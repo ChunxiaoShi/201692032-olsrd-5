@@ -36,3 +36,13 @@ MPRSelectorAddress：多点中继选择节点地址，该字段包含节点的�
 HELLO分组只在产生HELLO分组的节点的一跳范围内传播。
 
 邻居表：
+网络中每个节点从HELLO分组中得到其两跳以内的邻居的信息。
+条目格式：N_addr N_status  N_2hop_list N_time
+N_addr：节点的一条邻居地址。
+N_status：节点与一条邻居之间链路的状态。
+N_2hop_list：通过一条邻居可到达的两跳邻居的列表，包含保持时间。
+N_time：每个邻居表条目的保持时间。
+
+MPR Selector表：
+节点为判断转发哪些控制信息，需要维护一张MPR Selector表，此表包含节点的MPR Selector。当接收到MPR Selector的控制分组，节点转发分组，否则不转发。
+表格式：MS_addr MS_seq_num  MS_time
