@@ -1,0 +1,38 @@
+协议特点：
+多点中继节点（MPR）机制优化泛洪算法，降低了协议的开销。
+先应式路由计算，查找路由时延小。
+最短路径，路由计算选择最短路径作为最优路径。
+
+主要思想：
+核心思想：MPR（Multi Point Relay）机制。
+分组格式：HELLO分组、TC（Topology Control）分组。
+表格式：邻居表、MPR Selector表、拓扑表、路由表。
+算法描述：邻居监听、MPR选择、生成控制信息、路由计算。
+
+MPR机制：
+节点选择部分邻节点作为它的中继节点，只有被选择的中继节点转发节点的控制信息。
+多跳范围内的消息转发仍然遵循MPR机制。
+
+HELLO控制分组：
+作用：链路检测发现邻居
+MessageSeq.No：HELLO分组的序列号，由生成此分组的节点产生，用于区分不同的分组。
+MPRSeq.No：MPR的序列号，用于区分新旧MPR信息。
+LinkType：链路状态，有三种，非对称链路，对称链路，列表中节点被选为MPR。
+Reserved：保留字段，必为“0000 0000”。
+LinkMessagesize：本分组的大小。
+NeighborAddress：邻节点地址，在同一链路类型后的邻节点列表与节点之间的链路类型是相同的。（可有多组，记录多个邻节点地址信息）
+
+TC控制分组：
+作用：声明MPR信息，包括拓扑信息，节点通过该信息计算路由。
+MessageSeq.No：TC分组的序列号，用来识别是否为重复接受的TC分组。
+MSSN：MPR Selector序列号，与MPR Selector集合相对应，当MPR Selector集合有变化时，MSSN随之更新。
+HopCount：跳数，TC分组转发的最大跳数，当为“0”时，不再转发。
+OriginatorAddress：生成该TC分组的节点地址。
+Reserved：保留字节，必为“0000 0000 0000 0000 0000 0000”。
+MPRSelectorAddress：多点中继选择节点地址，该字段包含节点的多点中继选择节点的地址列表。
+
+网络中节点周期的发送TC分组，以声明自己的MPRSelector集。如果此节点没有被任何节点选作MPR，则它的MPRSelector集是空集，此节点不发送TC分组。
+节点的TC分组需要扩散至整个网络中的每个节点这是与HELLO分组的不同之处。
+HELLO分组只在产生HELLO分组的节点的一跳范围内传播。
+
+邻居表：
