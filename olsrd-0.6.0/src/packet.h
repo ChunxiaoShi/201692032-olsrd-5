@@ -46,43 +46,46 @@
 #include "interfaces.h"
 #include "mantissa.h"
 
-struct hello_neighbor {
-  uint8_t status;
-  uint8_t link;
-  union olsr_ip_addr main_address;
-  union olsr_ip_addr address;
-  struct hello_neighbor *next;
-  olsr_linkcost cost;
-  uint32_t linkquality[0];
+struct hello_neighbor {     /*HELLO消息的邻居结点集*/
+  uint8_t status;           /*记录邻居的状态*/
+  uint8_t link;             /*链接的类型*/
+  union olsr_ip_addr main_address;/*邻居的主地址*/
+  union olsr_ip_addr address;     /*邻居的其他地址*/
+  struct hello_neighbor *next;    /*发送给的下一邻居结点*/
+  olsr_linkcost cost;             /*代价*/
+  uint32_t linkquality[0];        /*质量*/
 };
 
-struct hello_message {
-  olsr_reltime vtime;
+struct hello_message {    /*消息数据包*/
+  olsr_reltime vtime;     
   olsr_reltime htime;
-  union olsr_ip_addr source_addr;
-  uint16_t packet_seq_number;
-  uint8_t hop_count;
-  uint8_t ttl;
-  uint8_t willingness;
-  struct hello_neighbor *neighbors;
+  union olsr_ip_addr source_addr;/*源地址*/
+  uint16_t packet_seq_number;    /*序列号*/
+  uint8_t hop_count;      /*跳数*/
+  uint8_t ttl;            /*time to live*/
+  uint8_t willingness;    /*指定节点的意愿进行，有意愿的WILL_NEVER的节点被选为MPR的任意结点*/
+  struct hello_neighbor *neighbors;/*消息传递的下一节点*/
 
 };
 
-struct tc_mpr_addr {
+struct tc_mpr_addr {    /*广播邻居集，将本节点选为MPR节点的邻居节点*/
   union olsr_ip_addr address;
   struct tc_mpr_addr *next;
   uint32_t linkquality[0];
 };
 
-struct tc_message {
-  olsr_reltime vtime;
-  union olsr_ip_addr source_addr;
-  union olsr_ip_addr originator;
-  uint16_t packet_seq_number;
-  uint8_t hop_count;
+struct tc_message {   /*TC消息数据包格式*/
+  olsr_reltime vtime; /*有效时间*/
+  union olsr_ip_addr source_addr;/*源地址*/
+  union olsr_ip_addr originator;/*到达目的地址的倒数第二跳地址*/
+  uint16_t packet_seq_number;   /*序列号*/
+  uint8_t hop_count;            
   uint8_t ttl;
-  uint16_t ansn;
+  uint16_t ansn;      /*本节点收到的最近一个TC分组的ANSN序列号。*/
   struct tc_mpr_addr *multipoint_relay_selector_address;
+                      /*TC分组仅仅包含MPRselector(将本节点选为MPR节点的邻居节点)的地址，
+                      而不是所有邻居节点的地址。因为TC分组数据包必须通过MPR节点被广播到全网中,
+                      用以维护网络的拓扑信息、确保链路时刻的连通状态和更新路由表集。*/
 };
 
 /*
