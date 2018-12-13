@@ -48,10 +48,15 @@ The olsr.org OLSR daemon is an implementation of the Optimized Link State
 routing protocol. The protocol is documented in RFC3626. The website
 of olsrd is http://www.olsr.org
 
+OLSR守护进程是优化链接状态路由协议的实现。
+
 Olsrd is designed to be a modular an extensible implementation. It features
 a plugin interface, allowing for developers to extend OLSR operation without
 interfering with the core code. It also features a experimental link quality
 routing scheme.
+
+Olsrd被设计成模块化的可扩展实现。它具有一个插件接口，允许开发人员在不干扰核心代码的
+情况下扩展OLSR操作。它还具有一个实验性的链路质量路由方案。 
 
 To ask questions or make comments, join up with the mailing lists:
 olsr-dev@olsr.org   - development discussion
@@ -94,6 +99,9 @@ functions like generation and processing of private package types, setting
 olsrd configurations in run-time and much more. This design is chosen for
 amongst others, the following reasons:
 
+Olsrd支持插件（动态加载库）的动态加载，用于生成和处理私有包类型、在运行时
+设置olsrd配置等功能。
+
  * No need to change any code in the olsr daemon to add custom packages or 
    functionality.
  * Users are free to implement olsrd plugins and license them under whatever 
@@ -102,6 +110,11 @@ amongst others, the following reasons:
    a dynamic library. Linux even allows scripts!
  * No need for people with extended OLSR versions to rely on heavy patching 
    to maintain functionality when new olsrd versions are released.
+
+*不需要更改olsr守护程序中的任何代码来添加自定义包或功能。
+*用户可以自由地实现olsrd插件，并按照他们喜欢的任何条款授权它们。
+*插件可以用任何可以编译为动态库的语言编写。Linux甚至允许脚本！
+*不需要具有扩展OLSR版本的人在发布新的olsrd版本时依赖重修补来维护功能。
 
 OLSR provides a default forwarding algorithm that allows for forwarding of OLSR 
 messages of unknown types. This is really neat - because it means that even if 
@@ -112,11 +125,20 @@ broadcast certain information, routing related or not, to all nodes that knows
 how to handle this message. Services that needs to broadcast/multicast data can 
 encapsulate data in a private OLSR message type using a olsrd plugin. 
 
+OLSR提供了一种默认的转发算法，允许转发未知类型的OLSR消息。这真的很巧妙——因为这意味着
+即使网络中只有一部分节点真正知道如何解释某种消息类型——所有节点都将根据MPR程序转发它们。
+用户可能希望使用OLSR中的优化泛洪技术来向所有知道如何处理此消息的节点广播某些信息（路由
+是否相关）。需要广播/多播数据的服务可以使用olsrd插件将数据封装在私有OLSR消息类型中。 
+
 The design of the various entities of OLSR allows one to easily add special 
 functionality into most aspects of OLSR. One can both register functions and 
 unregister them with the socket parser, packet parser, scheduler and HNA set etc. 
 This opens up for possibilities like intercepting current operation and replacing 
 it with custom actions.
+
+OLSR的各种实体的设计允许人们很容易地将特殊功能添加到OLSR的大多数方面。人们可以用
+套接字解析器、包解析器、调度器和HNA集等来注册和注销函数。这就为拦截当前操作并用
+自定义操作替换这些操作提供了可能。
 
   Plugins that are part of this release(can be found in the lib/ directory):
 
@@ -156,6 +178,9 @@ link quality metric. This enables olsrd to prefer routes that have a
 superior overall quality to routes that are worse but consist of less
 hops. Have a look at the README-Link-Quality.html file for details.
 
+0.4.8版本是实现ETX链接质量度量的olsrd的第一个版本。这使得olsrd能够优先选择
+总体质量优于质量更差但包含较少跳数的路由。
+
 ==================
  * KNOWN PROBLEMS
 ==================
@@ -163,6 +188,9 @@ hops. Have a look at the README-Link-Quality.html file for details.
 There is no synchronization concept (and thus - and for Gods sake -  no
 code). Some plugins use threads for concurrency so this should be solved.
 ATM the bmf plugin is the only one using threads.
+
+这里没有同步的概念（因此，没有代码）。一些插件使用线程进行并发。
+ATM的bmf插件是唯一一个使用线程的插件。 
 
 ===============
  * FUTURE WORK
