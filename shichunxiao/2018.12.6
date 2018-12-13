@@ -46,3 +46,32 @@ N_time：每个邻居表条目的保持时间。
 MPR Selector表：
 节点为判断转发哪些控制信息，需要维护一张MPR Selector表，此表包含节点的MPR Selector。当接收到MPR Selector的控制分组，节点转发分组，否则不转发。
 表格式：MS_addr MS_seq_num  MS_time
+MS_addr：MPR Selector的节点地址。
+MS_seq_num：MPR Selector集的序列号，用来区分MPR Selector集的新旧。
+MS_time：该MPR Selector集条目的保持时间。如过期，删除该条目。
+
+拓扑表：
+网络中的每一个节点维护一张拓扑表，记录从TC分组中得到的拓扑信息，并由此信息计算路由。节点将网络中其他节点的多点中继信息作为拓扑条目记录在拓扑表中。
+表格式：T_dest  T_last  T_seq  T_time
+此条目说明了T_dest已经选择T_last作为MPR，而且T_last已经发布了序列号为T_seq的MPR Selector集信息。T_time作为保持时间，过期就删除该条目。
+
+路由表：
+表格式：R_dest_addr  R_next_addr  R_dist
+R_dest_addr：目的节点地址。
+R_next_addr：下一条节点的地址。
+R_dist：本节点到目的节点的跳数。
+
+生成控制信息：
+网络中的节点根据收到TC分组构建拓扑表条目。当接收到一个TC分组后，执行以下步骤：
+(1)如果拓扑表中存在的条目T_last与接受到的TC分组初始发送节点地址相同，并且TC分组的MSSN值小于该条目T_seq，那么丢掉此分组。
+(2)如果拓扑表中存在的条目T_last与接受到的TC分组初始发送节点地址相同，并且TC分组的MSSN值大于该条目T_seq，那么删除拓扑表中所有该T_last的条目，并且记录新的拓扑信息。
+(3)如果拓扑表中不存在与接受到的TC分组初始发送节点地址相同的T_last条目，则在拓扑表中记录新的拓扑条目。
+
+优点：
+OLSR协议是一种先应式路由协议，具有査找路由吋延小的优点。
+OLSR协议采用MPR机制，只有MPR节点负责向全网泛洪TC控制消息，从而減少了协议开销。
+OLSR路由协议采用Dijkstra最短路径选路算法迸行选路。
+缩减了控制分俎的大小。节点并不发布它与所有邻节点的链路状态信息，而是仅发布它和作为它的多点中继选择节点（MPR Selector）的邻节点的信息。这就使分组的大小显著変小。
+
+局限:
+MPR机制只考虑覆盖度，忽略了链路质量的影响。
