@@ -47,11 +47,11 @@
 #include "mantissa.h"
 #include "packet.h"
 
-struct mid_address {
-  union olsr_ip_addr alias;
-  struct mid_entry *main_entry;
+struct mid_address {        //本节点其他接口的IP地址
+  union olsr_ip_addr alias;   //本节点中其他端口地址
+  struct mid_entry *main_entry;//节点链路信息
   struct mid_address *next_alias;
-  uint32_t vtime;
+  uint32_t vtime;             //有效时间
 
   /* These are for the reverse list */
   struct mid_address *prev;
@@ -62,9 +62,9 @@ struct mid_address {
  * Contains the main addr of a node and a list of aliases
  */
 struct mid_entry {
-  union olsr_ip_addr main_addr;
-  struct mid_address *aliases;
-  struct mid_entry *prev;
+  union olsr_ip_addr main_addr; //节点主地址
+  struct mid_address *aliases;  //本节点链路中其他端口信息
+  struct mid_entry *prev; 
   struct mid_entry *next;
   struct timer_entry *mid_timer;
 };

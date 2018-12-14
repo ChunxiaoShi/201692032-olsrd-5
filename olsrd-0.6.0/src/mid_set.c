@@ -64,7 +64,7 @@ struct mid_entry *mid_lookup_entry_bymain(const union olsr_ip_addr *adr);
  *
  */
 int
-olsr_init_mid_set(void)
+olsr_init_mid_set(void)     //MID消息初始化
 {
   int idx;
 
@@ -76,6 +76,9 @@ olsr_init_mid_set(void)
 
     reverse_mid_set[idx].next = &reverse_mid_set[idx];
     reverse_mid_set[idx].prev = &reverse_mid_set[idx];
+    //reverse_ mid_ set[idx].next标记的是下一跳的节点，
+    //reverse _ mid_ set[idx].prev 标记的是上一跳的节点,
+    //这两个数组标记了所有与节点距离不超过一条的节点，即MID消息的通信对象。
   }
 
   return 1;

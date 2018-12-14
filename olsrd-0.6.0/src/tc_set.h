@@ -56,7 +56,7 @@
  * The SPF calculation operates on these datasets.
  */
 
-struct tc_edge_entry {
+struct tc_edge_entry {      //拓扑边缘节点
   struct avl_node edge_node;           /* edge_tree node in tc_entry */
   union olsr_ip_addr T_dest_addr;      /* edge_node key */
   struct tc_edge_entry *edge_inv;      /* shortcut, used during SPF calculation */

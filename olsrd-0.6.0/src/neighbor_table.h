@@ -45,28 +45,28 @@
 #include "olsr_types.h"
 #include "hashing.h"
 
-struct neighbor_2_list_entry {
+struct neighbor_2_list_entry {        //两跳邻居列表
   struct neighbor_entry *nbr2_nbr;     /* backpointer to owning nbr entry */
-  struct neighbor_2_entry *neighbor_2;
-  struct timer_entry *nbr2_list_timer;
-  struct neighbor_2_list_entry *next;
-  struct neighbor_2_list_entry *prev;
+  struct neighbor_2_entry *neighbor_2;//两跳邻居节点信息
+  struct timer_entry *nbr2_list_timer;//有效时间
+  struct neighbor_2_list_entry *next; //下一节点
+  struct neighbor_2_list_entry *prev; //上一节点
 };
 
 #define OLSR_NBR2_LIST_JITTER 5 /* percent */
 
-struct neighbor_entry {
-  union olsr_ip_addr neighbor_main_addr;
-  uint8_t status;
-  uint8_t willingness;
-  bool is_mpr;
-  bool was_mpr;                        /* Used to detect changes in MPR */
-  bool skip;
-  int neighbor_2_nocov;
-  int linkcount;
-  struct neighbor_2_list_entry neighbor_2_list;
-  struct neighbor_entry *next;
-  struct neighbor_entry *prev;
+struct neighbor_entry {     //邻居结点信息
+  union olsr_ip_addr neighbor_main_addr;    //邻居主地址
+  uint8_t status;                           //主地址状态
+  uint8_t willingness;                      //MPR相关
+  bool is_mpr;                              //是否是MPR
+  bool was_mpr;                        /* Used to detect changes in MPR ？用于发现MPR的变化*/
+  bool skip;                                
+  int neighbor_2_nocov;                     //覆盖两跳邻居节点的数量
+  int linkcount;                            //链接链路的数量
+  struct neighbor_2_list_entry neighbor_2_list;//两跳邻居列表
+  struct neighbor_entry *next;              //该节点下一节点
+  struct neighbor_entry *prev;              //该节点上一节点
 };
 
 #define OLSR_FOR_ALL_NBR_ENTRIES(nbr) \

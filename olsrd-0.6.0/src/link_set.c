@@ -89,7 +89,7 @@ olsr_init_link_set(void)
  * a final "lost all links" hello can be generated to
  * tell your neighbors that you are gone now.
  */
-void olsr_reset_all_links(void) {
+void olsr_reset_all_links(void) {       //重置所有节点信息
   struct link_entry *link;
 
   OLSR_FOR_ALL_LINK_ENTRIES(link) {
@@ -117,8 +117,8 @@ void olsr_reset_all_links(void) {
  * @return the link status of the link
  */
 int
-lookup_link_status(const struct link_entry *entry)
-{
+lookup_link_status(const struct link_entry *entry)  //查找链路状态
+{                                                   //链路状态有四种：LOST，HIDE，SYM，ASYM
 
   if (entry == NULL || list_is_empty(&link_entry_head)) {
     return UNSPEC_LINK;
@@ -175,16 +175,17 @@ lookup_link_status(const struct link_entry *entry)
  * @return SYM_LINK if a symmetric link exists 0 if not
  */
 static int
-get_neighbor_status(const union olsr_ip_addr *address)
+get_neighbor_status(const union olsr_ip_addr *address)  //得到邻居状态
 {
   const union olsr_ip_addr *main_addr;
   struct interface *ifs;
 
-  /* Find main address */
+  /* Find main address */ //通过查找main_address找到节点
   if (!(main_addr = mid_lookup_main_addr(address)))
     main_addr = address;
 
   /* Loop trough local interfaces to check all possebilities */
+  //只返回对称链路的信息
   for (ifs = ifnet; ifs != NULL; ifs = ifs->int_next) {
     struct mid_address *aliases;
     struct link_entry *lnk = lookup_link_entry(main_addr, NULL, ifs);
@@ -358,14 +359,14 @@ set_loss_link_multiplier(struct link_entry *entry)
  * Delete, unlink and free a link entry.
  */
 static void
-olsr_delete_link_entry(struct link_entry *link)
+olsr_delete_link_entry(struct link_entry *link)//删除链路上所有节点信息
 {
-  struct tc_edge_entry *tc_edge;
+  struct tc_edge_entry *tc_edge;  //拓扑边缘节点
 
   /* delete tc edges we made for SPF */
   tc_edge = olsr_lookup_tc_edge(tc_myself, &link->neighbor_iface_addr);
   if (tc_edge != NULL) {
-    olsr_delete_tc_edge_entry(tc_edge);
+    olsr_delete_tc_edge_entry(tc_edge);     //删除边缘电路
   }
 
 
@@ -390,7 +391,7 @@ olsr_delete_link_entry(struct link_entry *link)
   free(link->if_name);
   free(link);
 
-  changes_neighborhood = true;
+  changes_neighborhood = true;    //让其他节点更新自己的链路状况
 }
 
 /**

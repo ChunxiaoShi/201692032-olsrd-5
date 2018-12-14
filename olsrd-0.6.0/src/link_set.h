@@ -55,22 +55,22 @@
 
 #define LINK_LOSS_MULTIPLIER (1<<16)
 
-struct link_entry {
-  union olsr_ip_addr local_iface_addr;
-  union olsr_ip_addr neighbor_iface_addr;
-  const struct interface *inter;
+struct link_entry {   //每个节点存储自身的信息
+  union olsr_ip_addr local_iface_addr;  //该节点接口的IP地址。
+  union olsr_ip_addr neighbor_iface_addr;//邻居节点IP地址
+  const struct interface *inter;        //
   char *if_name;
-  struct timer_entry *link_timer;
+  struct timer_entry *link_timer;       //定时器
   struct timer_entry *link_sym_timer;
   uint32_t ASYM_time;
-  olsr_reltime vtime;
-  struct neighbor_entry *neighbor;
-  uint8_t prev_status;
+  olsr_reltime vtime;                   //信息有效时间
+  struct neighbor_entry *neighbor;      //邻居结点具体信息
+  uint8_t prev_status;                  //上一节点的状态
 
   /*
-   * Hysteresis
+   * Hysteresis   //滞后作用
    */
-  float L_link_quality;
+  float L_link_quality;                //记录链路质量 
   int L_link_pending;
   uint32_t L_LOST_LINK_time;
   struct timer_entry *link_hello_timer; /* When we should receive a new HELLO */
@@ -79,7 +79,7 @@ struct link_entry {
   uint16_t olsr_seqno;
 
   /*
-   * packet loss
+   * packet loss    //数据包丢失相关信息
    */
   olsr_reltime loss_helloint;
   struct timer_entry *link_loss_timer;

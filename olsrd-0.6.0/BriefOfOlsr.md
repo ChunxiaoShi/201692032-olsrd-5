@@ -48,3 +48,24 @@ TC-拓扑控制。
 的MPR节点，则不转发该TC控制消息。
 
 相关定义在/src/lq_packet.h中，见注释。
+
+* ：HELLO消息包含着本节点的邻居及其链路状态信息。
+通过HELLO消息周期性地交互，各个节点不仅知道自己的邻居信息，还能知道两跳邻居。拥有邻居和两跳邻居信息后，移动节点独立选择本节点的MPR为邻居节点集中，能覆盖所有两跳邻居节点的个数最少的那些节点。
+
+- （5）MID消息：
+MID--multiple interface declaration。
+实现协议中多重OLSR接口之间的通信。
+MID消息数据部分为多个OLSR接口的地址。
+MID消息初始化代码在mid_set.c中。
+mid消息相关定义在/src/mid_set.h中。
+操作在/src/mid_set.c中
+
+4.邻居发现：
+---
+邻居发现是基于节点的邻居信息库，通过HELLO消息的传播实现
+邻居消息库包含关于邻居、2跳邻居、MPRs和MPR的信息。
+- （1）节点消息的存储：
+每个节点的消息存储在link_entry中，见注释：/src/link_set.h
+其中，邻居结点相关信息在neighbor_entry中，见：/src/neighbor_table.h
+- （2）节点操作：
+
