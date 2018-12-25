@@ -1,0 +1,1843 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+OLSR_AC_POWERED	apm.h	/^#define OLSR_AC_POWERED /;"	d
+OLSR_BATTERY_POWERED	apm.h	/^#define OLSR_BATTERY_POWERED /;"	d
+_OLSR_APM	apm.h	/^#define _OLSR_APM$/;"	d
+ac_line_status	apm.h	/^  int ac_line_status;$/;"	m	struct:olsr_apm_info
+battery_percentage	apm.h	/^  int battery_percentage;$/;"	m	struct:olsr_apm_info
+battery_time_left	apm.h	/^  int battery_time_left;               \/* Time left in minutes *\/$/;"	m	struct:olsr_apm_info
+olsr_apm_info	apm.h	/^struct olsr_apm_info {$/;"	s
+BMSG_DBGLVL	build_msg.c	/^#define BMSG_DBGLVL /;"	d	file:
+OLSR_HELLO_IPV4_HDRSIZE	build_msg.c	/^#define OLSR_HELLO_IPV4_HDRSIZE /;"	d	file:
+OLSR_HELLO_IPV6_HDRSIZE	build_msg.c	/^#define OLSR_HELLO_IPV6_HDRSIZE /;"	d	file:
+OLSR_HNA_IPV4_HDRSIZE	build_msg.c	/^#define OLSR_HNA_IPV4_HDRSIZE /;"	d	file:
+OLSR_HNA_IPV6_HDRSIZE	build_msg.c	/^#define OLSR_HNA_IPV6_HDRSIZE /;"	d	file:
+OLSR_IPV4_HDRSIZE	build_msg.c	/^#define OLSR_IPV4_HDRSIZE /;"	d	file:
+OLSR_IPV6_HDRSIZE	build_msg.c	/^#define OLSR_IPV6_HDRSIZE /;"	d	file:
+OLSR_MID_IPV4_HDRSIZE	build_msg.c	/^#define OLSR_MID_IPV4_HDRSIZE /;"	d	file:
+OLSR_MID_IPV6_HDRSIZE	build_msg.c	/^#define OLSR_MID_IPV6_HDRSIZE /;"	d	file:
+OLSR_TC_IPV4_HDRSIZE	build_msg.c	/^#define OLSR_TC_IPV4_HDRSIZE /;"	d	file:
+OLSR_TC_IPV6_HDRSIZE	build_msg.c	/^#define OLSR_TC_IPV6_HDRSIZE /;"	d	file:
+check_buffspace	build_msg.c	/^check_buffspace(int msgsize, int buffsize, const char *type)$/;"	f	file:
+get_empty_tc_timer	build_msg.c	/^get_empty_tc_timer(void)$/;"	f
+msg_buffer	build_msg.c	/^static uint8_t *msg_buffer = (uint8_t *)msg_buffer_align;$/;"	v	file:
+msg_buffer_align	build_msg.c	/^static uint32_t msg_buffer_align[(MAXMESSAGESIZE - OLSR_HEADERSIZE)\/sizeof(uint32_t) + 1];$/;"	v	file:
+queue_hello	build_msg.c	/^queue_hello(struct hello_message * message, struct interface * ifp)$/;"	f
+queue_hna	build_msg.c	/^queue_hna(struct interface * ifp)$/;"	f
+queue_mid	build_msg.c	/^queue_mid(struct interface * ifp)$/;"	f
+queue_tc	build_msg.c	/^queue_tc(struct tc_message * message, struct interface * ifp)$/;"	f
+send_empty_tc	build_msg.c	/^static uint32_t send_empty_tc;          \/* TC empty message sending *\/$/;"	v	file:
+serialize_hello4	build_msg.c	/^serialize_hello4(struct hello_message *message, struct interface *ifp)$/;"	f	file:
+serialize_hello6	build_msg.c	/^serialize_hello6(struct hello_message *message, struct interface *ifp)$/;"	f	file:
+serialize_hna4	build_msg.c	/^serialize_hna4(struct interface *ifp)$/;"	f	file:
+serialize_hna6	build_msg.c	/^serialize_hna6(struct interface *ifp)$/;"	f	file:
+serialize_mid4	build_msg.c	/^serialize_mid4(struct interface *ifp)$/;"	f	file:
+serialize_mid6	build_msg.c	/^serialize_mid6(struct interface *ifp)$/;"	f	file:
+serialize_tc4	build_msg.c	/^serialize_tc4(struct tc_message *message, struct interface *ifp)$/;"	f	file:
+serialize_tc6	build_msg.c	/^serialize_tc6(struct tc_message *message, struct interface *ifp)$/;"	f	file:
+set_empty_tc_timer	build_msg.c	/^set_empty_tc_timer(uint32_t empty_tc_new)$/;"	f
+_BUILD_MSG_H	build_msg.h	/^#define _BUILD_MSG_H$/;"	d
+ARM_NOWARN_ALIGN	defs.h	/^#define ARM_NOWARN_ALIGN(/;"	d
+ARRAYSIZE	defs.h	/^#define ARRAYSIZE(/;"	d
+CLOSE	defs.h	/^#define CLOSE(/;"	d
+CONST_ARM_NOWARN_ALIGN	defs.h	/^#define CONST_ARM_NOWARN_ALIGN(/;"	d
+DEQUEUE_ELEM	defs.h	/^#define DEQUEUE_ELEM(/;"	d
+GET_TIMESTAMP	defs.h	/^#define GET_TIMESTAMP(/;"	d
+INLINE	defs.h	/^#define INLINE /;"	d
+MAX	defs.h	/^#define MAX(/;"	d
+MAXMESSAGESIZE	defs.h	/^#define	MAXMESSAGESIZE	/;"	d
+MIN	defs.h	/^#define MIN(/;"	d
+OLSRD_CONF_FILE_NAME	defs.h	/^#define OLSRD_CONF_FILE_NAME	/;"	d
+OLSRD_GLOBAL_CONF_FILE	defs.h	/^#define OLSRD_GLOBAL_CONF_FILE	/;"	d
+OLSR_PRINTF	defs.h	/^#define OLSR_PRINTF(/;"	d
+QUEUE_ELEM	defs.h	/^#define QUEUE_ELEM(/;"	d
+TIMED_OUT	defs.h	/^#define TIMED_OUT(/;"	d
+TIME_DUE	defs.h	/^#define TIME_DUE(/;"	d
+UDP_IPV4_HDRSIZE	defs.h	/^#define UDP_IPV4_HDRSIZE /;"	d
+UDP_IPV6_HDRSIZE	defs.h	/^#define UDP_IPV6_HDRSIZE /;"	d
+_OLSR_DEFS	defs.h	/^#define _OLSR_DEFS$/;"	d
+olsr_debug	defs.h	/^#define olsr_debug(/;"	d
+strscat	defs.h	/^strscat(char *dest, const char *src, size_t size)$/;"	f
+strscpy	defs.h	/^strscpy(char *dest, const char *src, size_t size)$/;"	f
+duplicate_handler_head	duplicate_handler.c	/^static struct list_node duplicate_handler_head;$/;"	v	typeref:struct:list_node	file:
+duplicate_spam_timer	duplicate_handler.c	/^static struct timer_entry *duplicate_spam_timer;$/;"	v	typeref:struct:timer_entry	file:
+handle_duplicate_spam_timer	duplicate_handler.c	/^static void handle_duplicate_spam_timer(void __attribute__ ((unused)) *no) {$/;"	f	file:
+olsr_add_duplicate_handler	duplicate_handler.c	/^void olsr_add_duplicate_handler(struct duplicate_handler *h) {$/;"	f
+olsr_duplicate_handler_init	duplicate_handler.c	/^void olsr_duplicate_handler_init(void) {$/;"	f
+olsr_handle_hna_collision	duplicate_handler.c	/^void olsr_handle_hna_collision(union olsr_ip_addr *hna, union olsr_ip_addr *orig) {$/;"	f
+olsr_handle_mid_collision	duplicate_handler.c	/^void olsr_handle_mid_collision(union olsr_ip_addr *mid, union olsr_ip_addr *orig) {$/;"	f
+olsr_remove_duplicate_handler	duplicate_handler.c	/^void olsr_remove_duplicate_handler(struct duplicate_handler *h) {$/;"	f
+olsr_test_originator_collision	duplicate_handler.c	/^void olsr_test_originator_collision(uint8_t msgType, uint16_t seqno) {$/;"	f
+spam_hna_counter	duplicate_handler.c	/^static uint32_t spam_orig_counter, spam_hna_counter, spam_mid_counter;$/;"	v	file:
+spam_mid_counter	duplicate_handler.c	/^static uint32_t spam_orig_counter, spam_hna_counter, spam_mid_counter;$/;"	v	file:
+spam_orig_counter	duplicate_handler.c	/^static uint32_t spam_orig_counter, spam_hna_counter, spam_mid_counter;$/;"	v	file:
+DUPLICATE_HANDLER_H_	duplicate_handler.h	/^#define DUPLICATE_HANDLER_H_$/;"	d
+MAX_SYSLOG_EACH_HOUR	duplicate_handler.h	/^#define MAX_SYSLOG_EACH_HOUR /;"	d
+duplicate_handler	duplicate_handler.h	/^struct duplicate_handler {$/;"	s
+hna_collision	duplicate_handler.h	/^  void (*hna_collision)(union olsr_ip_addr *hna, union olsr_ip_addr *orig);$/;"	m	struct:duplicate_handler
+mid_collision	duplicate_handler.h	/^  void (*mid_collision)(union olsr_ip_addr *mid, union olsr_ip_addr *orig);$/;"	m	struct:duplicate_handler
+node	duplicate_handler.h	/^  struct list_node node;$/;"	m	struct:duplicate_handler	typeref:struct:duplicate_handler::list_node
+originator_collision	duplicate_handler.h	/^  void (*originator_collision)(uint8_t msgType);$/;"	m	struct:duplicate_handler
+duplicate_cleanup_timer	duplicate_set.c	/^struct timer_entry *duplicate_cleanup_timer;$/;"	v	typeref:struct:timer_entry
+duplicate_set	duplicate_set.c	/^struct avl_tree duplicate_set;$/;"	v	typeref:struct:avl_tree
+olsr_cleanup_duplicate_entry	duplicate_set.c	/^olsr_cleanup_duplicate_entry(void __attribute__ ((unused)) * unused)$/;"	f	file:
+olsr_cleanup_duplicates	duplicate_set.c	/^void olsr_cleanup_duplicates(union olsr_ip_addr *orig) {$/;"	f
+olsr_create_duplicate_entry	duplicate_set.c	/^olsr_create_duplicate_entry(void *ip, uint16_t seqnr)$/;"	f
+olsr_init_duplicate_set	duplicate_set.c	/^olsr_init_duplicate_set(void)$/;"	f
+olsr_message_is_duplicate	duplicate_set.c	/^olsr_message_is_duplicate(union olsr_message *m)$/;"	f
+olsr_print_duplicate_table	duplicate_set.c	/^olsr_print_duplicate_table(void)$/;"	f
+olsr_seqno_diff	duplicate_set.c	/^int olsr_seqno_diff(uint16_t seqno1, uint16_t seqno2) {$/;"	f
+DUPLICATE_CLEANUP_INTERVAL	duplicate_set.h	/^#define DUPLICATE_CLEANUP_INTERVAL /;"	d
+DUPLICATE_CLEANUP_JITTER	duplicate_set.h	/^#define DUPLICATE_CLEANUP_JITTER /;"	d
+DUPLICATE_SET_2_H_	duplicate_set.h	/^#define DUPLICATE_SET_2_H_$/;"	d
+DUPLICATE_VTIME	duplicate_set.h	/^#define DUPLICATE_VTIME /;"	d
+DUP_MAX_TOO_LOW	duplicate_set.h	/^#define DUP_MAX_TOO_LOW /;"	d
+OLSR_FOR_ALL_DUP_ENTRIES	duplicate_set.h	/^#define OLSR_FOR_ALL_DUP_ENTRIES(/;"	d
+OLSR_FOR_ALL_DUP_ENTRIES_END	duplicate_set.h	/^#define OLSR_FOR_ALL_DUP_ENTRIES_END(/;"	d
+array	duplicate_set.h	/^  uint32_t array;$/;"	m	struct:dup_entry
+avl	duplicate_set.h	/^  struct avl_node avl;$/;"	m	struct:dup_entry	typeref:struct:dup_entry::avl_node
+dup_entry	duplicate_set.h	/^struct dup_entry {$/;"	s
+ip	duplicate_set.h	/^  union olsr_ip_addr ip;$/;"	m	struct:dup_entry	typeref:union:dup_entry::olsr_ip_addr
+seqnr	duplicate_set.h	/^  uint16_t seqnr;$/;"	m	struct:dup_entry
+too_low_counter	duplicate_set.h	/^  uint16_t too_low_counter;$/;"	m	struct:dup_entry
+valid_until	duplicate_set.h	/^  uint32_t valid_until;$/;"	m	struct:dup_entry
+atofpm	fpm.c	/^atofpm(const char *s)$/;"	f
+fpmadd	fpm.c	/^fpmadd(fpm a, fpm b)$/;"	f
+fpmdiv	fpm.c	/^fpmdiv(fpm a, fpm b)$/;"	f
+fpmidiv	fpm.c	/^fpmidiv(fpm a, int b)$/;"	f
+fpmimul	fpm.c	/^fpmimul(int a, fpm b)$/;"	f
+fpmmul	fpm.c	/^fpmmul(fpm a, fpm b)$/;"	f
+fpmmuli	fpm.c	/^fpmmuli(fpm a, int b)$/;"	f
+fpmsub	fpm.c	/^fpmsub(fpm a, fpm b)$/;"	f
+fpmtoa	fpm.c	/^fpmtoa(float a)$/;"	f
+fpmtoa	fpm.c	/^fpmtoa(fpm a)$/;"	f
+fpmtof	fpm.c	/^fpmtof(fpm a)$/;"	f
+fpmtoi	fpm.c	/^fpmtoi(fpm a)$/;"	f
+ftofpm	fpm.c	/^ftofpm(float f)$/;"	f
+itofpm	fpm.c	/^itofpm(sfpm i)$/;"	f
+CEIL_LQDIFF	fpm.h	/^#define CEIL_LQDIFF /;"	d
+FLOOR_LQDIFF	fpm.h	/^#define FLOOR_LQDIFF /;"	d
+FPM_BIT	fpm.h	/^#define FPM_BIT /;"	d
+FPM_INT_MAX	fpm.h	/^#define FPM_INT_MAX /;"	d
+FPM_INT_MIN	fpm.h	/^#define FPM_INT_MIN /;"	d
+FPM_MAX	fpm.h	/^#define FPM_MAX /;"	d
+FPM_MIN	fpm.h	/^#define FPM_MIN /;"	d
+FPM_MSK	fpm.h	/^#define FPM_MSK /;"	d
+FPM_NUM	fpm.h	/^#define FPM_NUM /;"	d
+INFINITE_ETX	fpm.h	/^#define INFINITE_ETX /;"	d
+MIN_LINK_QUALITY	fpm.h	/^#define MIN_LINK_QUALITY /;"	d
+ZERO_ETX	fpm.h	/^#define ZERO_ETX /;"	d
+_FPM_H	fpm.h	/^#define _FPM_H$/;"	d
+fpm	fpm.h	/^typedef long fpm;$/;"	t
+fpm	fpm.h	/^typedef long long fpm;$/;"	t
+fpmadd	fpm.h	/^#define fpmadd /;"	d
+fpmadd_def	fpm.h	/^#define fpmadd_def(/;"	d
+fpmdiv	fpm.h	/^#define fpmdiv /;"	d
+fpmdiv_def	fpm.h	/^#define fpmdiv_def(/;"	d
+fpmidiv	fpm.h	/^#define fpmidiv /;"	d
+fpmidiv_def	fpm.h	/^#define fpmidiv_def(/;"	d
+fpmimul	fpm.h	/^#define fpmimul /;"	d
+fpmimul_def	fpm.h	/^#define fpmimul_def(/;"	d
+fpmmul	fpm.h	/^#define fpmmul /;"	d
+fpmmul_def	fpm.h	/^#define fpmmul_def(/;"	d
+fpmmuli	fpm.h	/^#define fpmmuli /;"	d
+fpmmuli_def	fpm.h	/^#define fpmmuli_def(/;"	d
+fpmsub	fpm.h	/^#define fpmsub /;"	d
+fpmsub_def	fpm.h	/^#define fpmsub_def(/;"	d
+fpmtof	fpm.h	/^#define fpmtof /;"	d
+fpmtof_def	fpm.h	/^#define fpmtof_def(/;"	d
+fpmtoi	fpm.h	/^#define fpmtoi /;"	d
+fpmtoi_def	fpm.h	/^#define fpmtoi_def(/;"	d
+ftofpm	fpm.h	/^#define ftofpm /;"	d
+ftofpm_def	fpm.h	/^#define ftofpm_def(/;"	d
+itofpm	fpm.h	/^#define itofpm /;"	d
+itofpm_def	fpm.h	/^#define itofpm_def(/;"	d
+sfpm	fpm.h	/^typedef signed long long sfpm;$/;"	t
+sfpm	fpm.h	/^typedef signed long sfpm;$/;"	t
+ufpm	fpm.h	/^typedef unsigned long long ufpm;$/;"	t
+ufpm	fpm.h	/^typedef unsigned long ufpm;$/;"	t
+cleanup_gateway_handler	gateway.c	/^static void cleanup_gateway_handler(void *ptr) {$/;"	f	file:
+current_ipv4_gw	gateway.c	/^static struct gateway_entry *current_ipv4_gw, *current_ipv6_gw;$/;"	v	typeref:struct:gateway_entry	file:
+current_ipv6_gw	gateway.c	/^static struct gateway_entry *current_ipv4_gw, *current_ipv6_gw;$/;"	v	typeref:struct:	file:
+deserialize_gw_speed	gateway.c	/^deserialize_gw_speed(uint8_t value) {$/;"	f	file:
+gateway_tree	gateway.c	/^struct avl_tree gateway_tree;$/;"	v	typeref:struct:avl_tree
+gw_handler	gateway.c	/^static struct olsr_gw_handler *gw_handler;$/;"	v	typeref:struct:olsr_gw_handler	file:
+gw_mem_cookie	gateway.c	/^static struct olsr_cookie_info *gw_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info	file:
+olsr_cleanup_gateways	gateway.c	/^void olsr_cleanup_gateways(void) {$/;"	f
+olsr_delete_gateway_entry	gateway.c	/^olsr_delete_gateway_entry(union olsr_ip_addr *originator, uint8_t prefixlen) {$/;"	f
+olsr_find_gateway_entry	gateway.c	/^olsr_find_gateway_entry(union olsr_ip_addr *originator) {$/;"	f
+olsr_get_ipv4_inet_gateway	gateway.c	/^struct gateway_entry *olsr_get_ipv4_inet_gateway(bool *ext) {$/;"	f
+olsr_get_ipv6_inet_gateway	gateway.c	/^struct gateway_entry *olsr_get_ipv6_inet_gateway(bool *ext) {$/;"	f
+olsr_init_gateways	gateway.c	/^olsr_init_gateways(void) {$/;"	f
+olsr_is_smart_gateway	gateway.c	/^olsr_is_smart_gateway(struct olsr_ip_prefix *prefix, union olsr_ip_addr *mask) {$/;"	f
+olsr_modifiy_inetgw_netmask	gateway.c	/^olsr_modifiy_inetgw_netmask(union olsr_ip_addr *mask, int prefixlen) {$/;"	f
+olsr_print_gateway_entries	gateway.c	/^olsr_print_gateway_entries(void) {$/;"	f
+olsr_set_inet_gateway	gateway.c	/^olsr_set_inet_gateway(union olsr_ip_addr *originator, bool ipv4, bool ipv6, bool external) {$/;"	f
+olsr_set_inetgw_handler	gateway.c	/^olsr_set_inetgw_handler(struct olsr_gw_handler *h) {$/;"	f
+olsr_trigger_gatewayloss_check	gateway.c	/^void olsr_trigger_gatewayloss_check(void) {$/;"	f
+olsr_trigger_inetgw_selection	gateway.c	/^olsr_trigger_inetgw_selection(bool ipv4, bool ipv6) {$/;"	f
+olsr_trigger_inetgw_startup	gateway.c	/^olsr_trigger_inetgw_startup(void) {$/;"	f
+olsr_update_gateway_entry	gateway.c	/^olsr_update_gateway_entry(union olsr_ip_addr *originator, union olsr_ip_addr *mask, int prefixlen, uint16_t seqno) {$/;"	f
+refresh_smartgw_netmask	gateway.c	/^void refresh_smartgw_netmask(void) {$/;"	f
+serialize_gw_speed	gateway.c	/^serialize_gw_speed(uint32_t speed) {$/;"	f	file:
+smart_gateway_netmask	gateway.c	/^static uint8_t smart_gateway_netmask[sizeof(union olsr_ip_addr)];$/;"	v	file:
+smartgw_tunnel_monitor	gateway.c	/^static void smartgw_tunnel_monitor (int if_index,$/;"	f	file:
+v4gw_choosen_external	gateway.c	/^static bool v4gw_choosen_external, v6gw_choosen_external;$/;"	v	file:
+v4gw_tunnel	gateway.c	/^static struct olsr_iptunnel_entry *v4gw_tunnel, *v6gw_tunnel;$/;"	v	typeref:struct:olsr_iptunnel_entry	file:
+v6gw_choosen_external	gateway.c	/^static bool v4gw_choosen_external, v6gw_choosen_external;$/;"	v	file:
+v6gw_tunnel	gateway.c	/^static struct olsr_iptunnel_entry *v4gw_tunnel, *v6gw_tunnel;$/;"	v	typeref:struct:	file:
+FORCE_DELETE_GW_ENTRY	gateway.h	/^#define FORCE_DELETE_GW_ENTRY /;"	d
+GATEWAY_H_	gateway.h	/^#define GATEWAY_H_$/;"	d
+GW_CLEANUP_INTERVAL	gateway.h	/^#define GW_CLEANUP_INTERVAL /;"	d
+GW_HNA_DOWNLINK	gateway.h	/^  GW_HNA_DOWNLINK    = 3,$/;"	e	enum:gateway_hna_fields
+GW_HNA_FLAGS	gateway.h	/^  GW_HNA_FLAGS       = 1,$/;"	e	enum:gateway_hna_fields
+GW_HNA_FLAG_IPV4	gateway.h	/^  GW_HNA_FLAG_IPV4       = 1<<1,$/;"	e	enum:gateway_hna_flags
+GW_HNA_FLAG_IPV4_NAT	gateway.h	/^  GW_HNA_FLAG_IPV4_NAT   = 1<<2,$/;"	e	enum:gateway_hna_flags
+GW_HNA_FLAG_IPV6	gateway.h	/^  GW_HNA_FLAG_IPV6       = 1<<3,$/;"	e	enum:gateway_hna_flags
+GW_HNA_FLAG_IPV6PREFIX	gateway.h	/^  GW_HNA_FLAG_IPV6PREFIX = 1<<4$/;"	e	enum:gateway_hna_flags
+GW_HNA_FLAG_LINKSPEED	gateway.h	/^  GW_HNA_FLAG_LINKSPEED  = 1<<0,$/;"	e	enum:gateway_hna_flags
+GW_HNA_PAD	gateway.h	/^  GW_HNA_PAD         = 0,$/;"	e	enum:gateway_hna_fields
+GW_HNA_UPLINK	gateway.h	/^  GW_HNA_UPLINK      = 2,$/;"	e	enum:gateway_hna_fields
+GW_HNA_V6PREFIX	gateway.h	/^  GW_HNA_V6PREFIX    = 5$/;"	e	enum:gateway_hna_fields
+GW_HNA_V6PREFIXLEN	gateway.h	/^  GW_HNA_V6PREFIXLEN = 4,$/;"	e	enum:gateway_hna_fields
+OLSR_FOR_ALL_GATEWAY_ENTRIES	gateway.h	/^#define OLSR_FOR_ALL_GATEWAY_ENTRIES(/;"	d
+OLSR_FOR_ALL_GATEWAY_ENTRIES_END	gateway.h	/^#define OLSR_FOR_ALL_GATEWAY_ENTRIES_END(/;"	d
+cleanup_timer	gateway.h	/^  struct timer_entry *cleanup_timer;$/;"	m	struct:gateway_entry	typeref:struct:gateway_entry::timer_entry
+downlink	gateway.h	/^  uint32_t uplink, downlink;$/;"	m	struct:gateway_entry
+external_prefix	gateway.h	/^  struct olsr_ip_prefix external_prefix;$/;"	m	struct:gateway_entry	typeref:struct:gateway_entry::olsr_ip_prefix
+gateway_entry	gateway.h	/^struct gateway_entry {$/;"	s
+gateway_hna_fields	gateway.h	/^enum gateway_hna_fields {$/;"	g
+gateway_hna_flags	gateway.h	/^enum gateway_hna_flags {$/;"	g
+handle_delete_gw	gateway.h	/^  void (* handle_delete_gw)(struct gateway_entry *);$/;"	m	struct:olsr_gw_handler
+handle_startup	gateway.h	/^  void (* handle_startup)(void);$/;"	m	struct:olsr_gw_handler
+handle_update_gw	gateway.h	/^  void (* handle_update_gw)(struct gateway_entry *);$/;"	m	struct:olsr_gw_handler
+ipv4	gateway.h	/^  bool ipv4, ipv4nat, ipv6;$/;"	m	struct:gateway_entry
+ipv4nat	gateway.h	/^  bool ipv4, ipv4nat, ipv6;$/;"	m	struct:gateway_entry
+ipv6	gateway.h	/^  bool ipv4, ipv4nat, ipv6;$/;"	m	struct:gateway_entry
+node	gateway.h	/^  struct avl_node node;$/;"	m	struct:gateway_entry	typeref:struct:gateway_entry::avl_node
+olsr_gw_handler	gateway.h	/^struct olsr_gw_handler {$/;"	s
+originator	gateway.h	/^  union olsr_ip_addr originator;$/;"	m	struct:gateway_entry	typeref:union:gateway_entry::olsr_ip_addr
+select_gateway	gateway.h	/^  void (* select_gateway) (bool ipv4, bool ipv6);$/;"	m	struct:olsr_gw_handler
+seqno	gateway.h	/^  uint16_t seqno;$/;"	m	struct:gateway_entry
+uplink	gateway.h	/^  uint32_t uplink, downlink;$/;"	m	struct:gateway_entry
+gw_def_finished_ipv4	gateway_default_handler.c	/^static bool gw_def_finished_ipv4, gw_def_finished_ipv6;$/;"	v	file:
+gw_def_finished_ipv6	gateway_default_handler.c	/^static bool gw_def_finished_ipv4, gw_def_finished_ipv6;$/;"	v	file:
+gw_def_handler	gateway_default_handler.c	/^static struct olsr_gw_handler gw_def_handler = {$/;"	v	typeref:struct:olsr_gw_handler	file:
+gw_def_nodecount	gateway_default_handler.c	/^static uint32_t gw_def_nodecount, gw_def_stablecount;$/;"	v	file:
+gw_def_stablecount	gateway_default_handler.c	/^static uint32_t gw_def_nodecount, gw_def_stablecount;$/;"	v	file:
+gw_def_timer	gateway_default_handler.c	/^static struct timer_entry *gw_def_timer;$/;"	v	typeref:struct:timer_entry	file:
+gw_default_choose_gateway	gateway_default_handler.c	/^static void gw_default_choose_gateway(void) {$/;"	f	file:
+gw_default_choosegw_handler	gateway_default_handler.c	/^static void gw_default_choosegw_handler(bool ipv4, bool ipv6) {$/;"	f	file:
+gw_default_delete_handler	gateway_default_handler.c	/^static void gw_default_delete_handler(struct gateway_entry *gw) {$/;"	f	file:
+gw_default_startup_handler	gateway_default_handler.c	/^static void gw_default_startup_handler(void) {$/;"	f	file:
+gw_default_timer	gateway_default_handler.c	/^static void gw_default_timer(void *unused __attribute__ ((unused))) {$/;"	f	file:
+gw_default_update_handler	gateway_default_handler.c	/^static void gw_default_update_handler(struct gateway_entry *gw) {$/;"	f	file:
+olsr_gw_default_init	gateway_default_handler.c	/^void olsr_gw_default_init(void) {$/;"	f
+olsr_gw_default_lookup_gateway	gateway_default_handler.c	/^void olsr_gw_default_lookup_gateway(bool ipv4, bool ipv6) {$/;"	f
+GATEWAY_DEFAULT_HANDLER_H_	gateway_default_handler.h	/^#define GATEWAY_DEFAULT_HANDLER_H_$/;"	d
+GW_DEFAULT_STABLE_COUNT	gateway_default_handler.h	/^#define GW_DEFAULT_STABLE_COUNT /;"	d
+GW_DEFAULT_TIMER_INTERVAL	gateway_default_handler.h	/^#define GW_DEFAULT_TIMER_INTERVAL /;"	d
+PULSE_MAX	generate_msg.c	/^#define PULSE_MAX /;"	d	file:
+generate_hello	generate_msg.c	/^generate_hello(void *p)$/;"	f
+generate_hna	generate_msg.c	/^generate_hna(void *p)$/;"	f
+generate_mid	generate_msg.c	/^generate_mid(void *p)$/;"	f
+generate_stdout_pulse	generate_msg.c	/^generate_stdout_pulse(void *foo __attribute__ ((unused)))$/;"	f
+generate_tc	generate_msg.c	/^generate_tc(void *p)$/;"	f
+pulse_state	generate_msg.c	/^static uint8_t pulse_state = 0;$/;"	v	file:
+pulsedata	generate_msg.c	/^static char pulsedata[] = { '\\\\', '|', '\/', '-' };$/;"	v	file:
+STDOUT_PULSE_INT	generate_msg.h	/^#define STDOUT_PULSE_INT /;"	d
+_OLSR_GEN_MSG	generate_msg.h	/^#define _OLSR_GEN_MSG$/;"	d
+__jhash_mix	hashing.c	/^#define __jhash_mix(/;"	d	file:
+jenkins_hash	hashing.c	/^jenkins_hash(const uint8_t * k, uint32_t length)$/;"	f	file:
+olsr_ip_hashing	hashing.c	/^olsr_ip_hashing(const union olsr_ip_addr * address)$/;"	f
+HASHMASK	hashing.h	/^#define	HASHMASK	/;"	d
+HASHSIZE	hashing.h	/^#define	HASHSIZE	/;"	d
+_OLSR_HASHING	hashing.h	/^#define _OLSR_HASHING$/;"	d
+hna_entry_mem_cookie	hna_set.c	/^struct olsr_cookie_info *hna_entry_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+hna_net_mem_cookie	hna_set.c	/^struct olsr_cookie_info *hna_net_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+hna_net_timer_cookie	hna_set.c	/^struct olsr_cookie_info *hna_net_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+hna_set	hna_set.c	/^struct hna_entry hna_set[HASHSIZE];$/;"	v	typeref:struct:hna_entry
+olsr_add_hna_entry	hna_set.c	/^olsr_add_hna_entry(const union olsr_ip_addr *addr)$/;"	f
+olsr_add_hna_net	hna_set.c	/^olsr_add_hna_net(struct hna_entry *hna_gw, const union olsr_ip_addr *net, uint8_t prefixlen)$/;"	f
+olsr_cleanup_hna	hna_set.c	/^olsr_cleanup_hna(union olsr_ip_addr *orig) {$/;"	f
+olsr_delete_hna_net_entry	hna_set.c	/^olsr_delete_hna_net_entry(struct hna_net *net_to_delete) {$/;"	f	file:
+olsr_expire_hna_net_entry	hna_set.c	/^olsr_expire_hna_net_entry(void *context)$/;"	f	file:
+olsr_init_hna_set	hna_set.c	/^olsr_init_hna_set(void)$/;"	f
+olsr_input_hna	hna_set.c	/^olsr_input_hna(union olsr_message *m, struct interface *in_if __attribute__ ((unused)), union olsr_ip_addr *from_addr)$/;"	f
+olsr_lookup_hna_gw	hna_set.c	/^olsr_lookup_hna_gw(const union olsr_ip_addr *gw)$/;"	f
+olsr_lookup_hna_net	hna_set.c	/^olsr_lookup_hna_net(const struct hna_net *nets, const union olsr_ip_addr *net, uint8_t prefixlen)$/;"	f
+olsr_print_hna_set	hna_set.c	/^olsr_print_hna_set(void)$/;"	f
+olsr_update_hna_entry	hna_set.c	/^olsr_update_hna_entry(const union olsr_ip_addr *gw, const union olsr_ip_addr *net, uint8_t prefixlen, olsr_reltime vtime)$/;"	f
+A_gateway_addr	hna_set.h	/^  union olsr_ip_addr A_gateway_addr;$/;"	m	struct:hna_entry	typeref:union:hna_entry::olsr_ip_addr
+OLSR_FOR_ALL_HNA_ENTRIES	hna_set.h	/^#define OLSR_FOR_ALL_HNA_ENTRIES(/;"	d
+OLSR_FOR_ALL_HNA_ENTRIES_END	hna_set.h	/^#define OLSR_FOR_ALL_HNA_ENTRIES_END(/;"	d
+OLSR_HNA_NET_JITTER	hna_set.h	/^#define OLSR_HNA_NET_JITTER /;"	d
+_OLSR_HNA	hna_set.h	/^#define _OLSR_HNA$/;"	d
+hna_entry	hna_set.h	/^struct hna_entry {$/;"	s
+hna_gw	hna_set.h	/^  struct hna_entry *hna_gw;            \/* backpointer to the owning HNA entry *\/$/;"	m	struct:hna_net	typeref:struct:hna_net::hna_entry
+hna_net	hna_set.h	/^struct hna_net {$/;"	s
+hna_net_timer	hna_set.h	/^  struct timer_entry *hna_net_timer;$/;"	m	struct:hna_net	typeref:struct:hna_net::timer_entry
+hna_prefix	hna_set.h	/^  struct olsr_ip_prefix hna_prefix;$/;"	m	struct:hna_net	typeref:struct:hna_net::olsr_ip_prefix
+networks	hna_set.h	/^  struct hna_net networks;$/;"	m	struct:hna_entry	typeref:struct:hna_entry::hna_net
+next	hna_set.h	/^  struct hna_entry *next;$/;"	m	struct:hna_entry	typeref:struct:hna_entry::hna_entry
+next	hna_set.h	/^  struct hna_net *next;$/;"	m	struct:hna_net	typeref:struct:hna_net::hna_net
+prev	hna_set.h	/^  struct hna_entry *prev;$/;"	m	struct:hna_entry	typeref:struct:hna_entry::hna_entry
+prev	hna_set.h	/^  struct hna_net *prev;$/;"	m	struct:hna_net	typeref:struct:hna_net::hna_net
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+hhigh	hysteresis.c	/^#define hhigh /;"	d	file:
+hlow	hysteresis.c	/^#define hlow /;"	d	file:
+hscaling	hysteresis.c	/^#define hscaling /;"	d	file:
+olsr_hyst_calc_instability	hysteresis.c	/^olsr_hyst_calc_instability(float old_quality)$/;"	f
+olsr_hyst_calc_stability	hysteresis.c	/^olsr_hyst_calc_stability(float old_quality)$/;"	f
+olsr_process_hysteresis	hysteresis.c	/^olsr_process_hysteresis(struct link_entry *entry)$/;"	f
+olsr_update_hysteresis_hello	hysteresis.c	/^olsr_update_hysteresis_hello(struct link_entry *entry, olsr_reltime htime)$/;"	f
+update_hysteresis_incoming	hysteresis.c	/^update_hysteresis_incoming(union olsr_ip_addr *remote, struct interface *local, uint16_t seqno)$/;"	f
+_OLSR_HYSTERESIS	hysteresis.h	/^#define _OLSR_HYSTERESIS$/;"	d
+_OLSR_IFNET	ifnet.h	/^#define _OLSR_IFNET$/;"	d
+close	interfaces.c	/^#define close(/;"	d	file:
+function	interfaces.c	/^  void (*function) (int if_index, struct interface *, enum olsr_ifchg_flag);$/;"	m	struct:ifchgf	file:
+hello_gen_timer_cookie	interfaces.c	/^struct olsr_cookie_info *hello_gen_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+hna_gen_timer_cookie	interfaces.c	/^struct olsr_cookie_info *hna_gen_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+if_ifwithaddr	interfaces.c	/^if_ifwithaddr(const union olsr_ip_addr *addr)$/;"	f
+if_ifwithindex	interfaces.c	/^if_ifwithindex(const int if_index)$/;"	f
+if_ifwithindex_name	interfaces.c	/^if_ifwithindex_name(const int if_index)$/;"	f
+if_ifwithname	interfaces.c	/^if_ifwithname(const char *if_name)$/;"	f
+if_ifwithsock	interfaces.c	/^if_ifwithsock(int fd)$/;"	f
+ifchgf	interfaces.c	/^struct ifchgf {$/;"	s	file:
+ifchgf_list	interfaces.c	/^static struct ifchgf *ifchgf_list;$/;"	v	typeref:struct:ifchgf	file:
+ifnet	interfaces.c	/^struct interface *ifnet;$/;"	v	typeref:struct:interface
+interface_poll_timer_cookie	interfaces.c	/^struct olsr_cookie_info *interface_poll_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+mid_gen_timer_cookie	interfaces.c	/^struct olsr_cookie_info *mid_gen_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+next	interfaces.c	/^  struct ifchgf *next;$/;"	m	struct:ifchgf	typeref:struct:ifchgf::ifchgf	file:
+olsr_add_ifchange_handler	interfaces.c	/^olsr_add_ifchange_handler(void (*f) (int if_index, struct interface *, enum olsr_ifchg_flag))$/;"	f
+olsr_create_olsrif	interfaces.c	/^olsr_create_olsrif(const char *name, int hemu)$/;"	f
+olsr_init_interfacedb	interfaces.c	/^olsr_init_interfacedb(void)$/;"	f
+olsr_remove_ifchange_handler	interfaces.c	/^olsr_remove_ifchange_handler(void (*f) (int if_index, struct interface *, enum olsr_ifchg_flag))$/;"	f
+olsr_remove_interface	interfaces.c	/^olsr_remove_interface(struct olsr_if * iface)$/;"	f
+olsr_trigger_ifchange	interfaces.c	/^olsr_trigger_ifchange(int if_index, struct interface *ifp, enum olsr_ifchg_flag flag)$/;"	f
+olsrif_ifwithname	interfaces.c	/^olsrif_ifwithname(const char *if_name)$/;"	f
+tc_gen_timer_cookie	interfaces.c	/^struct olsr_cookie_info *tc_gen_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+IFCHG_IF_ADD	interfaces.h	/^  IFCHG_IF_ADD = 1,$/;"	e	enum:olsr_ifchg_flag
+IFCHG_IF_REMOVE	interfaces.h	/^  IFCHG_IF_REMOVE = 2,$/;"	e	enum:olsr_ifchg_flag
+IFCHG_IF_UPDATE	interfaces.h	/^  IFCHG_IF_UPDATE = 3$/;"	e	enum:olsr_ifchg_flag
+IPV6_ADDR_ANY	interfaces.h	/^#define IPV6_ADDR_ANY	/;"	d
+IPV6_ADDR_ANYCAST	interfaces.h	/^#define IPV6_ADDR_ANYCAST	/;"	d
+IPV6_ADDR_COMPATv4	interfaces.h	/^#define IPV6_ADDR_COMPATv4	/;"	d
+IPV6_ADDR_LINKLOCAL	interfaces.h	/^#define IPV6_ADDR_LINKLOCAL	/;"	d
+IPV6_ADDR_LOOPBACK	interfaces.h	/^#define IPV6_ADDR_LOOPBACK	/;"	d
+IPV6_ADDR_MAPPED	interfaces.h	/^#define IPV6_ADDR_MAPPED	/;"	d
+IPV6_ADDR_MULTICAST	interfaces.h	/^#define IPV6_ADDR_MULTICAST /;"	d
+IPV6_ADDR_RESERVED	interfaces.h	/^#define IPV6_ADDR_RESERVED	/;"	d
+IPV6_ADDR_SCOPE_MASK	interfaces.h	/^#define IPV6_ADDR_SCOPE_MASK	/;"	d
+IPV6_ADDR_SITELOCAL	interfaces.h	/^#define IPV6_ADDR_SITELOCAL	/;"	d
+IPV6_ADDR_UNICAST	interfaces.h	/^#define IPV6_ADDR_UNICAST /;"	d
+MAX_IF_METRIC	interfaces.h	/^#define MAX_IF_METRIC /;"	d
+OLSR_DEFAULT_MTU	interfaces.h	/^#define OLSR_DEFAULT_MTU /;"	d
+WEIGHT_ETHERNET_100MB	interfaces.h	/^#define WEIGHT_ETHERNET_100MB /;"	d
+WEIGHT_ETHERNET_10MB	interfaces.h	/^#define WEIGHT_ETHERNET_10MB /;"	d
+WEIGHT_ETHERNET_1GB	interfaces.h	/^#define WEIGHT_ETHERNET_1GB /;"	d
+WEIGHT_ETHERNET_1GBP	interfaces.h	/^#define WEIGHT_ETHERNET_1GBP /;"	d
+WEIGHT_ETHERNET_DEFAULT	interfaces.h	/^#define WEIGHT_ETHERNET_DEFAULT /;"	d
+WEIGHT_HIGH	interfaces.h	/^#define WEIGHT_HIGH /;"	d
+WEIGHT_HIGHEST	interfaces.h	/^#define WEIGHT_HIGHEST /;"	d
+WEIGHT_LOW	interfaces.h	/^#define WEIGHT_LOW /;"	d
+WEIGHT_LOWEST	interfaces.h	/^#define WEIGHT_LOWEST /;"	d
+WEIGHT_SERIAL	interfaces.h	/^#define WEIGHT_SERIAL /;"	d
+WEIGHT_WLAN_11MB	interfaces.h	/^#define WEIGHT_WLAN_11MB /;"	d
+WEIGHT_WLAN_54MB	interfaces.h	/^#define WEIGHT_WLAN_54MB /;"	d
+WEIGHT_WLAN_DEFAULT	interfaces.h	/^#define WEIGHT_WLAN_DEFAULT /;"	d
+WEIGHT_WLAN_HIGH	interfaces.h	/^#define WEIGHT_WLAN_HIGH /;"	d
+WEIGHT_WLAN_LOW	interfaces.h	/^#define WEIGHT_WLAN_LOW /;"	d
+_OLSR_INTERFACE	interfaces.h	/^#define _OLSR_INTERFACE$/;"	d
+buff	interfaces.h	/^  uint8_t *buff;                       \/* Pointer to the allocated buffer *\/$/;"	m	struct:olsr_netbuf
+bufsize	interfaces.h	/^  int bufsize;                         \/* Size of the buffer *\/$/;"	m	struct:olsr_netbuf
+data	interfaces.h	/^  void *data;$/;"	m	struct:if_gen_property
+fwdtimer	interfaces.h	/^  uint32_t fwdtimer;$/;"	m	struct:interface
+gen_properties	interfaces.h	/^  struct if_gen_property *gen_properties;$/;"	m	struct:interface	typeref:struct:interface::if_gen_property
+hello	interfaces.h	/^  uint8_t hello;$/;"	m	struct:vtimes
+hello_etime	interfaces.h	/^  olsr_reltime hello_etime;$/;"	m	struct:interface
+hello_gen_timer	interfaces.h	/^  struct timer_entry *hello_gen_timer;$/;"	m	struct:interface	typeref:struct:interface::timer_entry
+hna	interfaces.h	/^  uint8_t hna;$/;"	m	struct:vtimes
+hna_gen_timer	interfaces.h	/^  struct timer_entry *hna_gen_timer;$/;"	m	struct:interface	typeref:struct:interface::timer_entry
+if_gen_property	interfaces.h	/^struct if_gen_property {$/;"	s
+if_index	interfaces.h	/^  int if_index;                        \/* Kernels index of this interface *\/$/;"	m	struct:interface
+immediate_send_tc	interfaces.h	/^  bool immediate_send_tc;$/;"	m	struct:interface
+int6_addr	interfaces.h	/^  struct sockaddr_in6 int6_addr;       \/* Address *\/$/;"	m	struct:interface	typeref:struct:interface::sockaddr_in6
+int6_multaddr	interfaces.h	/^  struct sockaddr_in6 int6_multaddr;   \/* Multicast *\/$/;"	m	struct:interface	typeref:struct:interface::sockaddr_in6
+int_addr	interfaces.h	/^  struct sockaddr_in int_addr;         \/* address *\/$/;"	m	struct:interface	typeref:struct:interface::sockaddr_in
+int_broadaddr	interfaces.h	/^  struct sockaddr_in int_broadaddr;    \/* broadcast address *\/$/;"	m	struct:interface	typeref:struct:interface::sockaddr_in
+int_flags	interfaces.h	/^  int int_flags;                       \/* see below *\/$/;"	m	struct:interface
+int_metric	interfaces.h	/^  int int_metric;                      \/* metric of interface *\/$/;"	m	struct:interface
+int_mtu	interfaces.h	/^  int int_mtu;                         \/* MTU of interface *\/$/;"	m	struct:interface
+int_name	interfaces.h	/^  char *int_name;                      \/* from kernel if structure *\/$/;"	m	struct:interface
+int_netmask	interfaces.h	/^  struct sockaddr_in int_netmask;      \/* netmask *\/$/;"	m	struct:interface	typeref:struct:interface::sockaddr_in
+int_next	interfaces.h	/^  struct interface *int_next;$/;"	m	struct:interface	typeref:struct:interface::interface
+interface	interfaces.h	/^#undef interface$/;"	d
+interface	interfaces.h	/^struct interface {$/;"	s
+ip_addr	interfaces.h	/^  union olsr_ip_addr ip_addr;$/;"	m	struct:interface	typeref:union:interface::olsr_ip_addr
+is_hcif	interfaces.h	/^  int is_hcif;                         \/* Is this a emulated host-client if? *\/$/;"	m	struct:interface
+is_wireless	interfaces.h	/^  int is_wireless;                     \/* wireless interface or not *\/$/;"	m	struct:interface
+maxsize	interfaces.h	/^  int maxsize;                         \/* Max bytes of payload that can be added to the buffer *\/$/;"	m	struct:olsr_netbuf
+mid	interfaces.h	/^  uint8_t mid;$/;"	m	struct:vtimes
+mid_gen_timer	interfaces.h	/^  struct timer_entry *mid_gen_timer;$/;"	m	struct:interface	typeref:struct:interface::timer_entry
+mode	interfaces.h	/^  int mode;                            \/* interface mode *\/$/;"	m	struct:interface
+netbuf	interfaces.h	/^  struct olsr_netbuf netbuf;$/;"	m	struct:interface	typeref:struct:interface::olsr_netbuf
+next	interfaces.h	/^  struct if_gen_property *next;$/;"	m	struct:if_gen_property	typeref:struct:if_gen_property::if_gen_property
+nic_state	interfaces.h	/^  struct nic_state {$/;"	s	struct:interface
+nic_state	interfaces.h	/^  } nic_state;$/;"	m	struct:interface	typeref:struct:interface::nic_state
+olsr_if	interfaces.h	/^  struct olsr_if *olsr_if;$/;"	m	struct:interface	typeref:struct:interface::olsr_if
+olsr_ifchg_flag	interfaces.h	/^enum olsr_ifchg_flag {$/;"	g
+olsr_netbuf	interfaces.h	/^struct olsr_netbuf {$/;"	s
+olsr_seqnum	interfaces.h	/^  uint16_t olsr_seqnum;                \/* Olsr message seqno *\/$/;"	m	struct:interface
+olsr_socket	interfaces.h	/^  int olsr_socket;                     \/* The broadcast socket for this interface *\/$/;"	m	struct:interface
+owner_id	interfaces.h	/^  uint32_t owner_id;$/;"	m	struct:if_gen_property
+pending	interfaces.h	/^  int pending;                         \/* How much data is currently pending in the buffer *\/$/;"	m	struct:olsr_netbuf
+redirect	interfaces.h	/^    char redirect;$/;"	m	struct:interface::nic_state
+reserved	interfaces.h	/^  int reserved;                        \/* Plugins can reserve space in buffers *\/$/;"	m	struct:olsr_netbuf
+send_socket	interfaces.h	/^  int send_socket;                     \/* The send socket for this interface *\/$/;"	m	struct:interface
+spoof	interfaces.h	/^    char spoof;$/;"	m	struct:interface::nic_state
+tc	interfaces.h	/^  uint8_t tc;$/;"	m	struct:vtimes
+tc_gen_timer	interfaces.h	/^  struct timer_entry *tc_gen_timer;$/;"	m	struct:interface	typeref:struct:interface::timer_entry
+ttl_index	interfaces.h	/^  int ttl_index;$/;"	m	struct:interface
+valtimes	interfaces.h	/^  struct vtimes valtimes;$/;"	m	struct:interface	typeref:struct:interface::vtimes
+vtimes	interfaces.h	/^struct vtimes {$/;"	s
+MSG_NOSIGNAL	ipc_frontend.c	/^#define MSG_NOSIGNAL /;"	d	file:
+close	ipc_frontend.c	/^#define close(/;"	d	file:
+frontend_msgparser	ipc_frontend.c	/^frontend_msgparser(union olsr_message * msg, struct interface * in_if __attribute__ ((unused)), union olsr_ip_addr * from_addr$/;"	f
+ipc_accept	ipc_frontend.c	/^ipc_accept(int fd, void *data __attribute__ ((unused)), unsigned int flags __attribute__ ((unused)))$/;"	f
+ipc_active	ipc_frontend.c	/^static int ipc_active = false;$/;"	v	file:
+ipc_check_allowed_ip	ipc_frontend.c	/^ipc_check_allowed_ip(const union olsr_ip_addr *addr)$/;"	f
+ipc_conn	ipc_frontend.c	/^static int ipc_conn = -1;$/;"	v	file:
+ipc_init	ipc_frontend.c	/^ipc_init(void)$/;"	f
+ipc_route_send_rtentry	ipc_frontend.c	/^ipc_route_send_rtentry(const union olsr_ip_addr *dst, const union olsr_ip_addr *gw, int met, int add, const char *int_name)$/;"	f
+ipc_send_all_routes	ipc_frontend.c	/^ipc_send_all_routes(int fd)$/;"	f	file:
+ipc_send_net_info	ipc_frontend.c	/^ipc_send_net_info(int fd)$/;"	f	file:
+ipc_sock	ipc_frontend.c	/^static int ipc_sock = -1;$/;"	v	file:
+perror	ipc_frontend.c	/^#define perror(/;"	d	file:
+shutdown_ipc	ipc_frontend.c	/^shutdown_ipc(void)$/;"	f
+IPC_PACK_SIZE	ipc_frontend.h	/^#define IPC_PACK_SIZE /;"	d
+IPC_PORT	ipc_frontend.h	/^#define IPC_PORT /;"	d
+NET_IPC	ipc_frontend.h	/^#define NET_IPC /;"	d
+ROUTE_IPC	ipc_frontend.h	/^#define	ROUTE_IPC /;"	d
+_OLSR_IPC	ipc_frontend.h	/^#define _OLSR_IPC$/;"	d
+add	ipc_frontend.h	/^  uint8_t add;$/;"	m	struct:ipcmsg
+device	ipc_frontend.h	/^  char device[4];$/;"	m	struct:ipcmsg
+gateway_addr	ipc_frontend.h	/^  union olsr_ip_addr gateway_addr;$/;"	m	struct:ipcmsg	typeref:union:ipcmsg::olsr_ip_addr
+hello_int	ipc_frontend.h	/^  uint16_t hello_int;$/;"	m	struct:ipc_net_msg
+hello_lan_int	ipc_frontend.h	/^  uint16_t hello_lan_int;$/;"	m	struct:ipc_net_msg
+hnas	ipc_frontend.h	/^  uint8_t hnas;                        \/* No. of HNA nets *\/$/;"	m	struct:ipc_net_msg
+ipc_net_msg	ipc_frontend.h	/^struct ipc_net_msg {$/;"	s
+ipcmsg	ipc_frontend.h	/^struct ipcmsg {$/;"	s
+ipv6	ipc_frontend.h	/^  uint8_t ipv6;$/;"	m	struct:ipc_net_msg
+main_addr	ipc_frontend.h	/^  union olsr_ip_addr main_addr;$/;"	m	struct:ipc_net_msg	typeref:union:ipc_net_msg::olsr_ip_addr
+metric	ipc_frontend.h	/^  uint8_t metric;$/;"	m	struct:ipcmsg
+mids	ipc_frontend.h	/^  uint8_t mids;                        \/* No. of extra interfaces *\/$/;"	m	struct:ipc_net_msg
+msgtype	ipc_frontend.h	/^  uint8_t msgtype;$/;"	m	struct:ipc_net_msg
+msgtype	ipc_frontend.h	/^  uint8_t msgtype;$/;"	m	struct:ipcmsg
+neigh_hold	ipc_frontend.h	/^  uint16_t neigh_hold;$/;"	m	struct:ipc_net_msg
+size	ipc_frontend.h	/^  uint16_t size;$/;"	m	struct:ipc_net_msg
+size	ipc_frontend.h	/^  uint16_t size;$/;"	m	struct:ipcmsg
+target_addr	ipc_frontend.h	/^  union olsr_ip_addr target_addr;$/;"	m	struct:ipcmsg	typeref:union:ipcmsg::olsr_ip_addr
+tc_int	ipc_frontend.h	/^  uint16_t tc_int;$/;"	m	struct:ipc_net_msg
+topology_hold	ipc_frontend.h	/^  uint16_t topology_hold;$/;"	m	struct:ipc_net_msg
+unused1	ipc_frontend.h	/^  uint8_t unused1;$/;"	m	struct:ipc_net_msg
+ip_in_net	ipcalc.c	/^ip_in_net(const union olsr_ip_addr *ipaddr, const struct olsr_ip_prefix *net)$/;"	f
+ipv4_internet_route	ipcalc.c	/^const struct olsr_ip_prefix ipv4_internet_route =$/;"	v	typeref:struct:olsr_ip_prefix
+ipv6_def_multicast	ipcalc.c	/^const union olsr_ip_addr ipv6_def_multicast = {$/;"	v	typeref:union:olsr_ip_addr
+ipv6_internet_route	ipcalc.c	/^const struct olsr_ip_prefix ipv6_internet_route =$/;"	v	typeref:struct:olsr_ip_prefix
+ipv6_mappedv4_route	ipcalc.c	/^const struct olsr_ip_prefix ipv6_mappedv4_route =$/;"	v	typeref:struct:olsr_ip_prefix
+is_prefix_inetgw	ipcalc.c	/^bool is_prefix_inetgw(const struct olsr_ip_prefix *prefix) {$/;"	f
+netmask_to_prefix	ipcalc.c	/^netmask_to_prefix(const uint8_t * adr, int len)$/;"	f
+olsr_ip_prefix_to_string	ipcalc.c	/^olsr_ip_prefix_to_string(const struct olsr_ip_prefix *prefix)$/;"	f
+olsr_ip_zero	ipcalc.c	/^const union olsr_ip_addr olsr_ip_zero =$/;"	v	typeref:union:olsr_ip_addr
+olsr_string_to_prefix	ipcalc.c	/^olsr_string_to_prefix(int ipversion, struct olsr_ip_prefix *dst, const char *string) {$/;"	f
+prefix_to_netmask	ipcalc.c	/^prefix_to_netmask(uint8_t * a, int len, uint8_t prefixlen)$/;"	f
+prefix_to_netmask4	ipcalc.c	/^prefix_to_netmask4(uint8_t prefixlen)$/;"	f	file:
+_IPCALC	ipcalc.h	/^#define _IPCALC$/;"	d
+buf	ipcalc.h	/^  char buf[MAX(INET6_ADDRSTRLEN, INET_ADDRSTRLEN)];$/;"	m	struct:ipaddr_str
+genipcopy	ipcalc.h	/^genipcopy(void *dst, const void *src)$/;"	f
+ip4_to_string	ipcalc.h	/^ip4_to_string(struct ipaddr_str *const buf, const struct in_addr addr4)$/;"	f
+ip4cmp	ipcalc.h	/^ip4cmp(const struct in_addr *a, const struct in_addr *b)$/;"	f
+ip4equal	ipcalc.h	/^ip4equal(const struct in_addr *a, const struct in_addr *b)$/;"	f
+ip6_to_string	ipcalc.h	/^ip6_to_string(struct ipaddr_str *const buf, const struct in6_addr *const addr6)$/;"	f
+ip6cmp	ipcalc.h	/^ip6cmp(const struct in6_addr *a, const struct in6_addr *b)$/;"	f
+ip6equal	ipcalc.h	/^ip6equal(const struct in6_addr *a, const struct in6_addr *b)$/;"	f
+ip_is_linklocal	ipcalc.h	/^ip_is_linklocal(const union olsr_ip_addr *ip) {$/;"	f
+ip_prefix_is_mappedv4	ipcalc.h	/^ip_prefix_is_mappedv4(const struct olsr_ip_prefix *prefix) {$/;"	f
+ip_prefix_is_mappedv4_inetgw	ipcalc.h	/^ip_prefix_is_mappedv4_inetgw(const struct olsr_ip_prefix *prefix) {$/;"	f
+ip_prefix_is_v4_inetgw	ipcalc.h	/^ip_prefix_is_v4_inetgw(const struct olsr_ip_prefix *prefix) {$/;"	f
+ip_prefix_is_v6_inetgw	ipcalc.h	/^ip_prefix_is_v6_inetgw(const struct olsr_ip_prefix *prefix) {$/;"	f
+ipaddr_str	ipcalc.h	/^struct ipaddr_str {$/;"	s
+ipequal	ipcalc.h	/^ipequal(const union olsr_ip_addr *a, const union olsr_ip_addr *b)$/;"	f
+is_prefix_niit_ipv6	ipcalc.h	/^is_prefix_niit_ipv6(const struct olsr_ip_prefix *p) {$/;"	f
+olsr_ip_to_string	ipcalc.h	/^olsr_ip_to_string(struct ipaddr_str *const buf, const union olsr_ip_addr *addr)$/;"	f
+olsr_netmask4_to_prefix	ipcalc.h	/^olsr_netmask4_to_prefix(const uint32_t * a)$/;"	f
+olsr_netmask6_to_prefix	ipcalc.h	/^olsr_netmask6_to_prefix(const struct in6_addr *a)$/;"	f
+olsr_netmask_to_prefix	ipcalc.h	/^olsr_netmask_to_prefix(const union olsr_ip_addr *adr)$/;"	f
+olsr_prefix_to_netmask	ipcalc.h	/^olsr_prefix_to_netmask(union olsr_ip_addr *adr, uint8_t prefixlen)$/;"	f
+prefix_mappedv4_to_v4	ipcalc.h	/^prefix_mappedv4_to_v4(struct olsr_ip_prefix *v4, const struct olsr_ip_prefix *v6) {$/;"	f
+sockaddr4_to_string	ipcalc.h	/^sockaddr4_to_string(struct ipaddr_str *const buf, const struct sockaddr *const addr)$/;"	f
+_OLSR_KERNEL_RT	kernel_routes.h	/^#define _OLSR_KERNEL_RT$/;"	d
+IF_NAMESIZE	kernel_tunnel.h	/^#define IF_NAMESIZE /;"	d
+KERNEL_TUNNEL_H_	kernel_tunnel.h	/^#define KERNEL_TUNNEL_H_$/;"	d
+TUNNEL_ENDPOINT_IF	kernel_tunnel.h	/^#define TUNNEL_ENDPOINT_IF /;"	d
+TUNNEL_ENDPOINT_IF6	kernel_tunnel.h	/^#define TUNNEL_ENDPOINT_IF6 /;"	d
+if_index	kernel_tunnel.h	/^  int if_index;$/;"	m	struct:olsr_iptunnel_entry
+if_name	kernel_tunnel.h	/^  char if_name[IF_NAMESIZE];$/;"	m	struct:olsr_iptunnel_entry
+node	kernel_tunnel.h	/^  struct avl_node node;$/;"	m	struct:olsr_iptunnel_entry	typeref:struct:olsr_iptunnel_entry::avl_node
+olsr_iptunnel_entry	kernel_tunnel.h	/^struct olsr_iptunnel_entry {$/;"	s
+target	kernel_tunnel.h	/^  union olsr_ip_addr target;$/;"	m	struct:olsr_iptunnel_entry	typeref:union:olsr_iptunnel_entry::olsr_ip_addr
+usage	kernel_tunnel.h	/^  int usage;$/;"	m	struct:olsr_iptunnel_entry
+add_link_entry	link_set.c	/^add_link_entry(const union olsr_ip_addr *local, const union olsr_ip_addr *remote, const union olsr_ip_addr *remote_main,$/;"	f	file:
+check_link_status	link_set.c	/^check_link_status(const struct hello_message *message, const struct interface *in_if)$/;"	f	file:
+check_neighbor_link	link_set.c	/^check_neighbor_link(const union olsr_ip_addr *int_addr)$/;"	f
+get_best_link_to_neighbor	link_set.c	/^get_best_link_to_neighbor(const union olsr_ip_addr *remote)$/;"	f
+get_neighbor_status	link_set.c	/^get_neighbor_status(const union olsr_ip_addr *address)$/;"	f	file:
+link_changes	link_set.c	/^bool link_changes;                     \/* is set if changes occur in MPRS set *\/$/;"	v
+link_entry_head	link_set.c	/^struct list_node link_entry_head;$/;"	v	typeref:struct:list_node
+lookup_link_entry	link_set.c	/^lookup_link_entry(const union olsr_ip_addr *remote, const union olsr_ip_addr *remote_main, const struct interface *local)$/;"	f
+lookup_link_status	link_set.c	/^lookup_link_status(const struct link_entry *entry)$/;"	f
+olsr_delete_link_entry	link_set.c	/^olsr_delete_link_entry(struct link_entry *link)$/;"	f	file:
+olsr_delete_link_entry_by_ip	link_set.c	/^olsr_delete_link_entry_by_ip(const union olsr_ip_addr *int_addr)$/;"	f
+olsr_expire_link_entry	link_set.c	/^olsr_expire_link_entry(void *context)$/;"	f	file:
+olsr_expire_link_hello_timer	link_set.c	/^olsr_expire_link_hello_timer(void *context)$/;"	f
+olsr_expire_link_loss_timer	link_set.c	/^olsr_expire_link_loss_timer(void *context)$/;"	f	file:
+olsr_expire_link_sym_timer	link_set.c	/^olsr_expire_link_sym_timer(void *context)$/;"	f	file:
+olsr_init_link_set	link_set.c	/^olsr_init_link_set(void)$/;"	f
+olsr_print_link_set	link_set.c	/^olsr_print_link_set(void)$/;"	f
+olsr_received_hello_handler	link_set.c	/^olsr_received_hello_handler(struct link_entry *entry)$/;"	f
+olsr_reset_all_links	link_set.c	/^void olsr_reset_all_links(void) {$/;"	f
+olsr_set_link_timer	link_set.c	/^olsr_set_link_timer(struct link_entry *link, unsigned int rel_timer)$/;"	f
+olsr_update_packet_loss_hello_int	link_set.c	/^olsr_update_packet_loss_hello_int(struct link_entry *entry, olsr_reltime loss_hello_int)$/;"	f
+replace_neighbor_link_set	link_set.c	/^replace_neighbor_link_set(const struct neighbor_entry *old, struct neighbor_entry *new)$/;"	f
+set_loss_link_multiplier	link_set.c	/^set_loss_link_multiplier(struct link_entry *entry)$/;"	f	file:
+signal_link_changes	link_set.c	/^signal_link_changes(bool val)$/;"	f
+update_link_entry	link_set.c	/^update_link_entry(const union olsr_ip_addr *local, const union olsr_ip_addr *remote, const struct hello_message *message,$/;"	f
+ASYM_time	link_set.h	/^  uint32_t ASYM_time;$/;"	m	struct:link_entry
+LINK_LOSS_MULTIPLIER	link_set.h	/^#define LINK_LOSS_MULTIPLIER /;"	d
+L_LOST_LINK_time	link_set.h	/^  uint32_t L_LOST_LINK_time;$/;"	m	struct:link_entry
+L_link_pending	link_set.h	/^  int L_link_pending;$/;"	m	struct:link_entry
+L_link_quality	link_set.h	/^  float L_link_quality;$/;"	m	struct:link_entry
+MID_ALIAS_HACK_VTIME	link_set.h	/^#define MID_ALIAS_HACK_VTIME /;"	d
+OLSR_FOR_ALL_LINK_ENTRIES	link_set.h	/^#define OLSR_FOR_ALL_LINK_ENTRIES(/;"	d
+OLSR_FOR_ALL_LINK_ENTRIES_END	link_set.h	/^#define OLSR_FOR_ALL_LINK_ENTRIES_END(/;"	d
+OLSR_LINK_HELLO_JITTER	link_set.h	/^#define OLSR_LINK_HELLO_JITTER /;"	d
+OLSR_LINK_JITTER	link_set.h	/^#define OLSR_LINK_JITTER /;"	d
+OLSR_LINK_LOSS_JITTER	link_set.h	/^#define OLSR_LINK_LOSS_JITTER /;"	d
+OLSR_LINK_SYM_JITTER	link_set.h	/^#define OLSR_LINK_SYM_JITTER /;"	d
+_LINK_SET_H	link_set.h	/^#define _LINK_SET_H$/;"	d
+if_name	link_set.h	/^  char *if_name;$/;"	m	struct:link_entry
+inter	link_set.h	/^  const struct interface *inter;$/;"	m	struct:link_entry	typeref:struct:link_entry::interface
+last_htime	link_set.h	/^  olsr_reltime last_htime;$/;"	m	struct:link_entry
+link_entry	link_set.h	/^struct link_entry {$/;"	s
+link_hello_timer	link_set.h	/^  struct timer_entry *link_hello_timer; \/* When we should receive a new HELLO *\/$/;"	m	struct:link_entry	typeref:struct:link_entry::timer_entry
+link_list	link_set.h	/^  struct list_node link_list;          \/* double linked list of all link entries *\/$/;"	m	struct:link_entry	typeref:struct:link_entry::list_node
+link_loss_timer	link_set.h	/^  struct timer_entry *link_loss_timer;$/;"	m	struct:link_entry	typeref:struct:link_entry::timer_entry
+link_sym_timer	link_set.h	/^  struct timer_entry *link_sym_timer;$/;"	m	struct:link_entry	typeref:struct:link_entry::timer_entry
+link_timer	link_set.h	/^  struct timer_entry *link_timer;$/;"	m	struct:link_entry	typeref:struct:link_entry::timer_entry
+linkcost	link_set.h	/^  olsr_linkcost linkcost;$/;"	m	struct:link_entry
+linkquality	link_set.h	/^  uint32_t linkquality[0];$/;"	m	struct:link_entry
+local_iface_addr	link_set.h	/^  union olsr_ip_addr local_iface_addr;$/;"	m	struct:link_entry	typeref:union:link_entry::olsr_ip_addr
+loss_helloint	link_set.h	/^  olsr_reltime loss_helloint;$/;"	m	struct:link_entry
+loss_link_multiplier	link_set.h	/^  uint32_t loss_link_multiplier;$/;"	m	struct:link_entry
+neighbor	link_set.h	/^  struct neighbor_entry *neighbor;$/;"	m	struct:link_entry	typeref:struct:link_entry::neighbor_entry
+neighbor_iface_addr	link_set.h	/^  union olsr_ip_addr neighbor_iface_addr;$/;"	m	struct:link_entry	typeref:union:link_entry::olsr_ip_addr
+olsr_seqno	link_set.h	/^  uint16_t olsr_seqno;$/;"	m	struct:link_entry
+olsr_seqno_valid	link_set.h	/^  bool olsr_seqno_valid;$/;"	m	struct:link_entry
+prev_status	link_set.h	/^  uint8_t prev_status;$/;"	m	struct:link_entry
+vtime	link_set.h	/^  olsr_reltime vtime;$/;"	m	struct:link_entry
+OLSR_LOG_ERR	log.h	/^#define OLSR_LOG_ERR /;"	d
+OLSR_LOG_INFO	log.h	/^#define OLSR_LOG_INFO /;"	d
+_OLSR_SYSLOG_H	log.h	/^#define _OLSR_SYSLOG_H$/;"	d
+olsr_syslog	log.h	/^#define olsr_syslog(/;"	d
+olsr_calculate_lq_mpr	lq_mpr.c	/^olsr_calculate_lq_mpr(void)$/;"	f
+_OLSR_LQ_MPR	lq_mpr.h	/^#define _OLSR_LQ_MPR$/;"	d
+calculate_border_flag	lq_packet.c	/^calculate_border_flag(void *lower_border, void *higher_border)$/;"	f	file:
+common_size	lq_packet.c	/^common_size(void)$/;"	f	file:
+create_lq_hello	lq_packet.c	/^create_lq_hello(struct lq_hello_message *lq_hello, struct interface *outif)$/;"	f	file:
+create_lq_tc	lq_packet.c	/^create_lq_tc(struct lq_tc_message *lq_tc, struct interface *outif)$/;"	f	file:
+destroy_lq_hello	lq_packet.c	/^destroy_lq_hello(struct lq_hello_message *lq_hello)$/;"	f	file:
+destroy_lq_tc	lq_packet.c	/^destroy_lq_tc(struct lq_tc_message *lq_tc)$/;"	f	file:
+lq_tc_pending	lq_packet.c	/^bool lq_tc_pending = false;$/;"	v
+msg_buffer	lq_packet.c	/^static unsigned char *const msg_buffer = (unsigned char *)msg_buffer_aligned;$/;"	v	file:
+msg_buffer_aligned	lq_packet.c	/^static uint32_t msg_buffer_aligned[(MAXMESSAGESIZE - OLSR_HEADERSIZE) \/ sizeof(uint32_t) + 1];$/;"	v	file:
+olsr_output_lq_hello	lq_packet.c	/^olsr_output_lq_hello(void *para)$/;"	f
+olsr_output_lq_tc	lq_packet.c	/^olsr_output_lq_tc(void *para)$/;"	f
+serialize_common	lq_packet.c	/^serialize_common(struct olsr_common *comm)$/;"	f	file:
+serialize_lq_hello	lq_packet.c	/^serialize_lq_hello(struct lq_hello_message *lq_hello, struct interface *outif)$/;"	f	file:
+serialize_lq_tc	lq_packet.c	/^serialize_lq_tc(struct lq_tc_message *lq_tc, struct interface *outif)$/;"	f	file:
+LQ_HELLO_MESSAGE	lq_packet.h	/^#define LQ_HELLO_MESSAGE /;"	d
+LQ_TC_MESSAGE	lq_packet.h	/^#define LQ_TC_MESSAGE /;"	d
+_OLSR_LQ_PACKET_H	lq_packet.h	/^#define _OLSR_LQ_PACKET_H$/;"	d
+addr	lq_packet.h	/^  union olsr_ip_addr addr;\/*发送端ip地址*\/$/;"	m	struct:lq_hello_neighbor	typeref:union:lq_hello_neighbor::olsr_ip_addr
+ansn	lq_packet.h	/^  uint16_t ansn;          \/*记录本节点收到的最近一个TC分组的ANSN序列号。$/;"	m	struct:lq_tc_message
+ansn	lq_packet.h	/^  uint16_t ansn;        \/*记录本节点收到的最近一个TC分组的ANSN序列号。*\/$/;"	m	struct:lq_tc_header
+comm	lq_packet.h	/^  struct olsr_common comm;  \/*olsr消息*\/$/;"	m	struct:lq_hello_message	typeref:struct:lq_hello_message::olsr_common
+comm	lq_packet.h	/^  struct olsr_common comm;\/*olsr基本数据包*\/$/;"	m	struct:lq_tc_message	typeref:struct:lq_tc_message::olsr_common
+from	lq_packet.h	/^  union olsr_ip_addr from;\/*到达目的地的倒数第二跳地址*\/$/;"	m	struct:lq_tc_message	typeref:union:lq_tc_message::olsr_ip_addr
+hops	lq_packet.h	/^  uint8_t hops;       \/*此消息在传递过程中经历的跳数*\/$/;"	m	struct:olsr_common
+hops	lq_packet.h	/^  uint8_t hops;$/;"	m	struct:olsr_header_v4
+hops	lq_packet.h	/^  uint8_t hops;$/;"	m	struct:olsr_header_v6
+htime	lq_packet.h	/^  olsr_reltime htime;       \/*消息发送间隔*\/$/;"	m	struct:lq_hello_message
+htime	lq_packet.h	/^  uint8_t htime;        \/*此接口的HELLO消息发送时间间隔*\/$/;"	m	struct:lq_hello_header
+link_code	lq_packet.h	/^  uint8_t link_code;    \/*链路类型：ASYM_LINK,SYM_LINK,MPR_LINK,还可提供附加信息，例如链路中断LOST_LINK*\/$/;"	m	struct:lq_hello_info_header
+link_type	lq_packet.h	/^  uint8_t link_type;      \/*链路状态，有三种，非对称链路，对称链路，列表中节点被选为MPR。*\/$/;"	m	struct:lq_hello_neighbor
+linkquality	lq_packet.h	/^  uint32_t linkquality[0];\/*链路质量？？（值是什么）*\/$/;"	m	struct:lq_hello_neighbor
+lower_border	lq_packet.h	/^  uint8_t lower_border; \/*下一级边界*\/$/;"	m	struct:lq_tc_header
+lq_hello_header	lq_packet.h	/^struct lq_hello_header {$/;"	s
+lq_hello_info_header	lq_packet.h	/^struct lq_hello_info_header {$/;"	s
+lq_hello_message	lq_packet.h	/^struct lq_hello_message {   \/*消息数据包的头部*\/$/;"	s
+lq_hello_neighbor	lq_packet.h	/^struct lq_hello_neighbor {\/*邻居结点集HELLO消息的头部*\/$/;"	s
+lq_tc_header	lq_packet.h	/^struct lq_tc_header {   \/*TC消息数据包头部*\/$/;"	s
+lq_tc_message	lq_packet.h	/^struct lq_tc_message {    \/*封装后的拓扑数据包格式。*\/$/;"	s
+neigh	lq_packet.h	/^  struct lq_hello_neighbor *neigh;\/*消息传递的下一节点*\/$/;"	m	struct:lq_hello_message	typeref:struct:lq_hello_message::lq_hello_neighbor
+neigh	lq_packet.h	/^  struct tc_mpr_addr *neigh;\/*指向广播邻居集$/;"	m	struct:lq_tc_message	typeref:struct:lq_tc_message::tc_mpr_addr
+neigh_type	lq_packet.h	/^  uint8_t neigh_type;     \/*邻居结点状态，对称、非对称*\/$/;"	m	struct:lq_hello_neighbor
+next	lq_packet.h	/^  struct lq_hello_neighbor *next;\/*将要把HELLO消息传递给的下一个邻居结点信息*\/$/;"	m	struct:lq_hello_neighbor	typeref:struct:lq_hello_neighbor::lq_hello_neighbor
+olsr_common	lq_packet.h	/^struct olsr_common {   \/*基本数据包*\/$/;"	s
+olsr_header_v4	lq_packet.h	/^struct olsr_header_v4 {$/;"	s
+olsr_header_v6	lq_packet.h	/^struct olsr_header_v6 {$/;"	s
+orig	lq_packet.h	/^  uint32_t orig;$/;"	m	struct:olsr_header_v4
+orig	lq_packet.h	/^  union olsr_ip_addr orig;\/*发送端ip地址*\/$/;"	m	struct:olsr_common	typeref:union:olsr_common::olsr_ip_addr
+orig	lq_packet.h	/^  unsigned char orig[16];$/;"	m	struct:olsr_header_v6
+pkt_get_ipaddress	lq_packet.h	/^pkt_get_ipaddress(const uint8_t ** p, union olsr_ip_addr *var)$/;"	f
+pkt_get_prefixlen	lq_packet.h	/^pkt_get_prefixlen(const uint8_t ** p, uint8_t * var)$/;"	f
+pkt_get_reltime	lq_packet.h	/^pkt_get_reltime(const uint8_t ** p, olsr_reltime * var)$/;"	f
+pkt_get_s16	lq_packet.h	/^pkt_get_s16(const uint8_t ** p, int16_t * var)$/;"	f
+pkt_get_s32	lq_packet.h	/^pkt_get_s32(const uint8_t ** p, int32_t * var)$/;"	f
+pkt_get_s8	lq_packet.h	/^pkt_get_s8(const uint8_t ** p, int8_t * var)$/;"	f
+pkt_get_u16	lq_packet.h	/^pkt_get_u16(const uint8_t ** p, uint16_t * var)$/;"	f
+pkt_get_u32	lq_packet.h	/^pkt_get_u32(const uint8_t ** p, uint32_t * var)$/;"	f
+pkt_get_u8	lq_packet.h	/^pkt_get_u8(const uint8_t ** p, uint8_t * var)$/;"	f
+pkt_ignore_ipaddress	lq_packet.h	/^pkt_ignore_ipaddress(const uint8_t ** p)$/;"	f
+pkt_ignore_prefixlen	lq_packet.h	/^pkt_ignore_prefixlen(const uint8_t ** p)$/;"	f
+pkt_ignore_s16	lq_packet.h	/^pkt_ignore_s16(const uint8_t ** p)$/;"	f
+pkt_ignore_s32	lq_packet.h	/^pkt_ignore_s32(const uint8_t ** p)$/;"	f
+pkt_ignore_s8	lq_packet.h	/^pkt_ignore_s8(const uint8_t ** p)$/;"	f
+pkt_ignore_u16	lq_packet.h	/^pkt_ignore_u16(const uint8_t ** p)$/;"	f
+pkt_ignore_u32	lq_packet.h	/^pkt_ignore_u32(const uint8_t ** p)$/;"	f
+pkt_ignore_u8	lq_packet.h	/^pkt_ignore_u8(const uint8_t ** p)$/;"	f
+pkt_put_ipaddress	lq_packet.h	/^pkt_put_ipaddress(uint8_t ** p, const union olsr_ip_addr *var)$/;"	f
+pkt_put_reltime	lq_packet.h	/^pkt_put_reltime(uint8_t ** p, olsr_reltime var)$/;"	f
+pkt_put_s16	lq_packet.h	/^pkt_put_s16(uint8_t ** p, int16_t var)$/;"	f
+pkt_put_s32	lq_packet.h	/^pkt_put_s32(uint8_t ** p, int32_t var)$/;"	f
+pkt_put_s8	lq_packet.h	/^pkt_put_s8(uint8_t ** p, int8_t var)$/;"	f
+pkt_put_u16	lq_packet.h	/^pkt_put_u16(uint8_t ** p, uint16_t var)$/;"	f
+pkt_put_u32	lq_packet.h	/^pkt_put_u32(uint8_t ** p, uint32_t var)$/;"	f
+pkt_put_u8	lq_packet.h	/^pkt_put_u8(uint8_t ** p, uint8_t var)$/;"	f
+reserved	lq_packet.h	/^  uint16_t reserved;    \/*保留字，0000 0000 0000*\/$/;"	m	struct:lq_hello_header
+reserved	lq_packet.h	/^  uint8_t reserved;     \/*保留字必须为0000 0000*\/$/;"	m	struct:lq_hello_info_header
+seqno	lq_packet.h	/^  uint16_t seqno;     \/*消息的序列号，这是唯一不变的！！以确保消息不会被重发。每发送一个新消息包就+1*\/$/;"	m	struct:olsr_common
+seqno	lq_packet.h	/^  uint16_t seqno;$/;"	m	struct:olsr_header_v4
+seqno	lq_packet.h	/^  uint16_t seqno;$/;"	m	struct:olsr_header_v6
+size	lq_packet.h	/^  uint16_t size;        \/*本链路消息的大小，从link_code到下一个link_code前*\/$/;"	m	struct:lq_hello_info_header
+size	lq_packet.h	/^  uint16_t size;      \/*消息大小。以字节为单位，包括header*\/$/;"	m	struct:olsr_common
+size	lq_packet.h	/^  uint16_t size;$/;"	m	struct:olsr_header_v4
+size	lq_packet.h	/^  uint16_t size;$/;"	m	struct:olsr_header_v6
+ttl	lq_packet.h	/^  uint8_t ttl;        \/*time to live 跳数*\/$/;"	m	struct:olsr_common
+ttl	lq_packet.h	/^  uint8_t ttl;$/;"	m	struct:olsr_header_v4
+ttl	lq_packet.h	/^  uint8_t ttl;$/;"	m	struct:olsr_header_v6
+type	lq_packet.h	/^  uint8_t type;       \/*消息类型。消息类型0-127由OLSR保留，而128-255空间被认为是“私有”，可用于协议的自定义扩展。*\/$/;"	m	struct:olsr_common
+type	lq_packet.h	/^  uint8_t type;$/;"	m	struct:olsr_header_v4
+type	lq_packet.h	/^  uint8_t type;$/;"	m	struct:olsr_header_v6
+upper_border	lq_packet.h	/^  uint8_t upper_border; \/*上一级边界*\/$/;"	m	struct:lq_tc_header
+vtime	lq_packet.h	/^  olsr_reltime vtime; \/*该字段指示接收后多长时间内节点将此信息视为有效的时间。时间间隔以尾数 - 指数格式表示。*\/$/;"	m	struct:olsr_common
+vtime	lq_packet.h	/^  uint8_t vtime;$/;"	m	struct:olsr_header_v4
+vtime	lq_packet.h	/^  uint8_t vtime;$/;"	m	struct:olsr_header_v6
+will	lq_packet.h	/^  uint8_t will;             \/*指定节点的意愿进行，有意愿的WILL_NEVER的节点被选为MPR的任意结点*\/$/;"	m	struct:lq_hello_message
+will	lq_packet.h	/^  uint8_t will;         \/*描述为一个节点为其他节点携带网络流量的意愿。$/;"	m	struct:lq_hello_header
+activate_lq_handler	lq_plugin.c	/^activate_lq_handler(const char *name)$/;"	f	file:
+active_lq_handler	lq_plugin.c	/^struct lq_handler *active_lq_handler = NULL;$/;"	v	typeref:struct:lq_handler
+avl_strcasecmp	lq_plugin.c	/^avl_strcasecmp(const void *str1, const void *str2)$/;"	f
+get_link_entry_text	lq_plugin.c	/^get_link_entry_text(struct link_entry *entry, char separator, struct lqtextbuffer *buffer)$/;"	f
+get_linkcost_text	lq_plugin.c	/^get_linkcost_text(olsr_linkcost cost, bool route, struct lqtextbuffer *buffer)$/;"	f
+get_tc_edge_entry_text	lq_plugin.c	/^get_tc_edge_entry_text(struct tc_edge_entry *entry, char separator, struct lqtextbuffer *buffer)$/;"	f
+init_lq_handler_tree	lq_plugin.c	/^init_lq_handler_tree(void)$/;"	f
+lq_handler_tree	lq_plugin.c	/^struct avl_tree lq_handler_tree;$/;"	v	typeref:struct:avl_tree
+olsr_calc_tc_cost	lq_plugin.c	/^olsr_calc_tc_cost(const struct tc_edge_entry * tc_edge)$/;"	f
+olsr_clear_hello_lq	lq_plugin.c	/^void olsr_clear_hello_lq(struct link_entry *link) {$/;"	f
+olsr_clear_tc_lq	lq_plugin.c	/^olsr_clear_tc_lq(struct tc_mpr_addr *target)$/;"	f
+olsr_copy_hello_lq	lq_plugin.c	/^olsr_copy_hello_lq(struct lq_hello_neighbor *target, struct link_entry *source)$/;"	f
+olsr_copylq_link_entry_2_tc_edge_entry	lq_plugin.c	/^olsr_copylq_link_entry_2_tc_edge_entry(struct tc_edge_entry *target, struct link_entry *source)$/;"	f
+olsr_copylq_link_entry_2_tc_mpr_addr	lq_plugin.c	/^olsr_copylq_link_entry_2_tc_mpr_addr(struct tc_mpr_addr *target, struct link_entry *source)$/;"	f
+olsr_deserialize_hello_lq_pair	lq_plugin.c	/^olsr_deserialize_hello_lq_pair(const uint8_t ** curr, struct hello_neighbor *neigh)$/;"	f
+olsr_deserialize_tc_lq_pair	lq_plugin.c	/^olsr_deserialize_tc_lq_pair(const uint8_t ** curr, struct tc_edge_entry *edge)$/;"	f
+olsr_malloc_hello_neighbor	lq_plugin.c	/^olsr_malloc_hello_neighbor(const char *id)$/;"	f
+olsr_malloc_link_entry	lq_plugin.c	/^olsr_malloc_link_entry(const char *id)$/;"	f
+olsr_malloc_lq_hello_neighbor	lq_plugin.c	/^olsr_malloc_lq_hello_neighbor(const char *id)$/;"	f
+olsr_malloc_tc_mpr_addr	lq_plugin.c	/^olsr_malloc_tc_mpr_addr(const char *id)$/;"	f
+olsr_memorize_foreign_hello_lq	lq_plugin.c	/^olsr_memorize_foreign_hello_lq(struct link_entry *local, struct hello_neighbor *foreign)$/;"	f
+olsr_relevant_linkcost_change	lq_plugin.c	/^void olsr_relevant_linkcost_change(void) {$/;"	f
+olsr_serialize_hello_lq_pair	lq_plugin.c	/^olsr_serialize_hello_lq_pair(unsigned char *buff, struct lq_hello_neighbor *neigh)$/;"	f
+olsr_serialize_tc_lq_pair	lq_plugin.c	/^olsr_serialize_tc_lq_pair(unsigned char *buff, struct tc_mpr_addr *neigh)$/;"	f
+olsr_sizeof_hello_lqdata	lq_plugin.c	/^size_t olsr_sizeof_hello_lqdata(void) {$/;"	f
+olsr_sizeof_tc_lqdata	lq_plugin.c	/^size_t olsr_sizeof_tc_lqdata(void) {$/;"	f
+olsr_update_packet_loss_worker	lq_plugin.c	/^olsr_update_packet_loss_worker(struct link_entry *entry, bool lost)$/;"	f
+register_lq_handler	lq_plugin.c	/^register_lq_handler(struct lq_handler *handler, const char *name)$/;"	f
+LINK_COST_BROKEN	lq_plugin.h	/^#define LINK_COST_BROKEN /;"	d
+LQPLUGIN_H_	lq_plugin.h	/^#define LQPLUGIN_H_$/;"	d
+LQ_PLUGIN_RELEVANT_COSTCHANGE	lq_plugin.h	/^#define LQ_PLUGIN_RELEVANT_COSTCHANGE /;"	d
+LQ_QUICKSTART_AGING	lq_plugin.h	/^#define LQ_QUICKSTART_AGING /;"	d
+LQ_QUICKSTART_STEPS	lq_plugin.h	/^#define LQ_QUICKSTART_STEPS /;"	d
+MINIMAL_USEFUL_LQ	lq_plugin.h	/^#define MINIMAL_USEFUL_LQ /;"	d
+OLSR_FOR_ALL_LQ_HANDLERS	lq_plugin.h	/^#define OLSR_FOR_ALL_LQ_HANDLERS(/;"	d
+OLSR_FOR_ALL_LQ_HANDLERS_END	lq_plugin.h	/^#define OLSR_FOR_ALL_LQ_HANDLERS_END(/;"	d
+ROUTE_COST_BROKEN	lq_plugin.h	/^#define ROUTE_COST_BROKEN /;"	d
+ZERO_ROUTE_COST	lq_plugin.h	/^#define ZERO_ROUTE_COST /;"	d
+buf	lq_plugin.h	/^  char buf[16];$/;"	m	struct:lqtextbuffer
+calc_hello_cost	lq_plugin.h	/^  olsr_linkcost (*calc_hello_cost) (const void *lq);$/;"	m	struct:lq_handler
+calc_tc_cost	lq_plugin.h	/^  olsr_linkcost (*calc_tc_cost) (const void *lq);$/;"	m	struct:lq_handler
+clear_hello	lq_plugin.h	/^  void (*clear_hello) (void *target);$/;"	m	struct:lq_handler
+clear_tc	lq_plugin.h	/^  void (*clear_tc) (void *target);$/;"	m	struct:lq_handler
+copy_link_lq_into_neigh	lq_plugin.h	/^  void (*copy_link_lq_into_neigh) (void *target, void *source);$/;"	m	struct:lq_handler
+copy_link_lq_into_tc	lq_plugin.h	/^  void (*copy_link_lq_into_tc) (void *target, void *source);$/;"	m	struct:lq_handler
+deserialize_hello_lq	lq_plugin.h	/^  void (*deserialize_hello_lq) (const uint8_t ** curr, void *lq);$/;"	m	struct:lq_handler
+deserialize_tc_lq	lq_plugin.h	/^  void (*deserialize_tc_lq) (const uint8_t ** curr, void *lq);$/;"	m	struct:lq_handler
+handler	lq_plugin.h	/^  struct lq_handler *handler;$/;"	m	struct:lq_handler_node	typeref:struct:lq_handler_node::lq_handler
+hello_lq_size	lq_plugin.h	/^  size_t hello_lq_size;$/;"	m	struct:lq_handler
+hello_lqdata_size	lq_plugin.h	/^  size_t hello_lqdata_size;$/;"	m	struct:lq_handler
+initialize	lq_plugin.h	/^  void (*initialize) (void);$/;"	m	struct:lq_handler
+lq_handler	lq_plugin.h	/^struct lq_handler {$/;"	s
+lq_handler_node	lq_plugin.h	/^struct lq_handler_node {$/;"	s
+lqtextbuffer	lq_plugin.h	/^struct lqtextbuffer {$/;"	s
+memorize_foreign_hello	lq_plugin.h	/^  void (*memorize_foreign_hello) (void *local, void *foreign);$/;"	m	struct:lq_handler
+name	lq_plugin.h	/^  char name[0];$/;"	m	struct:lq_handler_node
+node	lq_plugin.h	/^  struct avl_node node;$/;"	m	struct:lq_handler_node	typeref:struct:lq_handler_node::avl_node
+packet_loss_handler	lq_plugin.h	/^  void (*packet_loss_handler) (struct link_entry * entry, void *lq, bool lost);$/;"	m	struct:lq_handler
+print_cost	lq_plugin.h	/^  const char *(*print_cost) (olsr_linkcost cost, struct lqtextbuffer * buffer);$/;"	m	struct:lq_handler
+print_hello_lq	lq_plugin.h	/^  const char *(*print_hello_lq) (void *ptr, char separator, struct lqtextbuffer * buffer);$/;"	m	struct:lq_handler
+print_tc_lq	lq_plugin.h	/^  const char *(*print_tc_lq) (void *ptr, char separator, struct lqtextbuffer * buffer);$/;"	m	struct:lq_handler
+serialize_hello_lq	lq_plugin.h	/^  int (*serialize_hello_lq) (unsigned char *buff, void *lq);$/;"	m	struct:lq_handler
+serialize_tc_lq	lq_plugin.h	/^  int (*serialize_tc_lq) (unsigned char *buff, void *lq);$/;"	m	struct:lq_handler
+tc_lq_size	lq_plugin.h	/^  size_t tc_lq_size;$/;"	m	struct:lq_handler
+tc_lqdata_size	lq_plugin.h	/^  size_t tc_lqdata_size;$/;"	m	struct:lq_handler
+default_lq_calc_cost_ff	lq_plugin_default_ff.c	/^default_lq_calc_cost_ff(const void *ptr)$/;"	f	file:
+default_lq_clear_ff	lq_plugin_default_ff.c	/^default_lq_clear_ff(void *target)$/;"	f	file:
+default_lq_clear_ff_hello	lq_plugin_default_ff.c	/^default_lq_clear_ff_hello(void *target)$/;"	f	file:
+default_lq_copy_link2neigh_ff	lq_plugin_default_ff.c	/^default_lq_copy_link2neigh_ff(void *t, void *s)$/;"	f	file:
+default_lq_copy_link2tc_ff	lq_plugin_default_ff.c	/^default_lq_copy_link2tc_ff(void *t, void *s)$/;"	f	file:
+default_lq_deserialize_hello_lq_pair_ff	lq_plugin_default_ff.c	/^default_lq_deserialize_hello_lq_pair_ff(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_deserialize_tc_lq_pair_ff	lq_plugin_default_ff.c	/^default_lq_deserialize_tc_lq_pair_ff(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_ff_handle_lqchange	lq_plugin_default_ff.c	/^default_lq_ff_handle_lqchange(void) {$/;"	f	file:
+default_lq_ff_timer	lq_plugin_default_ff.c	/^default_lq_ff_timer(void __attribute__ ((unused)) * context)$/;"	f	file:
+default_lq_initialize_ff	lq_plugin_default_ff.c	/^default_lq_initialize_ff(void)$/;"	f	file:
+default_lq_memorize_foreign_hello_ff	lq_plugin_default_ff.c	/^default_lq_memorize_foreign_hello_ff(void *ptrLocal, void *ptrForeign)$/;"	f	file:
+default_lq_packet_loss_worker_ff	lq_plugin_default_ff.c	/^default_lq_packet_loss_worker_ff(struct link_entry *link,$/;"	f	file:
+default_lq_parser_ff	lq_plugin_default_ff.c	/^default_lq_parser_ff(struct olsr *olsr, struct interface *in_if, union olsr_ip_addr *from_addr)$/;"	f	file:
+default_lq_print_cost_ff	lq_plugin_default_ff.c	/^default_lq_print_cost_ff(olsr_linkcost cost, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_print_ff	lq_plugin_default_ff.c	/^default_lq_print_ff(void *ptr, char separator, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_serialize_hello_lq_pair_ff	lq_plugin_default_ff.c	/^default_lq_serialize_hello_lq_pair_ff(unsigned char *buff, void *ptr)$/;"	f	file:
+default_lq_serialize_tc_lq_pair_ff	lq_plugin_default_ff.c	/^default_lq_serialize_tc_lq_pair_ff(unsigned char *buff, void *ptr)$/;"	f	file:
+lq_etx_ff_handler	lq_plugin_default_ff.c	/^struct lq_handler lq_etx_ff_handler = {$/;"	v	typeref:struct:lq_handler
+LQ_ALGORITHM_ETX_FF_NAME	lq_plugin_default_ff.h	/^#define LQ_ALGORITHM_ETX_FF_NAME /;"	d
+LQ_ETX_FF_	lq_plugin_default_ff.h	/^#define LQ_ETX_FF_$/;"	d
+LQ_FF_QUICKSTART_INIT	lq_plugin_default_ff.h	/^#define LQ_FF_QUICKSTART_INIT /;"	d
+LQ_FF_WINDOW	lq_plugin_default_ff.h	/^#define LQ_FF_WINDOW /;"	d
+LQ_PLUGIN_LC_MULTIPLIER	lq_plugin_default_ff.h	/^#define LQ_PLUGIN_LC_MULTIPLIER /;"	d
+LQ_PLUGIN_RELEVANT_COSTCHANGE_FF	lq_plugin_default_ff.h	/^#define LQ_PLUGIN_RELEVANT_COSTCHANGE_FF /;"	d
+activePtr	lq_plugin_default_ff.h	/^  uint8_t windowSize, activePtr;$/;"	m	struct:default_lq_ff_hello
+default_lq_ff	lq_plugin_default_ff.h	/^struct default_lq_ff {$/;"	s
+default_lq_ff_hello	lq_plugin_default_ff.h	/^struct default_lq_ff_hello {$/;"	s
+last_seq_nr	lq_plugin_default_ff.h	/^  uint16_t last_seq_nr;$/;"	m	struct:default_lq_ff_hello
+lq	lq_plugin_default_ff.h	/^  struct default_lq_ff lq;$/;"	m	struct:default_lq_ff_hello	typeref:struct:default_lq_ff_hello::default_lq_ff
+missed_hellos	lq_plugin_default_ff.h	/^  uint16_t missed_hellos;$/;"	m	struct:default_lq_ff_hello
+received	lq_plugin_default_ff.h	/^  uint16_t received[LQ_FF_WINDOW], total[LQ_FF_WINDOW];$/;"	m	struct:default_lq_ff_hello
+smoothed_lq	lq_plugin_default_ff.h	/^  struct default_lq_ff smoothed_lq;$/;"	m	struct:default_lq_ff_hello	typeref:struct:default_lq_ff_hello::default_lq_ff
+total	lq_plugin_default_ff.h	/^  uint16_t received[LQ_FF_WINDOW], total[LQ_FF_WINDOW];$/;"	m	struct:default_lq_ff_hello
+valueLq	lq_plugin_default_ff.h	/^  uint8_t valueLq;$/;"	m	struct:default_lq_ff
+valueNlq	lq_plugin_default_ff.h	/^  uint8_t valueNlq;$/;"	m	struct:default_lq_ff
+windowSize	lq_plugin_default_ff.h	/^  uint8_t windowSize, activePtr;$/;"	m	struct:default_lq_ff_hello
+LQ_PLUGIN_LC_MULTIPLIER	lq_plugin_default_ffeth.c	/^#define LQ_PLUGIN_LC_MULTIPLIER /;"	d	file:
+LQ_PLUGIN_RELEVANT_COSTCHANGE_FF	lq_plugin_default_ffeth.c	/^#define LQ_PLUGIN_RELEVANT_COSTCHANGE_FF /;"	d	file:
+default_lq_calc_cost_ffeth	lq_plugin_default_ffeth.c	/^default_lq_calc_cost_ffeth(const void *ptr)$/;"	f	file:
+default_lq_clear_ffeth	lq_plugin_default_ffeth.c	/^default_lq_clear_ffeth(void *target)$/;"	f	file:
+default_lq_clear_ffeth_hello	lq_plugin_default_ffeth.c	/^default_lq_clear_ffeth_hello(void *target)$/;"	f	file:
+default_lq_copy_link2neigh_ffeth	lq_plugin_default_ffeth.c	/^default_lq_copy_link2neigh_ffeth(void *t, void *s)$/;"	f	file:
+default_lq_copy_link2tc_ffeth	lq_plugin_default_ffeth.c	/^default_lq_copy_link2tc_ffeth(void *t, void *s)$/;"	f	file:
+default_lq_deserialize_hello_lq_pair_ffeth	lq_plugin_default_ffeth.c	/^default_lq_deserialize_hello_lq_pair_ffeth(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_deserialize_tc_lq_pair_ffeth	lq_plugin_default_ffeth.c	/^default_lq_deserialize_tc_lq_pair_ffeth(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_ffeth_handle_lqchange	lq_plugin_default_ffeth.c	/^default_lq_ffeth_handle_lqchange(void) {$/;"	f	file:
+default_lq_ffeth_timer	lq_plugin_default_ffeth.c	/^default_lq_ffeth_timer(void __attribute__ ((unused)) * context)$/;"	f	file:
+default_lq_initialize_ffeth	lq_plugin_default_ffeth.c	/^default_lq_initialize_ffeth(void)$/;"	f	file:
+default_lq_memorize_foreign_hello_ffeth	lq_plugin_default_ffeth.c	/^default_lq_memorize_foreign_hello_ffeth(void *ptrLocal, void *ptrForeign)$/;"	f	file:
+default_lq_packet_loss_worker_ffeth	lq_plugin_default_ffeth.c	/^default_lq_packet_loss_worker_ffeth(struct link_entry *link,$/;"	f	file:
+default_lq_parser_ffeth	lq_plugin_default_ffeth.c	/^default_lq_parser_ffeth(struct olsr *olsr, struct interface *in_if, union olsr_ip_addr *from_addr)$/;"	f	file:
+default_lq_print_cost_ffeth	lq_plugin_default_ffeth.c	/^default_lq_print_cost_ffeth(olsr_linkcost cost, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_print_ffeth	lq_plugin_default_ffeth.c	/^default_lq_print_ffeth(void *ptr, char separator, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_serialize_hello_lq_pair_ffeth	lq_plugin_default_ffeth.c	/^default_lq_serialize_hello_lq_pair_ffeth(unsigned char *buff, void *ptr)$/;"	f	file:
+default_lq_serialize_tc_lq_pair_ffeth	lq_plugin_default_ffeth.c	/^default_lq_serialize_tc_lq_pair_ffeth(unsigned char *buff, void *ptr)$/;"	f	file:
+lq_etx_ffeth_handler	lq_plugin_default_ffeth.c	/^struct lq_handler lq_etx_ffeth_handler = {$/;"	v	typeref:struct:lq_handler
+LQ_ALGORITHM_ETX_FFETH_NAME	lq_plugin_default_ffeth.h	/^#define LQ_ALGORITHM_ETX_FFETH_NAME /;"	d
+LQ_ETX_FFETH_	lq_plugin_default_ffeth.h	/^#define LQ_ETX_FFETH_$/;"	d
+LQ_FFETH_QUICKSTART_INIT	lq_plugin_default_ffeth.h	/^#define LQ_FFETH_QUICKSTART_INIT /;"	d
+LQ_FFETH_WINDOW	lq_plugin_default_ffeth.h	/^#define LQ_FFETH_WINDOW /;"	d
+activePtr	lq_plugin_default_ffeth.h	/^  uint8_t windowSize, activePtr;$/;"	m	struct:default_lq_ffeth_hello
+default_lq_ffeth	lq_plugin_default_ffeth.h	/^struct default_lq_ffeth {$/;"	s
+default_lq_ffeth_hello	lq_plugin_default_ffeth.h	/^struct default_lq_ffeth_hello {$/;"	s
+last_seq_nr	lq_plugin_default_ffeth.h	/^  uint16_t last_seq_nr;$/;"	m	struct:default_lq_ffeth_hello
+lq	lq_plugin_default_ffeth.h	/^  struct default_lq_ffeth lq;$/;"	m	struct:default_lq_ffeth_hello	typeref:struct:default_lq_ffeth_hello::default_lq_ffeth
+missed_hellos	lq_plugin_default_ffeth.h	/^  uint16_t missed_hellos;$/;"	m	struct:default_lq_ffeth_hello
+perfect_eth	lq_plugin_default_ffeth.h	/^  bool perfect_eth;$/;"	m	struct:default_lq_ffeth_hello
+received	lq_plugin_default_ffeth.h	/^  uint16_t received[LQ_FFETH_WINDOW], total[LQ_FFETH_WINDOW];$/;"	m	struct:default_lq_ffeth_hello
+smoothed_lq	lq_plugin_default_ffeth.h	/^  struct default_lq_ffeth smoothed_lq;$/;"	m	struct:default_lq_ffeth_hello	typeref:struct:default_lq_ffeth_hello::default_lq_ffeth
+total	lq_plugin_default_ffeth.h	/^  uint16_t received[LQ_FFETH_WINDOW], total[LQ_FFETH_WINDOW];$/;"	m	struct:default_lq_ffeth_hello
+valueLq	lq_plugin_default_ffeth.h	/^  uint8_t valueLq;$/;"	m	struct:default_lq_ffeth
+valueNlq	lq_plugin_default_ffeth.h	/^  uint8_t valueNlq;$/;"	m	struct:default_lq_ffeth
+windowSize	lq_plugin_default_ffeth.h	/^  uint8_t windowSize, activePtr;$/;"	m	struct:default_lq_ffeth_hello
+default_lq_calc_cost_float	lq_plugin_default_float.c	/^default_lq_calc_cost_float(const void *ptr)$/;"	f	file:
+default_lq_clear_float	lq_plugin_default_float.c	/^default_lq_clear_float(void *target)$/;"	f	file:
+default_lq_copy_link2tc_float	lq_plugin_default_float.c	/^default_lq_copy_link2tc_float(void *target, void *source)$/;"	f	file:
+default_lq_deserialize_hello_lq_pair_float	lq_plugin_default_float.c	/^default_lq_deserialize_hello_lq_pair_float(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_deserialize_tc_lq_pair_float	lq_plugin_default_float.c	/^default_lq_deserialize_tc_lq_pair_float(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_initialize_float	lq_plugin_default_float.c	/^default_lq_initialize_float(void)$/;"	f	file:
+default_lq_memorize_foreign_hello_float	lq_plugin_default_float.c	/^default_lq_memorize_foreign_hello_float(void *ptrLocal, void *ptrForeign)$/;"	f	file:
+default_lq_packet_loss_worker_float	lq_plugin_default_float.c	/^default_lq_packet_loss_worker_float(struct link_entry *link, void *ptr, bool lost)$/;"	f	file:
+default_lq_print_cost_float	lq_plugin_default_float.c	/^default_lq_print_cost_float(olsr_linkcost cost, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_print_float	lq_plugin_default_float.c	/^default_lq_print_float(void *ptr, char separator, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_serialize_hello_lq_pair_float	lq_plugin_default_float.c	/^default_lq_serialize_hello_lq_pair_float(unsigned char *buff, void *ptr)$/;"	f	file:
+default_lq_serialize_tc_lq_pair_float	lq_plugin_default_float.c	/^default_lq_serialize_tc_lq_pair_float(unsigned char *buff, void *ptr)$/;"	f	file:
+lq_etx_float_handler	lq_plugin_default_float.c	/^struct lq_handler lq_etx_float_handler = {$/;"	v	typeref:struct:lq_handler
+LQ_ALGORITHM_ETX_FLOAT_NAME	lq_plugin_default_float.h	/^#define LQ_ALGORITHM_ETX_FLOAT_NAME /;"	d
+LQ_PLUGIN_DEFAULT_H_	lq_plugin_default_float.h	/^#define LQ_PLUGIN_DEFAULT_H_$/;"	d
+LQ_PLUGIN_LC_MULTIPLIER	lq_plugin_default_float.h	/^#define LQ_PLUGIN_LC_MULTIPLIER /;"	d
+default_lq_float	lq_plugin_default_float.h	/^struct default_lq_float {$/;"	s
+lq	lq_plugin_default_float.h	/^  float lq, nlq;$/;"	m	struct:default_lq_float
+nlq	lq_plugin_default_float.h	/^  float lq, nlq;$/;"	m	struct:default_lq_float
+quickstart	lq_plugin_default_float.h	/^  uint16_t quickstart;$/;"	m	struct:default_lq_float
+aging_factor_new	lq_plugin_default_fpm.c	/^uint32_t aging_factor_new, aging_factor_old;$/;"	v
+aging_factor_old	lq_plugin_default_fpm.c	/^uint32_t aging_factor_new, aging_factor_old;$/;"	v
+aging_quickstart_new	lq_plugin_default_fpm.c	/^uint32_t aging_quickstart_new, aging_quickstart_old;$/;"	v
+aging_quickstart_old	lq_plugin_default_fpm.c	/^uint32_t aging_quickstart_new, aging_quickstart_old;$/;"	v
+default_lq_calc_cost_fpm	lq_plugin_default_fpm.c	/^default_lq_calc_cost_fpm(const void *ptr)$/;"	f	file:
+default_lq_clear_fpm	lq_plugin_default_fpm.c	/^default_lq_clear_fpm(void *target)$/;"	f	file:
+default_lq_copy_link2tc_fpm	lq_plugin_default_fpm.c	/^default_lq_copy_link2tc_fpm(void *target, void *source)$/;"	f	file:
+default_lq_deserialize_hello_lq_pair_fpm	lq_plugin_default_fpm.c	/^default_lq_deserialize_hello_lq_pair_fpm(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_deserialize_tc_lq_pair_fpm	lq_plugin_default_fpm.c	/^default_lq_deserialize_tc_lq_pair_fpm(const uint8_t ** curr, void *ptr)$/;"	f	file:
+default_lq_initialize_fpm	lq_plugin_default_fpm.c	/^default_lq_initialize_fpm(void)$/;"	f	file:
+default_lq_memorize_foreign_hello_fpm	lq_plugin_default_fpm.c	/^default_lq_memorize_foreign_hello_fpm(void *ptrLocal, void *ptrForeign)$/;"	f	file:
+default_lq_packet_loss_worker_fpm	lq_plugin_default_fpm.c	/^default_lq_packet_loss_worker_fpm(struct link_entry *link __attribute__ ((unused)), void *ptr, bool lost)$/;"	f	file:
+default_lq_print_cost_fpm	lq_plugin_default_fpm.c	/^default_lq_print_cost_fpm(olsr_linkcost cost, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_print_fpm	lq_plugin_default_fpm.c	/^default_lq_print_fpm(void *ptr, char separator, struct lqtextbuffer *buffer)$/;"	f	file:
+default_lq_serialize_hello_lq_pair_fpm	lq_plugin_default_fpm.c	/^default_lq_serialize_hello_lq_pair_fpm(unsigned char *buff, void *ptr)$/;"	f	file:
+default_lq_serialize_tc_lq_pair_fpm	lq_plugin_default_fpm.c	/^default_lq_serialize_tc_lq_pair_fpm(unsigned char *buff, void *ptr)$/;"	f	file:
+lq_etx_fpm_handler	lq_plugin_default_fpm.c	/^struct lq_handler lq_etx_fpm_handler = {$/;"	v	typeref:struct:lq_handler
+LQ_ALGORITHM_ETX_FPM_NAME	lq_plugin_default_fpm.h	/^#define LQ_ALGORITHM_ETX_FPM_NAME /;"	d
+LQ_ETX_FPM_	lq_plugin_default_fpm.h	/^#define LQ_ETX_FPM_$/;"	d
+LQ_FPM_INTERNAL_MULTIPLIER	lq_plugin_default_fpm.h	/^#define LQ_FPM_INTERNAL_MULTIPLIER /;"	d
+LQ_FPM_LINKCOST_MULTIPLIER	lq_plugin_default_fpm.h	/^#define LQ_FPM_LINKCOST_MULTIPLIER /;"	d
+default_lq_fpm	lq_plugin_default_fpm.h	/^struct default_lq_fpm {$/;"	s
+quickstart	lq_plugin_default_fpm.h	/^  uint16_t quickstart;$/;"	m	struct:default_lq_fpm
+valueLq	lq_plugin_default_fpm.h	/^  uint8_t valueLq;$/;"	m	struct:default_lq_fpm
+valueNlq	lq_plugin_default_fpm.h	/^  uint8_t valueNlq;$/;"	m	struct:default_lq_fpm
+CHECK_ARGC	main.c	/^#define CHECK_ARGC /;"	d	file:
+DEFAULT_LOCKFILE_PREFIX	main.c	/^#define DEFAULT_LOCKFILE_PREFIX /;"	d	file:
+NEXT_ARG	main.c	/^#define NEXT_ARG /;"	d	file:
+SignalHandler	main.c	/^SignalHandler(unsigned long signo)$/;"	f
+close	main.c	/^#define close(/;"	d	file:
+copyright_string	main.c	/^    copyright_string[] __attribute__ ((unused)) =$/;"	v	file:
+def_timer_ci	main.c	/^struct olsr_cookie_info *def_timer_ci = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+lock_fd	main.c	/^static int lock_fd = 0;$/;"	v	file:
+lock_file_name	main.c	/^static char lock_file_name[FILENAME_MAX];$/;"	v	file:
+main	main.c	/^int main(int argc, char *argv[]) {$/;"	f
+olsr_argv	main.c	/^static char **olsr_argv;$/;"	v	file:
+olsr_create_lock_file	main.c	/^static void olsr_create_lock_file(void) {$/;"	f	file:
+olsr_process_arguments	main.c	/^static int olsr_process_arguments(int argc, char *argv[],$/;"	f	file:
+olsr_reconfigure	main.c	/^void olsr_reconfigure(int signo __attribute__ ((unused))) {$/;"	f
+olsr_shutdown_messages	main.c	/^static void olsr_shutdown_messages(void) {$/;"	f	file:
+olsr_win32_end_flag	main.c	/^bool olsr_win32_end_flag = false;$/;"	v
+olsr_win32_end_request	main.c	/^bool olsr_win32_end_request = false;$/;"	v
+olsrmain_load_config	main.c	/^olsrmain_load_config(char *file) {$/;"	f	file:
+print_usage	main.c	/^static void print_usage(bool error) {$/;"	f	file:
+set_default_ifcnfs	main.c	/^int set_default_ifcnfs(struct olsr_if *ifs, struct if_config_options *cnf) {$/;"	f
+me_to_reltime	mantissa.c	/^me_to_reltime(const uint8_t me)$/;"	f
+reltime_to_me	mantissa.c	/^reltime_to_me(const olsr_reltime interval)$/;"	f
+_OLSR_MANTISSA	mantissa.h	/^#define _OLSR_MANTISSA$/;"	d
+olsr_reltime	mantissa.h	/^typedef uint32_t olsr_reltime;$/;"	t
+insert_mid_alias	mid_set.c	/^insert_mid_alias(union olsr_ip_addr *main_add, const union olsr_ip_addr *alias, olsr_reltime vtime)$/;"	f
+insert_mid_tuple	mid_set.c	/^insert_mid_tuple(union olsr_ip_addr *m_addr, struct mid_address *alias, olsr_reltime vtime)$/;"	f	file:
+mid_lookup_aliases	mid_set.c	/^mid_lookup_aliases(const union olsr_ip_addr *adr)$/;"	f
+mid_lookup_entry_bymain	mid_set.c	/^mid_lookup_entry_bymain(const union olsr_ip_addr *adr)$/;"	f
+mid_lookup_main_addr	mid_set.c	/^mid_lookup_main_addr(const union olsr_ip_addr *adr)$/;"	f
+mid_set	mid_set.c	/^struct mid_entry mid_set[HASHSIZE];$/;"	v	typeref:struct:mid_entry
+olsr_cleanup_mid	mid_set.c	/^void olsr_cleanup_mid(union olsr_ip_addr *orig) {$/;"	f
+olsr_delete_all_mid_entries	mid_set.c	/^void olsr_delete_all_mid_entries(void) {$/;"	f
+olsr_delete_mid_entry	mid_set.c	/^olsr_delete_mid_entry(struct mid_entry *mid)$/;"	f
+olsr_expire_mid_entry	mid_set.c	/^olsr_expire_mid_entry(void *context)$/;"	f	file:
+olsr_init_mid_set	mid_set.c	/^olsr_init_mid_set(void)$/;"	f
+olsr_input_mid	mid_set.c	/^olsr_input_mid(union olsr_message *m, struct interface *in_if __attribute__ ((unused)), union olsr_ip_addr *from_addr)$/;"	f
+olsr_print_mid_set	mid_set.c	/^olsr_print_mid_set(void)$/;"	f
+olsr_prune_aliases	mid_set.c	/^olsr_prune_aliases(struct mid_message *message)$/;"	f	file:
+olsr_set_mid_timer	mid_set.c	/^olsr_set_mid_timer(struct mid_entry *mid, olsr_reltime rel_timer)$/;"	f	file:
+olsr_update_mid_table	mid_set.c	/^olsr_update_mid_table(const union olsr_ip_addr *adr, olsr_reltime vtime)$/;"	f
+reverse_mid_set	mid_set.c	/^struct mid_address reverse_mid_set[HASHSIZE];$/;"	v	typeref:struct:mid_address
+OLSR_MID_JITTER	mid_set.h	/^#define OLSR_MID_JITTER /;"	d
+_OLSR_MID	mid_set.h	/^#define _OLSR_MID$/;"	d
+alias	mid_set.h	/^  union olsr_ip_addr alias;$/;"	m	struct:mid_address	typeref:union:mid_address::olsr_ip_addr
+aliases	mid_set.h	/^  struct mid_address *aliases;$/;"	m	struct:mid_entry	typeref:struct:mid_entry::mid_address
+main_addr	mid_set.h	/^  union olsr_ip_addr main_addr;$/;"	m	struct:mid_entry	typeref:union:mid_entry::olsr_ip_addr
+main_entry	mid_set.h	/^  struct mid_entry *main_entry;$/;"	m	struct:mid_address	typeref:struct:mid_address::mid_entry
+mid_address	mid_set.h	/^struct mid_address {$/;"	s
+mid_entry	mid_set.h	/^struct mid_entry {$/;"	s
+mid_timer	mid_set.h	/^  struct timer_entry *mid_timer;$/;"	m	struct:mid_entry	typeref:struct:mid_entry::timer_entry
+next	mid_set.h	/^  struct mid_address *next;$/;"	m	struct:mid_address	typeref:struct:mid_address::mid_address
+next	mid_set.h	/^  struct mid_entry *next;$/;"	m	struct:mid_entry	typeref:struct:mid_entry::mid_entry
+next_alias	mid_set.h	/^  struct mid_address *next_alias;$/;"	m	struct:mid_address	typeref:struct:mid_address::mid_address
+prev	mid_set.h	/^  struct mid_address *prev;$/;"	m	struct:mid_address	typeref:struct:mid_address::mid_address
+prev	mid_set.h	/^  struct mid_entry *prev;$/;"	m	struct:mid_entry	typeref:struct:mid_entry::mid_entry
+vtime	mid_set.h	/^  uint32_t vtime;$/;"	m	struct:mid_address
+_OLSR_MISC_H	misc.h	/^#define _OLSR_MISC_H$/;"	d
+add_will_always_nodes	mpr.c	/^add_will_always_nodes(void)$/;"	f	file:
+olsr_calculate_mpr	mpr.c	/^olsr_calculate_mpr(void)$/;"	f
+olsr_calculate_two_hop_neighbors	mpr.c	/^olsr_calculate_two_hop_neighbors(void)$/;"	f	file:
+olsr_check_mpr_changes	mpr.c	/^olsr_check_mpr_changes(void)$/;"	f	file:
+olsr_chosen_mpr	mpr.c	/^olsr_chosen_mpr(struct neighbor_entry *one_hop_neighbor, uint16_t * two_hop_covered_count)$/;"	f	file:
+olsr_clear_mprs	mpr.c	/^olsr_clear_mprs(void)$/;"	f	file:
+olsr_clear_two_hop_processed	mpr.c	/^olsr_clear_two_hop_processed(void)$/;"	f	file:
+olsr_find_2_hop_neighbors_with_1_link	mpr.c	/^olsr_find_2_hop_neighbors_with_1_link(int willingness)$/;"	f	file:
+olsr_find_maximum_covered	mpr.c	/^olsr_find_maximum_covered(int willingness)$/;"	f	file:
+olsr_optimize_mpr_set	mpr.c	/^olsr_optimize_mpr_set(void)$/;"	f	file:
+olsr_print_mpr_set	mpr.c	/^olsr_print_mpr_set(void)$/;"	f
+_OLSR_MPR	mpr.h	/^#define _OLSR_MPR$/;"	d
+ansn	mpr_selector_set.c	/^static uint16_t ansn;$/;"	v	file:
+get_local_ansn	mpr_selector_set.c	/^get_local_ansn(void)$/;"	f
+increase_local_ansn	mpr_selector_set.c	/^increase_local_ansn(void)$/;"	f
+mprs_list	mpr_selector_set.c	/^static struct mpr_selector mprs_list;$/;"	v	typeref:struct:mpr_selector	file:
+olsr_add_mpr_selector	mpr_selector_set.c	/^olsr_add_mpr_selector(const union olsr_ip_addr *addr, olsr_reltime vtime)$/;"	f
+olsr_expire_mpr_sel_entry	mpr_selector_set.c	/^olsr_expire_mpr_sel_entry(void *context)$/;"	f	file:
+olsr_init_mprs_set	mpr_selector_set.c	/^olsr_init_mprs_set(void)$/;"	f
+olsr_lookup_mprs_set	mpr_selector_set.c	/^olsr_lookup_mprs_set(const union olsr_ip_addr *addr)$/;"	f
+olsr_set_mpr_sel_timer	mpr_selector_set.c	/^olsr_set_mpr_sel_timer(struct mpr_selector *mpr_sel, olsr_reltime rel_timer)$/;"	f	file:
+olsr_update_mprs_set	mpr_selector_set.c	/^olsr_update_mprs_set(const union olsr_ip_addr *addr, olsr_reltime vtime)$/;"	f
+MS_main_addr	mpr_selector_set.h	/^  union olsr_ip_addr MS_main_addr;$/;"	m	struct:mpr_selector	typeref:union:mpr_selector::olsr_ip_addr
+MS_timer	mpr_selector_set.h	/^  struct timer_entry *MS_timer;$/;"	m	struct:mpr_selector	typeref:struct:mpr_selector::timer_entry
+OLSR_MPR_SEL_JITTER	mpr_selector_set.h	/^#define OLSR_MPR_SEL_JITTER /;"	d
+_OLSR_MPRS_SET	mpr_selector_set.h	/^#define _OLSR_MPRS_SET$/;"	d
+mpr_selector	mpr_selector_set.h	/^struct mpr_selector {$/;"	s
+next	mpr_selector_set.h	/^  struct mpr_selector *next;$/;"	m	struct:mpr_selector	typeref:struct:mpr_selector::mpr_selector
+prev	mpr_selector_set.h	/^  struct mpr_selector *prev;$/;"	m	struct:mpr_selector	typeref:struct:mpr_selector::mpr_selector
+neighbortable	neighbor_table.c	/^struct neighbor_entry neighbortable[HASHSIZE];$/;"	v	typeref:struct:neighbor_entry
+olsr_del_nbr2_list	neighbor_table.c	/^olsr_del_nbr2_list(struct neighbor_2_list_entry *nbr2_list)$/;"	f	file:
+olsr_delete_neighbor_2_pointer	neighbor_table.c	/^olsr_delete_neighbor_2_pointer(struct neighbor_entry *neighbor, struct neighbor_2_entry *neigh2)$/;"	f
+olsr_delete_neighbor_table	neighbor_table.c	/^olsr_delete_neighbor_table(const union olsr_ip_addr *neighbor_addr)$/;"	f
+olsr_expire_nbr2_list	neighbor_table.c	/^olsr_expire_nbr2_list(void *context)$/;"	f
+olsr_init_neighbor_table	neighbor_table.c	/^olsr_init_neighbor_table(void)$/;"	f
+olsr_insert_neighbor_table	neighbor_table.c	/^olsr_insert_neighbor_table(const union olsr_ip_addr *main_addr)$/;"	f
+olsr_lookup_my_neighbors	neighbor_table.c	/^olsr_lookup_my_neighbors(const struct neighbor_entry *neighbor, const union olsr_ip_addr *neighbor_main_address)$/;"	f
+olsr_lookup_neighbor_table	neighbor_table.c	/^olsr_lookup_neighbor_table(const union olsr_ip_addr *dst)$/;"	f
+olsr_lookup_neighbor_table_alias	neighbor_table.c	/^olsr_lookup_neighbor_table_alias(const union olsr_ip_addr *dst)$/;"	f
+olsr_print_neighbor_table	neighbor_table.c	/^olsr_print_neighbor_table(void)$/;"	f
+update_neighbor_status	neighbor_table.c	/^update_neighbor_status(struct neighbor_entry *entry, int lnk)$/;"	f
+OLSR_FOR_ALL_NBR_ENTRIES	neighbor_table.h	/^#define OLSR_FOR_ALL_NBR_ENTRIES(/;"	d
+OLSR_FOR_ALL_NBR_ENTRIES_END	neighbor_table.h	/^#define OLSR_FOR_ALL_NBR_ENTRIES_END(/;"	d
+OLSR_NBR2_LIST_JITTER	neighbor_table.h	/^#define OLSR_NBR2_LIST_JITTER /;"	d
+_OLSR_NEIGH_TBL	neighbor_table.h	/^#define _OLSR_NEIGH_TBL$/;"	d
+is_mpr	neighbor_table.h	/^  bool is_mpr;$/;"	m	struct:neighbor_entry
+linkcount	neighbor_table.h	/^  int linkcount;$/;"	m	struct:neighbor_entry
+nbr2_list_timer	neighbor_table.h	/^  struct timer_entry *nbr2_list_timer;$/;"	m	struct:neighbor_2_list_entry	typeref:struct:neighbor_2_list_entry::timer_entry
+nbr2_nbr	neighbor_table.h	/^  struct neighbor_entry *nbr2_nbr;     \/* backpointer to owning nbr entry *\/$/;"	m	struct:neighbor_2_list_entry	typeref:struct:neighbor_2_list_entry::neighbor_entry
+neighbor_2	neighbor_table.h	/^  struct neighbor_2_entry *neighbor_2;$/;"	m	struct:neighbor_2_list_entry	typeref:struct:neighbor_2_list_entry::neighbor_2_entry
+neighbor_2_list	neighbor_table.h	/^  struct neighbor_2_list_entry neighbor_2_list;$/;"	m	struct:neighbor_entry	typeref:struct:neighbor_entry::neighbor_2_list_entry
+neighbor_2_list_entry	neighbor_table.h	/^struct neighbor_2_list_entry {$/;"	s
+neighbor_2_nocov	neighbor_table.h	/^  int neighbor_2_nocov;$/;"	m	struct:neighbor_entry
+neighbor_entry	neighbor_table.h	/^struct neighbor_entry {$/;"	s
+neighbor_main_addr	neighbor_table.h	/^  union olsr_ip_addr neighbor_main_addr;$/;"	m	struct:neighbor_entry	typeref:union:neighbor_entry::olsr_ip_addr
+next	neighbor_table.h	/^  struct neighbor_2_list_entry *next;$/;"	m	struct:neighbor_2_list_entry	typeref:struct:neighbor_2_list_entry::neighbor_2_list_entry
+next	neighbor_table.h	/^  struct neighbor_entry *next;$/;"	m	struct:neighbor_entry	typeref:struct:neighbor_entry::neighbor_entry
+prev	neighbor_table.h	/^  struct neighbor_2_list_entry *prev;$/;"	m	struct:neighbor_2_list_entry	typeref:struct:neighbor_2_list_entry::neighbor_2_list_entry
+prev	neighbor_table.h	/^  struct neighbor_entry *prev;$/;"	m	struct:neighbor_entry	typeref:struct:neighbor_entry::neighbor_entry
+skip	neighbor_table.h	/^  bool skip;$/;"	m	struct:neighbor_entry
+status	neighbor_table.h	/^  uint8_t status;$/;"	m	struct:neighbor_entry
+was_mpr	neighbor_table.h	/^  bool was_mpr;                        \/* Used to detect changes in MPR *\/$/;"	m	struct:neighbor_entry
+willingness	neighbor_table.h	/^  uint8_t willingness;$/;"	m	struct:neighbor_entry
+add_ptf	net_olsr.c	/^add_ptf(packet_transform_function f)$/;"	f
+addr	net_olsr.c	/^  union olsr_ip_addr addr;$/;"	m	struct:deny_address_entry	typeref:union:deny_address_entry::olsr_ip_addr	file:
+del_ptf	net_olsr.c	/^del_ptf(packet_transform_function f)$/;"	f
+deny_address_entry	net_olsr.c	/^struct deny_address_entry {$/;"	s	file:
+deny_entries	net_olsr.c	/^static struct deny_address_entry *deny_entries;$/;"	v	typeref:struct:deny_address_entry	file:
+deny_ipv4_defaults	net_olsr.c	/^static const char *const deny_ipv4_defaults[] = {$/;"	v	file:
+deny_ipv6_defaults	net_olsr.c	/^static const char *const deny_ipv6_defaults[] = {$/;"	v	file:
+disp_pack_out	net_olsr.c	/^static bool disp_pack_out = false;$/;"	v	file:
+function	net_olsr.c	/^  packet_transform_function function;$/;"	m	struct:ptf	file:
+init_net	net_olsr.c	/^init_net(void)$/;"	f
+net_add_buffer	net_olsr.c	/^net_add_buffer(struct interface *ifp)$/;"	f
+net_outbuffer_bytes_left	net_olsr.c	/^net_outbuffer_bytes_left(const struct interface *ifp)$/;"	f
+net_outbuffer_push	net_olsr.c	/^net_outbuffer_push(struct interface *ifp, const void *data, const uint16_t size)$/;"	f
+net_outbuffer_push_reserved	net_olsr.c	/^net_outbuffer_push_reserved(struct interface *ifp, const void *data, const uint16_t size)$/;"	f
+net_output	net_olsr.c	/^net_output(struct interface *ifp)$/;"	f
+net_output_pending	net_olsr.c	/^net_output_pending(const struct interface * ifp)$/;"	f
+net_remove_buffer	net_olsr.c	/^net_remove_buffer(struct interface *ifp)$/;"	f
+net_reserve_bufspace	net_olsr.c	/^net_reserve_bufspace(struct interface *ifp, int size)$/;"	f
+net_set_disp_pack_out	net_olsr.c	/^net_set_disp_pack_out(bool val)$/;"	f
+next	net_olsr.c	/^  struct deny_address_entry *next;$/;"	m	struct:deny_address_entry	typeref:struct:deny_address_entry::deny_address_entry	file:
+next	net_olsr.c	/^  struct ptf *next;$/;"	m	struct:ptf	typeref:struct:ptf::ptf	file:
+olsr_add_invalid_address	net_olsr.c	/^olsr_add_invalid_address(const union olsr_ip_addr *adr)$/;"	f
+olsr_validate_address	net_olsr.c	/^olsr_validate_address(const union olsr_ip_addr *adr)$/;"	f
+perror	net_olsr.c	/^#define perror(/;"	d	file:
+ptf	net_olsr.c	/^struct ptf {$/;"	s	file:
+ptf_list	net_olsr.c	/^static struct ptf *ptf_list;$/;"	v	typeref:struct:ptf	file:
+_NET_OLSR	net_olsr.h	/^#define _NET_OLSR$/;"	d
+packet_transform_function	net_olsr.h	/^typedef int (*packet_transform_function) (uint8_t *, int *);$/;"	t
+_OLSR_NET_OS_H	net_os.h	/^#define _OLSR_NET_OS_H$/;"	d
+all_zero	olsr.c	/^union olsr_ip_addr all_zero;$/;"	v	typeref:union:olsr_ip_addr
+changes_force	olsr.c	/^bool changes_force;$/;"	v
+changes_hna	olsr.c	/^bool changes_hna;$/;"	v
+changes_neighborhood	olsr.c	/^bool changes_neighborhood;$/;"	v
+changes_topology	olsr.c	/^bool changes_topology;$/;"	v
+function	olsr.c	/^  int (*function) (int, int, int);$/;"	m	struct:pcf	file:
+get_msg_seqno	olsr.c	/^get_msg_seqno(void)$/;"	f
+init_msg_seqno	olsr.c	/^init_msg_seqno(void)$/;"	f
+max_startup_sleep	olsr.c	/^static int max_startup_sleep = 0;$/;"	v	file:
+message_seqno	olsr.c	/^static uint16_t message_seqno;$/;"	v	file:
+next	olsr.c	/^  struct pcf *next;$/;"	m	struct:pcf	typeref:struct:pcf::pcf	file:
+olsr_calculate_willingness	olsr.c	/^olsr_calculate_willingness(void)$/;"	f
+olsr_do_startup_sleep	olsr.c	/^void olsr_do_startup_sleep(void)$/;"	f
+olsr_exit	olsr.c	/^olsr_exit(const char *msg, int val)$/;"	f
+olsr_forward_message	olsr.c	/^olsr_forward_message(union olsr_message *m, struct interface *in_if, union olsr_ip_addr *from_addr)$/;"	f
+olsr_init_tables	olsr.c	/^olsr_init_tables(void)$/;"	f
+olsr_init_willingness	olsr.c	/^olsr_init_willingness(void)$/;"	f
+olsr_is_bad_duplicate_msg_seqno	olsr.c	/^olsr_is_bad_duplicate_msg_seqno(uint16_t seqno) {$/;"	f
+olsr_link_to_string	olsr.c	/^olsr_link_to_string(uint8_t linktype)$/;"	f
+olsr_malloc	olsr.c	/^olsr_malloc(size_t size, const char *id)$/;"	f
+olsr_msgtype_to_string	olsr.c	/^olsr_msgtype_to_string(uint8_t msgtype)$/;"	f
+olsr_printf	olsr.c	/^olsr_printf(int loglevel, const char *format, ...)$/;"	f
+olsr_process_changes	olsr.c	/^olsr_process_changes(void)$/;"	f
+olsr_startup_sleep	olsr.c	/^void olsr_startup_sleep(int s)$/;"	f
+olsr_status_to_string	olsr.c	/^olsr_status_to_string(uint8_t status)$/;"	f
+olsr_update_willingness	olsr.c	/^olsr_update_willingness(void *foo __attribute__ ((unused)))$/;"	f
+pcf	olsr.c	/^struct pcf {$/;"	s	file:
+pcf_list	olsr.c	/^static struct pcf *pcf_list;$/;"	v	typeref:struct:pcf	file:
+register_pcf	olsr.c	/^register_pcf(int (*f) (int, int, int))$/;"	f
+set_buffer_timer	olsr.c	/^set_buffer_timer(struct interface *ifn)$/;"	f
+sum_startup_sleep	olsr.c	/^static int sum_startup_sleep = 0;$/;"	v	file:
+_OLSR_FUNCTIONS	olsr.h	/^#define _OLSR_FUNCTIONS$/;"	d
+DEF_ALLOW_NO_INTS	olsr_cfg.h	/^#define DEF_ALLOW_NO_INTS /;"	d
+DEF_CLEAR_SCREEN	olsr_cfg.h	/^#define DEF_CLEAR_SCREEN /;"	d
+DEF_DEBUGLVL	olsr_cfg.h	/^#define DEF_DEBUGLVL /;"	d
+DEF_DOWNLINK_SPEED	olsr_cfg.h	/^#define DEF_DOWNLINK_SPEED /;"	d
+DEF_FIB_METRIC	olsr_cfg.h	/^#define DEF_FIB_METRIC /;"	d
+DEF_GW_ALLOW_NAT	olsr_cfg.h	/^#define DEF_GW_ALLOW_NAT /;"	d
+DEF_GW_TYPE	olsr_cfg.h	/^#define DEF_GW_TYPE /;"	d
+DEF_GW_UPLINK_NAT	olsr_cfg.h	/^#define DEF_GW_UPLINK_NAT /;"	d
+DEF_IF_MODE	olsr_cfg.h	/^#define DEF_IF_MODE /;"	d
+DEF_IPC_CONNECTIONS	olsr_cfg.h	/^#define DEF_IPC_CONNECTIONS /;"	d
+DEF_IP_VERSION	olsr_cfg.h	/^#define DEF_IP_VERSION /;"	d
+DEF_LQ_AGING	olsr_cfg.h	/^#define DEF_LQ_AGING /;"	d
+DEF_LQ_ALGORITHM	olsr_cfg.h	/^#define DEF_LQ_ALGORITHM /;"	d
+DEF_LQ_FISH	olsr_cfg.h	/^#define DEF_LQ_FISH /;"	d
+DEF_LQ_LEVEL	olsr_cfg.h	/^#define DEF_LQ_LEVEL /;"	d
+DEF_LQ_NAT_THRESH	olsr_cfg.h	/^#define DEF_LQ_NAT_THRESH /;"	d
+DEF_MIN_TC_VTIME	olsr_cfg.h	/^#define DEF_MIN_TC_VTIME /;"	d
+DEF_NICCHGPOLLRT	olsr_cfg.h	/^#define DEF_NICCHGPOLLRT /;"	d
+DEF_OLSRPORT	olsr_cfg.h	/^#define DEF_OLSRPORT /;"	d
+DEF_POLLRATE	olsr_cfg.h	/^#define DEF_POLLRATE /;"	d
+DEF_RTPROTO	olsr_cfg.h	/^#define DEF_RTPROTO /;"	d
+DEF_RT_AUTO	olsr_cfg.h	/^#define DEF_RT_AUTO /;"	d
+DEF_RT_NONE	olsr_cfg.h	/^#define DEF_RT_NONE /;"	d
+DEF_SMART_GW	olsr_cfg.h	/^#define DEF_SMART_GW /;"	d
+DEF_TOS	olsr_cfg.h	/^#define DEF_TOS /;"	d
+DEF_UPLINK_SPEED	olsr_cfg.h	/^#define DEF_UPLINK_SPEED /;"	d
+DEF_USE_HYST	olsr_cfg.h	/^#define DEF_USE_HYST /;"	d
+DEF_USE_NIIT	olsr_cfg.h	/^#define DEF_USE_NIIT /;"	d
+DEF_USE_SRCIP_ROUTES	olsr_cfg.h	/^#define DEF_USE_SRCIP_ROUTES /;"	d
+DEF_WILLINGNESS	olsr_cfg.h	/^#define DEF_WILLINGNESS /;"	d
+DEF_WILL_AUTO	olsr_cfg.h	/^#define DEF_WILL_AUTO /;"	d
+FIBM_APPROX	olsr_cfg.h	/^  FIBM_APPROX,$/;"	e	enum:__anon3
+FIBM_CNT	olsr_cfg.h	/^  FIBM_CNT$/;"	e	enum:__anon3
+FIBM_CORRECT	olsr_cfg.h	/^  FIBM_CORRECT,$/;"	e	enum:__anon3
+FIBM_FLAT	olsr_cfg.h	/^  FIBM_FLAT,$/;"	e	enum:__anon3
+GW_UPLINK_CNT	olsr_cfg.h	/^  GW_UPLINK_CNT,$/;"	e	enum:smart_gw_uplinktype
+GW_UPLINK_IPV4	olsr_cfg.h	/^  GW_UPLINK_IPV4,$/;"	e	enum:smart_gw_uplinktype
+GW_UPLINK_IPV46	olsr_cfg.h	/^  GW_UPLINK_IPV46,$/;"	e	enum:smart_gw_uplinktype
+GW_UPLINK_IPV6	olsr_cfg.h	/^  GW_UPLINK_IPV6,$/;"	e	enum:smart_gw_uplinktype
+GW_UPLINK_NONE	olsr_cfg.h	/^  GW_UPLINK_NONE,$/;"	e	enum:smart_gw_uplinktype
+IF_MODE_CNT	olsr_cfg.h	/^  IF_MODE_CNT$/;"	e	enum:olsr_if_mode
+IF_MODE_ETHER	olsr_cfg.h	/^  IF_MODE_ETHER,$/;"	e	enum:olsr_if_mode
+IF_MODE_MESH	olsr_cfg.h	/^  IF_MODE_MESH,$/;"	e	enum:olsr_if_mode
+IPV6_ADDR_SITELOCAL	olsr_cfg.h	/^#define IPV6_ADDR_SITELOCAL /;"	d
+MAX_DEBUGLVL	olsr_cfg.h	/^#define MAX_DEBUGLVL /;"	d
+MAX_HYST_PARAM	olsr_cfg.h	/^#define MAX_HYST_PARAM /;"	d
+MAX_LQ_AGING	olsr_cfg.h	/^#define MAX_LQ_AGING /;"	d
+MAX_LQ_LEVEL	olsr_cfg.h	/^#define MAX_LQ_LEVEL /;"	d
+MAX_MPR_COVERAGE	olsr_cfg.h	/^#define MAX_MPR_COVERAGE /;"	d
+MAX_NICCHGPOLLRT	olsr_cfg.h	/^#define MAX_NICCHGPOLLRT /;"	d
+MAX_POLLRATE	olsr_cfg.h	/^#define MAX_POLLRATE /;"	d
+MAX_SMARTGW_SPEED	olsr_cfg.h	/^#define MAX_SMARTGW_SPEED /;"	d
+MAX_TC_REDUNDANCY	olsr_cfg.h	/^#define MAX_TC_REDUNDANCY /;"	d
+MAX_TOS	olsr_cfg.h	/^#define MAX_TOS /;"	d
+MAX_WILLINGNESS	olsr_cfg.h	/^#define MAX_WILLINGNESS /;"	d
+MIN_DEBUGLVL	olsr_cfg.h	/^#define MIN_DEBUGLVL /;"	d
+MIN_HYST_PARAM	olsr_cfg.h	/^#define MIN_HYST_PARAM /;"	d
+MIN_INTERVAL	olsr_cfg.h	/^#define MIN_INTERVAL /;"	d
+MIN_LQ_AGING	olsr_cfg.h	/^#define MIN_LQ_AGING /;"	d
+MIN_LQ_LEVEL	olsr_cfg.h	/^#define MIN_LQ_LEVEL /;"	d
+MIN_MPR_COVERAGE	olsr_cfg.h	/^#define MIN_MPR_COVERAGE /;"	d
+MIN_NICCHGPOLLRT	olsr_cfg.h	/^#define MIN_NICCHGPOLLRT /;"	d
+MIN_POLLRATE	olsr_cfg.h	/^#define MIN_POLLRATE /;"	d
+MIN_SMARTGW_SPEED	olsr_cfg.h	/^#define MIN_SMARTGW_SPEED /;"	d
+MIN_TC_REDUNDANCY	olsr_cfg.h	/^#define MIN_TC_REDUNDANCY /;"	d
+MIN_TOS	olsr_cfg.h	/^#define MIN_TOS /;"	d
+MIN_WILLINGNESS	olsr_cfg.h	/^#define MIN_WILLINGNESS /;"	d
+OLSR_COLLECT_STARTUP_SLEEP	olsr_cfg.h	/^#define OLSR_COLLECT_STARTUP_SLEEP /;"	d
+SYSLOG_NUMBERING	olsr_cfg.h	/^#define SYSLOG_NUMBERING /;"	d
+TESTLIB_PATH	olsr_cfg.h	/^#define TESTLIB_PATH /;"	d
+_OLSRD_CFGPARSER_H	olsr_cfg.h	/^#define _OLSRD_CFGPARSER_H$/;"	d
+addr	olsr_cfg.h	/^  union olsr_ip_addr addr;$/;"	m	struct:olsr_lq_mult	typeref:union:olsr_lq_mult::olsr_ip_addr
+allow_no_interfaces	olsr_cfg.h	/^  bool allow_no_interfaces;$/;"	m	struct:olsrd_config
+autodetect_chg	olsr_cfg.h	/^  bool autodetect_chg;$/;"	m	struct:if_config_options
+clear_screen	olsr_cfg.h	/^  bool clear_screen;$/;"	m	struct:olsrd_config
+cnf	olsr_cfg.h	/^  struct if_config_options *cnf, *cnfi;$/;"	m	struct:olsr_if	typeref:struct:olsr_if::if_config_options
+cnfi	olsr_cfg.h	/^  struct if_config_options *cnf, *cnfi;$/;"	m	struct:olsr_if	typeref:struct:olsr_if::
+configured	olsr_cfg.h	/^  bool configured;$/;"	m	struct:olsr_if
+debug_level	olsr_cfg.h	/^  int debug_level;$/;"	m	struct:olsrd_config
+del_gws	olsr_cfg.h	/^  bool del_gws;                        \/* Delete InternetGWs at startup *\/$/;"	m	struct:olsrd_config
+emission_interval	olsr_cfg.h	/^  float emission_interval;$/;"	m	struct:olsr_msg_params
+exit_value	olsr_cfg.h	/^  int exit_value;                      \/* Global return value for process termination *\/$/;"	m	struct:olsrd_config
+fib_metric	olsr_cfg.h	/^  olsr_fib_metric_options fib_metric;$/;"	m	struct:olsrd_config
+fixed	olsr_cfg.h	/^  bool fixed;$/;"	m	struct:olsr_if_weight
+has_ipv4_gateway	olsr_cfg.h	/^  bool has_ipv4_gateway, has_ipv6_gateway;$/;"	m	struct:olsrd_config
+has_ipv6_gateway	olsr_cfg.h	/^  bool has_ipv4_gateway, has_ipv6_gateway;$/;"	m	struct:olsrd_config
+hello_params	olsr_cfg.h	/^  struct olsr_msg_params hello_params;$/;"	m	struct:if_config_options	typeref:struct:if_config_options::olsr_msg_params
+hemu_ip	olsr_cfg.h	/^  union olsr_ip_addr hemu_ip;$/;"	m	struct:olsr_if	typeref:union:olsr_if::olsr_ip_addr
+hna_entries	olsr_cfg.h	/^  struct ip_prefix_list *hna_entries;$/;"	m	struct:olsrd_config	typeref:struct:olsrd_config::ip_prefix_list
+hna_params	olsr_cfg.h	/^  struct olsr_msg_params hna_params;$/;"	m	struct:if_config_options	typeref:struct:if_config_options::olsr_msg_params
+host_emul	olsr_cfg.h	/^  bool host_emul;$/;"	m	struct:olsr_if
+host_emul	olsr_cfg.h	/^  bool host_emul;$/;"	m	struct:olsrd_config
+hyst_param	olsr_cfg.h	/^struct hyst_param {$/;"	s
+hysteresis_param	olsr_cfg.h	/^  struct hyst_param hysteresis_param;$/;"	m	struct:olsrd_config	typeref:struct:olsrd_config::hyst_param
+if_config_options	olsr_cfg.h	/^struct if_config_options {$/;"	s
+interf	olsr_cfg.h	/^  struct interface *interf;$/;"	m	struct:olsr_if	typeref:struct:olsr_if::interface
+interface_defaults	olsr_cfg.h	/^  struct if_config_options *interface_defaults;$/;"	m	struct:olsrd_config	typeref:struct:olsrd_config::if_config_options
+interfaces	olsr_cfg.h	/^  struct olsr_if *interfaces;$/;"	m	struct:olsrd_config	typeref:struct:olsrd_config::olsr_if
+ioctl_s	olsr_cfg.h	/^  int ioctl_s;                         \/* Socket used for ioctl calls *\/$/;"	m	struct:olsrd_config
+ip_prefix_list	olsr_cfg.h	/^struct ip_prefix_list {$/;"	s
+ip_version	olsr_cfg.h	/^  int ip_version;$/;"	m	struct:olsrd_config
+ipc_connections	olsr_cfg.h	/^  int ipc_connections;$/;"	m	struct:olsrd_config
+ipc_nets	olsr_cfg.h	/^  struct ip_prefix_list *ipc_nets;$/;"	m	struct:olsrd_config	typeref:struct:olsrd_config::ip_prefix_list
+ipsize	olsr_cfg.h	/^  size_t ipsize;                       \/* Size of address *\/$/;"	m	struct:olsrd_config
+ipv4_multicast	olsr_cfg.h	/^  union olsr_ip_addr ipv4_multicast;$/;"	m	struct:if_config_options	typeref:union:if_config_options::olsr_ip_addr
+ipv4_src	olsr_cfg.h	/^  union olsr_ip_addr ipv4_src;$/;"	m	struct:if_config_options	typeref:union:if_config_options::olsr_ip_addr
+ipv6_multicast	olsr_cfg.h	/^  union olsr_ip_addr ipv6_multicast;$/;"	m	struct:if_config_options	typeref:union:if_config_options::olsr_ip_addr
+ipv6_src	olsr_cfg.h	/^  struct olsr_ip_prefix ipv6_src;$/;"	m	struct:if_config_options	typeref:struct:if_config_options::olsr_ip_prefix
+key	olsr_cfg.h	/^  char *key;$/;"	m	struct:plugin_param
+lock_file	olsr_cfg.h	/^  char *lock_file;$/;"	m	struct:olsrd_config
+lq_aging	olsr_cfg.h	/^  float lq_aging;$/;"	m	struct:olsrd_config
+lq_algorithm	olsr_cfg.h	/^  char *lq_algorithm;$/;"	m	struct:olsrd_config
+lq_fish	olsr_cfg.h	/^  uint8_t lq_fish;$/;"	m	struct:olsrd_config
+lq_level	olsr_cfg.h	/^  uint8_t lq_level;$/;"	m	struct:olsrd_config
+lq_mult	olsr_cfg.h	/^  struct olsr_lq_mult *lq_mult;$/;"	m	struct:if_config_options	typeref:struct:if_config_options::olsr_lq_mult
+lq_nat_thresh	olsr_cfg.h	/^  float lq_nat_thresh;$/;"	m	struct:olsrd_config
+main_addr	olsr_cfg.h	/^  union olsr_ip_addr main_addr, unicast_src_ip;$/;"	m	struct:olsrd_config	typeref:union:olsrd_config::olsr_ip_addr
+max_jitter	olsr_cfg.h	/^  float max_jitter;$/;"	m	struct:olsrd_config
+max_tc_vtime	olsr_cfg.h	/^  float max_tc_vtime;$/;"	m	struct:olsrd_config
+maxplen	olsr_cfg.h	/^  uint8_t maxplen;                     \/* maximum prefix len *\/$/;"	m	struct:olsrd_config
+mid_params	olsr_cfg.h	/^  struct olsr_msg_params mid_params;$/;"	m	struct:if_config_options	typeref:struct:if_config_options::olsr_msg_params
+min_tc_vtime	olsr_cfg.h	/^  float min_tc_vtime;$/;"	m	struct:olsrd_config
+mode	olsr_cfg.h	/^  int mode;$/;"	m	struct:if_config_options
+mpr_coverage	olsr_cfg.h	/^  uint8_t mpr_coverage;$/;"	m	struct:olsrd_config
+name	olsr_cfg.h	/^  char *name;$/;"	m	struct:olsr_if
+name	olsr_cfg.h	/^  char *name;$/;"	m	struct:plugin_entry
+net	olsr_cfg.h	/^  struct olsr_ip_prefix net;$/;"	m	struct:ip_prefix_list	typeref:struct:ip_prefix_list::olsr_ip_prefix
+next	olsr_cfg.h	/^  struct ip_prefix_list *next;$/;"	m	struct:ip_prefix_list	typeref:struct:ip_prefix_list::ip_prefix_list
+next	olsr_cfg.h	/^  struct olsr_if *next;$/;"	m	struct:olsr_if	typeref:struct:olsr_if::olsr_if
+next	olsr_cfg.h	/^  struct olsr_lq_mult *next;$/;"	m	struct:olsr_lq_mult	typeref:struct:olsr_lq_mult::olsr_lq_mult
+next	olsr_cfg.h	/^  struct plugin_entry *next;$/;"	m	struct:plugin_entry	typeref:struct:plugin_entry::plugin_entry
+next	olsr_cfg.h	/^  struct plugin_param *next;$/;"	m	struct:plugin_param	typeref:struct:plugin_param::plugin_param
+nic_chgs_pollrate	olsr_cfg.h	/^  float nic_chgs_pollrate;$/;"	m	struct:olsrd_config
+niit4to6_if_index	olsr_cfg.h	/^  int niit4to6_if_index, niit6to4_if_index;$/;"	m	struct:olsrd_config
+niit6to4_if_index	olsr_cfg.h	/^  int niit4to6_if_index, niit6to4_if_index;$/;"	m	struct:olsrd_config
+no_fork	olsr_cfg.h	/^  bool no_fork;$/;"	m	struct:olsrd_config
+olsr_fib_metric_options	olsr_cfg.h	/^} olsr_fib_metric_options;$/;"	t	typeref:enum:__anon3
+olsr_if	olsr_cfg.h	/^struct olsr_if {$/;"	s
+olsr_if_mode	olsr_cfg.h	/^enum olsr_if_mode {$/;"	g
+olsr_if_weight	olsr_cfg.h	/^struct olsr_if_weight {$/;"	s
+olsr_lq_mult	olsr_cfg.h	/^struct olsr_lq_mult {$/;"	s
+olsr_msg_params	olsr_cfg.h	/^struct olsr_msg_params {$/;"	s
+olsrd_config	olsr_cfg.h	/^struct olsrd_config {$/;"	s
+olsrport	olsr_cfg.h	/^  uint16_t olsrport;$/;"	m	struct:olsrd_config
+orig_lq_mult_cnt	olsr_cfg.h	/^  int orig_lq_mult_cnt;$/;"	m	struct:if_config_options
+params	olsr_cfg.h	/^  struct plugin_param *params;$/;"	m	struct:plugin_entry	typeref:struct:plugin_entry::plugin_param
+plugin_entry	olsr_cfg.h	/^struct plugin_entry {$/;"	s
+plugin_param	olsr_cfg.h	/^struct plugin_param {$/;"	s
+plugins	olsr_cfg.h	/^  struct plugin_entry *plugins;$/;"	m	struct:olsrd_config	typeref:struct:olsrd_config::plugin_entry
+pollrate	olsr_cfg.h	/^  float pollrate;$/;"	m	struct:olsrd_config
+rt_monitor_socket	olsr_cfg.h	/^  int rt_monitor_socket;$/;"	m	struct:olsrd_config
+rt_proto	olsr_cfg.h	/^  uint8_t rt_proto;$/;"	m	struct:olsrd_config
+rt_table	olsr_cfg.h	/^  uint8_t rt_table, rt_table_default, rt_table_tunnel;$/;"	m	struct:olsrd_config
+rt_table_default	olsr_cfg.h	/^  uint8_t rt_table, rt_table_default, rt_table_tunnel;$/;"	m	struct:olsrd_config
+rt_table_default_pri	olsr_cfg.h	/^  int32_t rt_table_defaultolsr_pri, rt_table_default_pri;$/;"	m	struct:olsrd_config
+rt_table_defaultolsr_pri	olsr_cfg.h	/^  int32_t rt_table_defaultolsr_pri, rt_table_default_pri;$/;"	m	struct:olsrd_config
+rt_table_pri	olsr_cfg.h	/^  int32_t rt_table_pri, rt_table_tunnel_pri;$/;"	m	struct:olsrd_config
+rt_table_tunnel	olsr_cfg.h	/^  uint8_t rt_table, rt_table_default, rt_table_tunnel;$/;"	m	struct:olsrd_config
+rt_table_tunnel_pri	olsr_cfg.h	/^  int32_t rt_table_pri, rt_table_tunnel_pri;$/;"	m	struct:olsrd_config
+rtnl_s	olsr_cfg.h	/^  int rtnl_s;                          \/* Socket used for rtnetlink messages *\/$/;"	m	struct:olsrd_config
+rts	olsr_cfg.h	/^  int rts;                             \/* Socket used for route changes on BSDs *\/$/;"	m	struct:olsrd_config
+scaling	olsr_cfg.h	/^  float scaling;$/;"	m	struct:hyst_param
+smart_gw_active	olsr_cfg.h	/^  bool smart_gw_active, smart_gw_allow_nat, smart_gw_uplink_nat;$/;"	m	struct:olsrd_config
+smart_gw_allow_nat	olsr_cfg.h	/^  bool smart_gw_active, smart_gw_allow_nat, smart_gw_uplink_nat;$/;"	m	struct:olsrd_config
+smart_gw_downlink	olsr_cfg.h	/^  uint32_t smart_gw_uplink, smart_gw_downlink;$/;"	m	struct:olsrd_config
+smart_gw_prefix	olsr_cfg.h	/^  struct olsr_ip_prefix smart_gw_prefix;$/;"	m	struct:olsrd_config	typeref:struct:olsrd_config::olsr_ip_prefix
+smart_gw_type	olsr_cfg.h	/^  enum smart_gw_uplinktype smart_gw_type;$/;"	m	struct:olsrd_config	typeref:enum:olsrd_config::smart_gw_uplinktype
+smart_gw_uplink	olsr_cfg.h	/^  uint32_t smart_gw_uplink, smart_gw_downlink;$/;"	m	struct:olsrd_config
+smart_gw_uplink_nat	olsr_cfg.h	/^  bool smart_gw_active, smart_gw_allow_nat, smart_gw_uplink_nat;$/;"	m	struct:olsrd_config
+smart_gw_uplinktype	olsr_cfg.h	/^enum smart_gw_uplinktype {$/;"	g
+tc_params	olsr_cfg.h	/^  struct olsr_msg_params tc_params;$/;"	m	struct:if_config_options	typeref:struct:if_config_options::olsr_msg_params
+tc_redundancy	olsr_cfg.h	/^  uint8_t tc_redundancy;$/;"	m	struct:olsrd_config
+thr_high	olsr_cfg.h	/^  float thr_high;$/;"	m	struct:hyst_param
+thr_low	olsr_cfg.h	/^  float thr_low;$/;"	m	struct:hyst_param
+tos	olsr_cfg.h	/^  uint16_t tos;$/;"	m	struct:olsrd_config
+unicast_src_ip	olsr_cfg.h	/^  union olsr_ip_addr main_addr, unicast_src_ip;$/;"	m	struct:olsrd_config	typeref:union:olsrd_config::
+use_hysteresis	olsr_cfg.h	/^  bool use_hysteresis;$/;"	m	struct:olsrd_config
+use_niit	olsr_cfg.h	/^  bool use_niit;$/;"	m	struct:olsrd_config
+use_src_ip_routes	olsr_cfg.h	/^  bool use_src_ip_routes;$/;"	m	struct:olsrd_config
+validity_time	olsr_cfg.h	/^  float validity_time;$/;"	m	struct:olsr_msg_params
+value	olsr_cfg.h	/^  char *value;$/;"	m	struct:plugin_param
+value	olsr_cfg.h	/^  int value;$/;"	m	struct:olsr_if_weight
+value	olsr_cfg.h	/^  uint32_t value;$/;"	m	struct:olsr_lq_mult
+weight	olsr_cfg.h	/^  struct olsr_if_weight weight;$/;"	m	struct:if_config_options	typeref:struct:if_config_options::olsr_if_weight
+will_int	olsr_cfg.h	/^  float will_int;$/;"	m	struct:olsrd_config
+willingness	olsr_cfg.h	/^  uint8_t willingness;$/;"	m	struct:olsrd_config
+willingness_auto	olsr_cfg.h	/^  bool willingness_auto;$/;"	m	struct:olsrd_config
+cookies	olsr_cookie.c	/^static struct olsr_cookie_info *cookies[COOKIE_ID_MAX] = { 0 };$/;"	v	typeref:struct:olsr_cookie_info	file:
+olsr_alloc_cookie	olsr_cookie.c	/^olsr_alloc_cookie(const char *cookie_name, olsr_cookie_type cookie_type)$/;"	f
+olsr_cookie_free	olsr_cookie.c	/^olsr_cookie_free(struct olsr_cookie_info *ci, void *ptr)$/;"	f
+olsr_cookie_malloc	olsr_cookie.c	/^olsr_cookie_malloc(struct olsr_cookie_info *ci)$/;"	f
+olsr_cookie_name	olsr_cookie.c	/^olsr_cookie_name(olsr_cookie_t cookie_id)$/;"	f
+olsr_cookie_set_memory_size	olsr_cookie.c	/^olsr_cookie_set_memory_size(struct olsr_cookie_info *ci, size_t size)$/;"	f
+olsr_cookie_usage_decr	olsr_cookie.c	/^olsr_cookie_usage_decr(olsr_cookie_t cookie_id)$/;"	f
+olsr_cookie_usage_incr	olsr_cookie.c	/^olsr_cookie_usage_incr(olsr_cookie_t cookie_id)$/;"	f
+olsr_cookie_valid	olsr_cookie.c	/^olsr_cookie_valid(olsr_cookie_t cookie_id)$/;"	f	file:
+olsr_delete_all_cookies	olsr_cookie.c	/^olsr_delete_all_cookies(void)$/;"	f
+olsr_free_cookie	olsr_cookie.c	/^olsr_free_cookie(struct olsr_cookie_info *ci)$/;"	f
+COOKIE_FREE_LIST_THRESHOLD	olsr_cookie.h	/^#define COOKIE_FREE_LIST_THRESHOLD /;"	d
+COOKIE_ID_MAX	olsr_cookie.h	/^#define COOKIE_ID_MAX /;"	d
+OLSR_COOKIE_TYPE_MAX	olsr_cookie.h	/^  OLSR_COOKIE_TYPE_MAX$/;"	e	enum:olsr_cookie_type_
+OLSR_COOKIE_TYPE_MEMORY	olsr_cookie.h	/^  OLSR_COOKIE_TYPE_MEMORY,$/;"	e	enum:olsr_cookie_type_
+OLSR_COOKIE_TYPE_MIN	olsr_cookie.h	/^  OLSR_COOKIE_TYPE_MIN,$/;"	e	enum:olsr_cookie_type_
+OLSR_COOKIE_TYPE_TIMER	olsr_cookie.h	/^  OLSR_COOKIE_TYPE_TIMER,$/;"	e	enum:olsr_cookie_type_
+_OLSR_COOKIE_H	olsr_cookie.h	/^#define _OLSR_COOKIE_H$/;"	d
+ci_changes	olsr_cookie.h	/^  unsigned int ci_changes;             \/* Stats, resource churn *\/$/;"	m	struct:olsr_cookie_info
+ci_free_list	olsr_cookie.h	/^  struct list_node ci_free_list;       \/* List head for recyclable blocks *\/$/;"	m	struct:olsr_cookie_info	typeref:struct:olsr_cookie_info::list_node
+ci_free_list_usage	olsr_cookie.h	/^  unsigned int ci_free_list_usage;     \/* Length of free list *\/$/;"	m	struct:olsr_cookie_info
+ci_id	olsr_cookie.h	/^  olsr_cookie_t ci_id;                 \/* ID *\/$/;"	m	struct:olsr_cookie_info
+ci_name	olsr_cookie.h	/^  char *ci_name;                       \/* Name *\/$/;"	m	struct:olsr_cookie_info
+ci_size	olsr_cookie.h	/^  size_t ci_size;                      \/* Fixed size for block allocations *\/$/;"	m	struct:olsr_cookie_info
+ci_type	olsr_cookie.h	/^  olsr_cookie_type ci_type;            \/* Type of cookie *\/$/;"	m	struct:olsr_cookie_info
+ci_usage	olsr_cookie.h	/^  unsigned int ci_usage;               \/* Stats, resource usage *\/$/;"	m	struct:olsr_cookie_info
+cmb_id	olsr_cookie.h	/^  olsr_cookie_t cmb_id;$/;"	m	struct:olsr_cookie_mem_brand
+cmb_sig	olsr_cookie.h	/^  char cmb_sig[6];$/;"	m	struct:olsr_cookie_mem_brand
+olsr_cookie_info	olsr_cookie.h	/^struct olsr_cookie_info {$/;"	s
+olsr_cookie_mem_brand	olsr_cookie.h	/^struct olsr_cookie_mem_brand {$/;"	s
+olsr_cookie_type	olsr_cookie.h	/^} olsr_cookie_type;$/;"	t	typeref:enum:olsr_cookie_type_
+olsr_cookie_type_	olsr_cookie.h	/^typedef enum olsr_cookie_type_ {$/;"	g
+handle_niit_ifchange	olsr_niit.c	/^static void handle_niit_ifchange (int if_index, struct interface *iface __attribute__ ((unused)),$/;"	f	file:
+niit4to6_active	olsr_niit.c	/^static bool niit4to6_active, niit6to4_active;$/;"	v	file:
+niit6to4_active	olsr_niit.c	/^static bool niit4to6_active, niit6to4_active;$/;"	v	file:
+olsr_cleanup_niit_routes	olsr_niit.c	/^void olsr_cleanup_niit_routes(void) {$/;"	f
+olsr_init_niit	olsr_niit.c	/^void olsr_init_niit(void) {$/;"	f
+olsr_niit_handle_route	olsr_niit.c	/^void olsr_niit_handle_route(const struct rt_entry *rt, bool set) {$/;"	f
+olsr_setup_niit_routes	olsr_niit.c	/^void olsr_setup_niit_routes(void) {$/;"	f
+refresh_niit4to6_routes	olsr_niit.c	/^static void refresh_niit4to6_routes(bool set) {$/;"	f	file:
+DEF_NIIT4TO6_IFNAME	olsr_niit.h	/^#define DEF_NIIT4TO6_IFNAME /;"	d
+DEF_NIIT6TO4_IFNAME	olsr_niit.h	/^#define DEF_NIIT6TO4_IFNAME /;"	d
+OLSR_NIIT_H_	olsr_niit.h	/^#define OLSR_NIIT_H_$/;"	d
+ASYM_LINK	olsr_protocol.h	/^#define ASYM_LINK /;"	d
+CREATE_LINK_CODE	olsr_protocol.h	/^#define CREATE_LINK_CODE(/;"	d
+DUP_HOLD_TIME	olsr_protocol.h	/^#define DUP_HOLD_TIME /;"	d
+EXTRACT_LINK	olsr_protocol.h	/^#define EXTRACT_LINK(/;"	d
+EXTRACT_STATUS	olsr_protocol.h	/^#define EXTRACT_STATUS(/;"	d
+HELLO_INTERVAL	olsr_protocol.h	/^#define HELLO_INTERVAL /;"	d
+HELLO_JITTER	olsr_protocol.h	/^#define HELLO_JITTER /;"	d
+HELLO_MESSAGE	olsr_protocol.h	/^#define HELLO_MESSAGE /;"	d
+HIDE_LINK	olsr_protocol.h	/^#define HIDE_LINK /;"	d
+HNA_HOLD_TIME	olsr_protocol.h	/^#define HNA_HOLD_TIME /;"	d
+HNA_INTERVAL	olsr_protocol.h	/^#define HNA_INTERVAL /;"	d
+HNA_JITTER	olsr_protocol.h	/^#define HNA_JITTER /;"	d
+HNA_MESSAGE	olsr_protocol.h	/^#define HNA_MESSAGE /;"	d
+HYST_SCALING	olsr_protocol.h	/^#define HYST_SCALING /;"	d
+HYST_THRESHOLD_HIGH	olsr_protocol.h	/^#define HYST_THRESHOLD_HIGH /;"	d
+HYST_THRESHOLD_LOW	olsr_protocol.h	/^#define HYST_THRESHOLD_LOW /;"	d
+LOST_LINK	olsr_protocol.h	/^#define LOST_LINK /;"	d
+MAXJITTER	olsr_protocol.h	/^#define MAXJITTER /;"	d
+MAXVALUE	olsr_protocol.h	/^#define MAXVALUE /;"	d
+MAX_LINK	olsr_protocol.h	/^#define MAX_LINK /;"	d
+MAX_MESSAGE	olsr_protocol.h	/^#define MAX_MESSAGE /;"	d
+MAX_NEIGH	olsr_protocol.h	/^#define MAX_NEIGH /;"	d
+MAX_TTL	olsr_protocol.h	/^#define MAX_TTL /;"	d
+MID_HOLD_TIME	olsr_protocol.h	/^#define MID_HOLD_TIME /;"	d
+MID_INTERVAL	olsr_protocol.h	/^#define MID_INTERVAL /;"	d
+MID_JITTER	olsr_protocol.h	/^#define MID_JITTER /;"	d
+MID_MESSAGE	olsr_protocol.h	/^#define MID_MESSAGE /;"	d
+MPR_COVERAGE	olsr_protocol.h	/^#define MPR_COVERAGE /;"	d
+MPR_NEIGH	olsr_protocol.h	/^#define MPR_NEIGH /;"	d
+NEIGHB_HOLD_TIME	olsr_protocol.h	/^#define NEIGHB_HOLD_TIME /;"	d
+NOT_NEIGH	olsr_protocol.h	/^#define NOT_NEIGH /;"	d
+NOT_SYM	olsr_protocol.h	/^#define NOT_SYM /;"	d
+OLSR_HEADERSIZE	olsr_protocol.h	/^#define OLSR_HEADERSIZE /;"	d
+OLSR_MSGHDRSZ_IPV4	olsr_protocol.h	/^#define OLSR_MSGHDRSZ_IPV4 /;"	d
+OLSR_MSGHDRSZ_IPV6	olsr_protocol.h	/^#define OLSR_MSGHDRSZ_IPV6 /;"	d
+REFRESH_INTERVAL	olsr_protocol.h	/^#define REFRESH_INTERVAL /;"	d
+SEQNO_GREATER_THAN	olsr_protocol.h	/^#define SEQNO_GREATER_THAN(/;"	d
+SYM	olsr_protocol.h	/^#define SYM /;"	d
+SYM_LINK	olsr_protocol.h	/^#define SYM_LINK /;"	d
+SYM_NEIGH	olsr_protocol.h	/^#define SYM_NEIGH /;"	d
+TC_INTERVAL	olsr_protocol.h	/^#define TC_INTERVAL /;"	d
+TC_JITTER	olsr_protocol.h	/^#define TC_JITTER /;"	d
+TC_MESSAGE	olsr_protocol.h	/^#define TC_MESSAGE /;"	d
+TC_REDUNDANCY	olsr_protocol.h	/^#define TC_REDUNDANCY /;"	d
+TOP_HOLD_TIME	olsr_protocol.h	/^#define TOP_HOLD_TIME /;"	d
+UNSPEC_LINK	olsr_protocol.h	/^#define UNSPEC_LINK /;"	d
+WILL_ALWAYS	olsr_protocol.h	/^#define WILL_ALWAYS /;"	d
+WILL_DEFAULT	olsr_protocol.h	/^#define WILL_DEFAULT /;"	d
+WILL_HIGH	olsr_protocol.h	/^#define WILL_HIGH /;"	d
+WILL_LOW	olsr_protocol.h	/^#define WILL_LOW /;"	d
+WILL_NEVER	olsr_protocol.h	/^#define WILL_NEVER /;"	d
+_PROTOCOLS_OLSR_H	olsr_protocol.h	/^#define	_PROTOCOLS_OLSR_H$/;"	d
+addr	olsr_protocol.h	/^  struct in6_addr addr;$/;"	m	struct:hnapair6	typeref:struct:hnapair6::in6_addr
+addr	olsr_protocol.h	/^  struct in6_addr addr;$/;"	m	struct:midaddr6	typeref:struct:midaddr6::in6_addr
+addr	olsr_protocol.h	/^  struct in6_addr addr;$/;"	m	struct:neigh_info6	typeref:struct:neigh_info6::in6_addr
+addr	olsr_protocol.h	/^  uint32_t addr;$/;"	m	struct:hnapair
+addr	olsr_protocol.h	/^  uint32_t addr;$/;"	m	struct:midaddr
+addr	olsr_protocol.h	/^  uint32_t addr;$/;"	m	struct:neigh_info
+ansn	olsr_protocol.h	/^  uint16_t ansn;$/;"	m	struct:olsr_tcmsg
+ansn	olsr_protocol.h	/^  uint16_t ansn;$/;"	m	struct:olsr_tcmsg6
+hell_info	olsr_protocol.h	/^  struct hellinfo hell_info[1];$/;"	m	struct:hellomsg	typeref:struct:hellomsg::hellinfo
+hell_info	olsr_protocol.h	/^  struct hellinfo6 hell_info[1];$/;"	m	struct:hellomsg6	typeref:struct:hellomsg6::hellinfo6
+hellinfo	olsr_protocol.h	/^struct hellinfo {$/;"	s
+hellinfo6	olsr_protocol.h	/^struct hellinfo6 {$/;"	s
+hello	olsr_protocol.h	/^    struct hellomsg hello;$/;"	m	union:olsrmsg::__anon1	typeref:struct:olsrmsg::__anon1::hellomsg
+hello	olsr_protocol.h	/^    struct hellomsg6 hello;$/;"	m	union:olsrmsg6::__anon2	typeref:struct:olsrmsg6::__anon2::hellomsg6
+hellomsg	olsr_protocol.h	/^struct hellomsg {$/;"	s
+hellomsg6	olsr_protocol.h	/^struct hellomsg6 {$/;"	s
+hna	olsr_protocol.h	/^    struct hnamsg hna;$/;"	m	union:olsrmsg::__anon1	typeref:struct:olsrmsg::__anon1::hnamsg
+hna	olsr_protocol.h	/^    struct hnamsg6 hna;$/;"	m	union:olsrmsg6::__anon2	typeref:struct:olsrmsg6::__anon2::hnamsg6
+hna_net	olsr_protocol.h	/^  struct hnapair hna_net[1];$/;"	m	struct:hnamsg	typeref:struct:hnamsg::hnapair
+hna_net	olsr_protocol.h	/^  struct hnapair6 hna_net[1];$/;"	m	struct:hnamsg6	typeref:struct:hnamsg6::hnapair6
+hnamsg	olsr_protocol.h	/^struct hnamsg {$/;"	s
+hnamsg6	olsr_protocol.h	/^struct hnamsg6 {$/;"	s
+hnapair	olsr_protocol.h	/^struct hnapair {$/;"	s
+hnapair6	olsr_protocol.h	/^struct hnapair6 {$/;"	s
+hopcnt	olsr_protocol.h	/^  uint8_t hopcnt;$/;"	m	struct:olsrmsg
+hopcnt	olsr_protocol.h	/^  uint8_t hopcnt;$/;"	m	struct:olsrmsg6
+htime	olsr_protocol.h	/^  uint8_t htime;$/;"	m	struct:hellomsg
+htime	olsr_protocol.h	/^  uint8_t htime;$/;"	m	struct:hellomsg6
+link_code	olsr_protocol.h	/^  uint8_t link_code;$/;"	m	struct:hellinfo
+link_code	olsr_protocol.h	/^  uint8_t link_code;$/;"	m	struct:hellinfo6
+message	olsr_protocol.h	/^  } message;$/;"	m	struct:olsrmsg	typeref:union:olsrmsg::__anon1
+message	olsr_protocol.h	/^  } message;$/;"	m	struct:olsrmsg6	typeref:union:olsrmsg6::__anon2
+mid	olsr_protocol.h	/^    struct midmsg mid;$/;"	m	union:olsrmsg::__anon1	typeref:struct:olsrmsg::__anon1::midmsg
+mid	olsr_protocol.h	/^    struct midmsg6 mid;$/;"	m	union:olsrmsg6::__anon2	typeref:struct:olsrmsg6::__anon2::midmsg6
+mid_addr	olsr_protocol.h	/^  struct midaddr mid_addr[1];$/;"	m	struct:midmsg	typeref:struct:midmsg::midaddr
+mid_addr	olsr_protocol.h	/^  struct midaddr6 mid_addr[1];$/;"	m	struct:midmsg6	typeref:struct:midmsg6::midaddr6
+midaddr	olsr_protocol.h	/^struct midaddr {$/;"	s
+midaddr6	olsr_protocol.h	/^struct midaddr6 {$/;"	s
+midmsg	olsr_protocol.h	/^struct midmsg {$/;"	s
+midmsg6	olsr_protocol.h	/^struct midmsg6 {$/;"	s
+neigh	olsr_protocol.h	/^  struct neigh_info neigh[1];$/;"	m	struct:olsr_tcmsg	typeref:struct:olsr_tcmsg::neigh_info
+neigh	olsr_protocol.h	/^  struct neigh_info6 neigh[1];$/;"	m	struct:olsr_tcmsg6	typeref:struct:olsr_tcmsg6::neigh_info6
+neigh_addr	olsr_protocol.h	/^  struct in6_addr neigh_addr[1];       \/* neighbor IP address(es) *\/$/;"	m	struct:hellinfo6	typeref:struct:hellinfo6::in6_addr
+neigh_addr	olsr_protocol.h	/^  uint32_t neigh_addr[1];              \/* neighbor IP address(es) *\/$/;"	m	struct:hellinfo
+neigh_info	olsr_protocol.h	/^struct neigh_info {$/;"	s
+neigh_info6	olsr_protocol.h	/^struct neigh_info6 {$/;"	s
+netmask	olsr_protocol.h	/^  struct in6_addr netmask;$/;"	m	struct:hnapair6	typeref:struct:hnapair6::in6_addr
+netmask	olsr_protocol.h	/^  uint32_t netmask;$/;"	m	struct:hnapair
+olsr	olsr_protocol.h	/^struct olsr {$/;"	s
+olsr6	olsr_protocol.h	/^struct olsr6 {$/;"	s
+olsr_message	olsr_protocol.h	/^union olsr_message {$/;"	u
+olsr_msg	olsr_protocol.h	/^  struct olsrmsg olsr_msg[1];          \/* variable messages *\/$/;"	m	struct:olsr	typeref:struct:olsr::olsrmsg
+olsr_msg	olsr_protocol.h	/^  struct olsrmsg6 olsr_msg[1];         \/* variable messages *\/$/;"	m	struct:olsr6	typeref:struct:olsr6::olsrmsg6
+olsr_msgsize	olsr_protocol.h	/^  uint16_t olsr_msgsize;$/;"	m	struct:olsrmsg
+olsr_msgsize	olsr_protocol.h	/^  uint16_t olsr_msgsize;$/;"	m	struct:olsrmsg6
+olsr_msgtype	olsr_protocol.h	/^  uint8_t olsr_msgtype;$/;"	m	struct:olsrmsg
+olsr_msgtype	olsr_protocol.h	/^  uint8_t olsr_msgtype;$/;"	m	struct:olsrmsg6
+olsr_packet	olsr_protocol.h	/^union olsr_packet {$/;"	u
+olsr_packlen	olsr_protocol.h	/^  uint16_t olsr_packlen;               \/* packet length *\/$/;"	m	struct:olsr
+olsr_packlen	olsr_protocol.h	/^  uint16_t olsr_packlen;               \/* packet length *\/$/;"	m	struct:olsr6
+olsr_seqno	olsr_protocol.h	/^  uint16_t olsr_seqno;$/;"	m	struct:olsr
+olsr_seqno	olsr_protocol.h	/^  uint16_t olsr_seqno;$/;"	m	struct:olsr6
+olsr_tcmsg	olsr_protocol.h	/^struct olsr_tcmsg {$/;"	s
+olsr_tcmsg6	olsr_protocol.h	/^struct olsr_tcmsg6 {$/;"	s
+olsr_vtime	olsr_protocol.h	/^  uint8_t olsr_vtime;$/;"	m	struct:olsrmsg
+olsr_vtime	olsr_protocol.h	/^  uint8_t olsr_vtime;$/;"	m	struct:olsrmsg6
+olsrmsg	olsr_protocol.h	/^struct olsrmsg {$/;"	s
+olsrmsg6	olsr_protocol.h	/^struct olsrmsg6 {$/;"	s
+originator	olsr_protocol.h	/^  struct in6_addr originator;$/;"	m	struct:olsrmsg6	typeref:struct:olsrmsg6::in6_addr
+originator	olsr_protocol.h	/^  uint32_t originator;$/;"	m	struct:olsrmsg
+reserved	olsr_protocol.h	/^  uint16_t reserved;$/;"	m	struct:hellomsg
+reserved	olsr_protocol.h	/^  uint16_t reserved;$/;"	m	struct:hellomsg6
+reserved	olsr_protocol.h	/^  uint16_t reserved;$/;"	m	struct:olsr_tcmsg
+reserved	olsr_protocol.h	/^  uint16_t reserved;$/;"	m	struct:olsr_tcmsg6
+reserved	olsr_protocol.h	/^  uint8_t reserved;$/;"	m	struct:hellinfo
+reserved	olsr_protocol.h	/^  uint8_t reserved;$/;"	m	struct:hellinfo6
+seqno	olsr_protocol.h	/^  uint16_t seqno;$/;"	m	struct:olsrmsg
+seqno	olsr_protocol.h	/^  uint16_t seqno;$/;"	m	struct:olsrmsg6
+size	olsr_protocol.h	/^  uint16_t size;$/;"	m	struct:hellinfo
+size	olsr_protocol.h	/^  uint16_t size;$/;"	m	struct:hellinfo6
+tc	olsr_protocol.h	/^    struct olsr_tcmsg tc;$/;"	m	union:olsrmsg::__anon1	typeref:struct:olsrmsg::__anon1::olsr_tcmsg
+tc	olsr_protocol.h	/^    struct olsr_tcmsg6 tc;$/;"	m	union:olsrmsg6::__anon2	typeref:struct:olsrmsg6::__anon2::olsr_tcmsg6
+ttl	olsr_protocol.h	/^  uint8_t ttl;$/;"	m	struct:olsrmsg
+ttl	olsr_protocol.h	/^  uint8_t ttl;$/;"	m	struct:olsrmsg6
+v4	olsr_protocol.h	/^  struct olsr v4;$/;"	m	union:olsr_packet	typeref:struct:olsr_packet::olsr
+v4	olsr_protocol.h	/^  struct olsrmsg v4;$/;"	m	union:olsr_message	typeref:struct:olsr_message::olsrmsg
+v6	olsr_protocol.h	/^  struct olsr6 v6;$/;"	m	union:olsr_packet	typeref:struct:olsr_packet::olsr6
+v6	olsr_protocol.h	/^  struct olsrmsg6 v6;$/;"	m	union:olsr_message	typeref:struct:olsr_message::olsrmsg6
+willingness	olsr_protocol.h	/^  uint8_t willingness;$/;"	m	struct:hellomsg
+willingness	olsr_protocol.h	/^  uint8_t willingness;$/;"	m	struct:hellomsg6
+avl_comp_etx	olsr_spf.c	/^avl_comp_etx(const void *etx1, const void *etx2)$/;"	f	file:
+olsr_calculate_routing_table	olsr_spf.c	/^olsr_calculate_routing_table(bool force)$/;"	f
+olsr_expire_spf_backoff	olsr_spf.c	/^olsr_expire_spf_backoff(void *context __attribute__ ((unused)))$/;"	f	file:
+olsr_spf_add_cand_tree	olsr_spf.c	/^olsr_spf_add_cand_tree(struct avl_tree *tree, struct tc_entry *tc)$/;"	f	file:
+olsr_spf_add_path_list	olsr_spf.c	/^olsr_spf_add_path_list(struct list_node *head, int *path_count, struct tc_entry *tc)$/;"	f	file:
+olsr_spf_del_cand_tree	olsr_spf.c	/^olsr_spf_del_cand_tree(struct avl_tree *tree, struct tc_entry *tc)$/;"	f	file:
+olsr_spf_extract_best	olsr_spf.c	/^olsr_spf_extract_best(struct avl_tree *tree)$/;"	f	file:
+olsr_spf_relax	olsr_spf.c	/^olsr_spf_relax(struct avl_tree *cand_tree, struct tc_entry *tc)$/;"	f	file:
+olsr_spf_run_full	olsr_spf.c	/^olsr_spf_run_full(struct avl_tree *cand_tree, struct list_node *path_list, int *path_count)$/;"	f	file:
+spf_backoff_timer	olsr_spf.c	/^struct timer_entry *spf_backoff_timer = NULL;$/;"	v	typeref:struct:timer_entry
+_OLSR_SPF_H	olsr_spf.h	/^#define _OLSR_SPF_H$/;"	d
+_OLSR_TYPES_H	olsr_types.h	/^#define	_OLSR_TYPES_H$/;"	d
+__bool_true_false_are_defined	olsr_types.h	/^#define __bool_true_false_are_defined /;"	d
+bool	olsr_types.h	/^#define bool /;"	d
+false	olsr_types.h	/^#define false /;"	d
+in	olsr_types.h	/^  struct sockaddr in;$/;"	m	union:olsr_sockaddr	typeref:struct:olsr_sockaddr::sockaddr
+in4	olsr_types.h	/^  struct sockaddr_in in4;$/;"	m	union:olsr_sockaddr	typeref:struct:olsr_sockaddr::sockaddr_in
+in6	olsr_types.h	/^  struct sockaddr_in6 in6;$/;"	m	union:olsr_sockaddr	typeref:struct:olsr_sockaddr::sockaddr_in6
+int16_t	olsr_types.h	/^typedef signed short int16_t;$/;"	t
+int32_t	olsr_types.h	/^typedef signed int int32_t;$/;"	t
+int8_t	olsr_types.h	/^typedef signed char int8_t;$/;"	t
+olsr_cookie_t	olsr_types.h	/^typedef uint16_t olsr_cookie_t;$/;"	t
+olsr_ip_addr	olsr_types.h	/^union olsr_ip_addr {$/;"	u
+olsr_ip_prefix	olsr_types.h	/^struct olsr_ip_prefix {$/;"	s
+olsr_linkcost	olsr_types.h	/^typedef uint32_t olsr_linkcost;$/;"	t
+olsr_sockaddr	olsr_types.h	/^union olsr_sockaddr {$/;"	u
+prefix	olsr_types.h	/^  union olsr_ip_addr prefix;$/;"	m	struct:olsr_ip_prefix	typeref:union:olsr_ip_prefix::olsr_ip_addr
+prefix_len	olsr_types.h	/^  uint8_t prefix_len;$/;"	m	struct:olsr_ip_prefix
+storage	olsr_types.h	/^  struct sockaddr_storage storage;$/;"	m	union:olsr_sockaddr	typeref:struct:olsr_sockaddr::sockaddr_storage
+true	olsr_types.h	/^#define true /;"	d
+uint16_t	olsr_types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	olsr_types.h	/^typedef unsigned int uint32_t;$/;"	t
+uint8_t	olsr_types.h	/^typedef unsigned char uint8_t;$/;"	t
+v4	olsr_types.h	/^  struct in_addr v4;$/;"	m	union:olsr_ip_addr	typeref:struct:olsr_ip_addr::in_addr
+v6	olsr_types.h	/^  struct in6_addr v6;$/;"	m	union:olsr_ip_addr	typeref:struct:olsr_ip_addr::in6_addr
+LAST_SUPPORTED_PLUGIN_INTERFACE_VERSION	olsrd_plugin.h	/^#define LAST_SUPPORTED_PLUGIN_INTERFACE_VERSION	/;"	d
+MOST_RECENT_PLUGIN_INTERFACE_VERSION	olsrd_plugin.h	/^#define MOST_RECENT_PLUGIN_INTERFACE_VERSION	/;"	d
+_OLSRD_PLUGIN	olsrd_plugin.h	/^#define _OLSRD_PLUGIN$/;"	d
+addon	olsrd_plugin.h	/^  set_plugin_parameter_addon addon;$/;"	m	struct:olsrd_plugin_parameters
+data	olsrd_plugin.h	/^  void *data;$/;"	m	struct:olsrd_plugin_parameters
+name	olsrd_plugin.h	/^  const char *name;$/;"	m	struct:olsrd_plugin_parameters
+olsrd_plugin_parameters	olsrd_plugin.h	/^struct olsrd_plugin_parameters {$/;"	s
+pc	olsrd_plugin.h	/^  char *pc;$/;"	m	union:__anon6
+set_plugin_parameter	olsrd_plugin.h	/^  set_plugin_parameter *set_plugin_parameter;$/;"	m	struct:olsrd_plugin_parameters
+set_plugin_parameter	olsrd_plugin.h	/^typedef int set_plugin_parameter(const char *value, void *data, set_plugin_parameter_addon addon);$/;"	t
+set_plugin_parameter_addon	olsrd_plugin.h	/^} set_plugin_parameter_addon;$/;"	t	typeref:union:__anon6
+ui	olsrd_plugin.h	/^  unsigned int ui;$/;"	m	union:__anon6
+olsr_build_hello_packet	packet.c	/^olsr_build_hello_packet(struct hello_message *message, struct interface *outif)$/;"	f
+olsr_build_tc_packet	packet.c	/^olsr_build_tc_packet(struct tc_message *message)$/;"	f
+olsr_free_hello_packet	packet.c	/^olsr_free_hello_packet(struct hello_message *message)$/;"	f
+olsr_free_mid_packet	packet.c	/^olsr_free_mid_packet(struct mid_message *message)$/;"	f
+olsr_free_tc_packet	packet.c	/^olsr_free_tc_packet(struct tc_message *message)$/;"	f
+sending_tc	packet.c	/^static bool sending_tc = false;$/;"	v	file:
+_OLSR_PACKET	packet.h	/^#define _OLSR_PACKET$/;"	d
+addr	packet.h	/^  union olsr_ip_addr addr;             \/* main address *\/$/;"	m	struct:mid_message	typeref:union:mid_message::olsr_ip_addr
+address	packet.h	/^  union olsr_ip_addr address;     \/*邻居的其他地址*\/$/;"	m	struct:hello_neighbor	typeref:union:hello_neighbor::olsr_ip_addr
+address	packet.h	/^  union olsr_ip_addr address;$/;"	m	struct:tc_mpr_addr	typeref:union:tc_mpr_addr::olsr_ip_addr
+alias_addr	packet.h	/^  union olsr_ip_addr alias_addr;$/;"	m	struct:mid_alias	typeref:union:mid_alias::olsr_ip_addr
+ansn	packet.h	/^  uint16_t ansn;      \/*本节点收到的最近一个TC分组的ANSN序列号。*\/$/;"	m	struct:tc_message
+cost	packet.h	/^  olsr_linkcost cost;             \/*代价*\/$/;"	m	struct:hello_neighbor
+hello_message	packet.h	/^struct hello_message {    \/*消息数据包*\/$/;"	s
+hello_neighbor	packet.h	/^struct hello_neighbor {     \/*HELLO消息的邻居结点集*\/$/;"	s
+hop_count	packet.h	/^  uint8_t hop_count;            $/;"	m	struct:tc_message
+hop_count	packet.h	/^  uint8_t hop_count;      \/*跳数*\/$/;"	m	struct:hello_message
+htime	packet.h	/^  olsr_reltime htime;$/;"	m	struct:hello_message
+link	packet.h	/^  uint8_t link;             \/*链接的类型*\/$/;"	m	struct:hello_neighbor
+linkquality	packet.h	/^  uint32_t linkquality[0];        \/*质量*\/$/;"	m	struct:hello_neighbor
+linkquality	packet.h	/^  uint32_t linkquality[0];$/;"	m	struct:tc_mpr_addr
+main_address	packet.h	/^  union olsr_ip_addr main_address;\/*邻居的主地址*\/$/;"	m	struct:hello_neighbor	typeref:union:hello_neighbor::olsr_ip_addr
+mid_addr	packet.h	/^  struct mid_alias *mid_addr;          \/* variable length *\/$/;"	m	struct:mid_message	typeref:struct:mid_message::mid_alias
+mid_alias	packet.h	/^struct mid_alias {$/;"	s
+mid_hopcnt	packet.h	/^  uint8_t mid_hopcnt;                  \/* number of hops to destination *\/$/;"	m	struct:mid_message
+mid_message	packet.h	/^struct mid_message {$/;"	s
+mid_origaddr	packet.h	/^  union olsr_ip_addr mid_origaddr;     \/* originator's address *\/$/;"	m	struct:mid_message	typeref:union:mid_message::olsr_ip_addr
+mid_seqno	packet.h	/^  uint16_t mid_seqno;                  \/* sequence number *\/$/;"	m	struct:mid_message
+mid_ttl	packet.h	/^  uint8_t mid_ttl;                     \/* ttl *\/$/;"	m	struct:mid_message
+multipoint_relay_selector_address	packet.h	/^  struct tc_mpr_addr *multipoint_relay_selector_address;$/;"	m	struct:tc_message	typeref:struct:tc_message::tc_mpr_addr
+neighbors	packet.h	/^  struct hello_neighbor *neighbors;\/*消息传递的下一节点*\/$/;"	m	struct:hello_message	typeref:struct:hello_message::hello_neighbor
+next	packet.h	/^  struct hello_neighbor *next;    \/*发送给的下一邻居结点*\/$/;"	m	struct:hello_neighbor	typeref:struct:hello_neighbor::hello_neighbor
+next	packet.h	/^  struct mid_alias *next;$/;"	m	struct:mid_alias	typeref:struct:mid_alias::mid_alias
+next	packet.h	/^  struct tc_mpr_addr *next;$/;"	m	struct:tc_mpr_addr	typeref:struct:tc_mpr_addr::tc_mpr_addr
+originator	packet.h	/^  union olsr_ip_addr originator;$/;"	m	struct:unknown_message	typeref:union:unknown_message::olsr_ip_addr
+originator	packet.h	/^  union olsr_ip_addr originator;\/*到达目的地址的倒数第二跳地址*\/$/;"	m	struct:tc_message	typeref:union:tc_message::olsr_ip_addr
+packet_seq_number	packet.h	/^  uint16_t packet_seq_number;    \/*序列号*\/$/;"	m	struct:hello_message
+packet_seq_number	packet.h	/^  uint16_t packet_seq_number;   \/*序列号*\/$/;"	m	struct:tc_message
+seqno	packet.h	/^  uint16_t seqno;$/;"	m	struct:unknown_message
+source_addr	packet.h	/^  union olsr_ip_addr source_addr;\/*源地址*\/$/;"	m	struct:hello_message	typeref:union:hello_message::olsr_ip_addr
+source_addr	packet.h	/^  union olsr_ip_addr source_addr;\/*源地址*\/$/;"	m	struct:tc_message	typeref:union:tc_message::olsr_ip_addr
+status	packet.h	/^  uint8_t status;           \/*记录邻居的状态*\/$/;"	m	struct:hello_neighbor
+tc_message	packet.h	/^struct tc_message {   \/*TC消息数据包格式*\/$/;"	s
+tc_mpr_addr	packet.h	/^struct tc_mpr_addr {    \/*广播邻居集，将本节点选为MPR节点的邻居节点*\/$/;"	s
+ttl	packet.h	/^  uint8_t ttl;            \/*time to live*\/$/;"	m	struct:hello_message
+ttl	packet.h	/^  uint8_t ttl;$/;"	m	struct:tc_message
+type	packet.h	/^  uint8_t type;$/;"	m	struct:unknown_message
+unknown_message	packet.h	/^struct unknown_message {$/;"	s
+vtime	packet.h	/^  olsr_reltime vtime;     $/;"	m	struct:hello_message
+vtime	packet.h	/^  olsr_reltime vtime; \/*有效时间*\/$/;"	m	struct:tc_message
+vtime	packet.h	/^  olsr_reltime vtime;$/;"	m	struct:mid_message
+willingness	packet.h	/^  uint8_t willingness;    \/*指定节点的意愿进行，有意愿的WILL_NEVER的节点被选为MPR的任意结点*\/$/;"	m	struct:hello_message
+EWOULDBLOCK	parser.c	/^#define EWOULDBLOCK /;"	d	file:
+EWOULDBLOCK	parser.c	/^#undef EWOULDBLOCK$/;"	d	file:
+cpu_overload_exit	parser.c	/^unsigned int cpu_overload_exit = 0;$/;"	v
+disp_pack_in	parser.c	/^static bool disp_pack_in = false;$/;"	v	file:
+errno	parser.c	/^#define errno /;"	d	file:
+errno	parser.c	/^#undef errno$/;"	d	file:
+inbuf	parser.c	/^static char *inbuf = (char *)inbuf_aligned;$/;"	v	file:
+inbuf_aligned	parser.c	/^static uint32_t inbuf_aligned[MAXMESSAGESIZE\/sizeof(uint32_t) + 1];$/;"	v	file:
+olsr_destroy_parser	parser.c	/^olsr_destroy_parser(void) {$/;"	f
+olsr_init_parser	parser.c	/^olsr_init_parser(void)$/;"	f
+olsr_input	parser.c	/^olsr_input(int fd, void *data __attribute__ ((unused)), unsigned int flags __attribute__ ((unused)))$/;"	f
+olsr_input_hostemu	parser.c	/^olsr_input_hostemu(int fd, void *data __attribute__ ((unused)), unsigned int flags __attribute__ ((unused)))$/;"	f
+olsr_packetparser_add_function	parser.c	/^olsr_packetparser_add_function(packetparser_function * function)$/;"	f
+olsr_packetparser_remove_function	parser.c	/^olsr_packetparser_remove_function(packetparser_function * function)$/;"	f
+olsr_parser_add_function	parser.c	/^olsr_parser_add_function(parse_function * function, uint32_t type)$/;"	f
+olsr_parser_remove_function	parser.c	/^olsr_parser_remove_function(parse_function * function, uint32_t type)$/;"	f
+olsr_preprocessor_add_function	parser.c	/^olsr_preprocessor_add_function(preprocessor_function * function)$/;"	f
+olsr_preprocessor_remove_function	parser.c	/^olsr_preprocessor_remove_function(preprocessor_function * function)$/;"	f
+packetparser_functions	parser.c	/^struct packetparser_function_entry *packetparser_functions;$/;"	v	typeref:struct:packetparser_function_entry
+parse_functions	parser.c	/^struct parse_function_entry *parse_functions;$/;"	v	typeref:struct:parse_function_entry
+parse_packet	parser.c	/^parse_packet(struct olsr *olsr, int size, struct interface *in_if, union olsr_ip_addr *from_addr)$/;"	f
+parser_set_disp_pack_in	parser.c	/^parser_set_disp_pack_in(bool val)$/;"	f
+preprocessor_functions	parser.c	/^struct preprocessor_function_entry *preprocessor_functions;$/;"	v	typeref:struct:preprocessor_function_entry
+strerror	parser.c	/^#define strerror(/;"	d	file:
+strerror	parser.c	/^#undef strerror$/;"	d	file:
+PROMISCUOUS	parser.h	/^#define PROMISCUOUS /;"	d
+_OLSR_MSG_PARSER	parser.h	/^#define _OLSR_MSG_PARSER$/;"	d
+function	parser.h	/^  packetparser_function *function;$/;"	m	struct:packetparser_function_entry
+function	parser.h	/^  parse_function *function;$/;"	m	struct:parse_function_entry
+function	parser.h	/^  preprocessor_function *function;$/;"	m	struct:preprocessor_function_entry
+next	parser.h	/^  struct packetparser_function_entry *next;$/;"	m	struct:packetparser_function_entry	typeref:struct:packetparser_function_entry::packetparser_function_entry
+next	parser.h	/^  struct parse_function_entry *next;$/;"	m	struct:parse_function_entry	typeref:struct:parse_function_entry::parse_function_entry
+next	parser.h	/^  struct preprocessor_function_entry *next;$/;"	m	struct:preprocessor_function_entry	typeref:struct:preprocessor_function_entry::preprocessor_function_entry
+packetparser_function	parser.h	/^typedef void packetparser_function(struct olsr *olsr, struct interface *in_if, union olsr_ip_addr *from_addr);$/;"	t
+packetparser_function_entry	parser.h	/^struct packetparser_function_entry {$/;"	s
+parse_function	parser.h	/^typedef bool parse_function(union olsr_message *, struct interface *, union olsr_ip_addr *);$/;"	t
+parse_function_entry	parser.h	/^struct parse_function_entry {$/;"	s
+preprocessor_function	parser.h	/^typedef char *preprocessor_function(char *packet, struct interface *, union olsr_ip_addr *, int *length);$/;"	t
+preprocessor_function_entry	parser.h	/^struct preprocessor_function_entry {$/;"	s
+type	parser.h	/^  uint32_t type;                       \/* If set to PROMISCUOUS all messages will be received *\/$/;"	m	struct:parse_function_entry
+init_olsr_plugin	plugin_loader.c	/^init_olsr_plugin(struct olsr_plugin *entry)$/;"	f	file:
+olsr_add_dl	plugin_loader.c	/^olsr_add_dl(struct olsr_plugin *plugin)$/;"	f	file:
+olsr_close_plugins	plugin_loader.c	/^olsr_close_plugins(void)$/;"	f
+olsr_load_dl	plugin_loader.c	/^olsr_load_dl(char *libname, struct plugin_param *params)$/;"	f	file:
+olsr_load_plugins	plugin_loader.c	/^olsr_load_plugins(void)$/;"	f
+olsr_plugins	plugin_loader.c	/^static struct olsr_plugin *olsr_plugins = NULL;$/;"	v	typeref:struct:olsr_plugin	file:
+try_old_versions	plugin_loader.c	/^#define try_old_versions(/;"	d	file:
+try_old_versions	plugin_loader.c	/^try_old_versions(const struct olsr_plugin *plugin)$/;"	f	file:
+_OLSR_PLUGIN_LOADER	plugin_loader.h	/^#define _OLSR_PLUGIN_LOADER$/;"	d
+dlhandle	plugin_loader.h	/^  void *dlhandle;$/;"	m	struct:olsr_plugin
+get_interface_version_func	plugin_loader.h	/^typedef int (*get_interface_version_func) (void);$/;"	t
+get_plugin_parameters_func	plugin_loader.h	/^typedef void (*get_plugin_parameters_func) (const struct olsrd_plugin_parameters ** params, unsigned int *size);$/;"	t
+next	plugin_loader.h	/^  struct olsr_plugin *next;$/;"	m	struct:olsr_plugin	typeref:struct:olsr_plugin::olsr_plugin
+olsr_plugin	plugin_loader.h	/^struct olsr_plugin {$/;"	s
+params	plugin_loader.h	/^  struct plugin_param *params;$/;"	m	struct:olsr_plugin	typeref:struct:olsr_plugin::plugin_param
+plugin_init	plugin_loader.h	/^  plugin_init_func plugin_init;$/;"	m	struct:olsr_plugin
+plugin_init_func	plugin_loader.h	/^typedef int (*plugin_init_func) (void);$/;"	t
+plugin_interface_version	plugin_loader.h	/^  int plugin_interface_version;$/;"	m	struct:olsr_plugin
+plugin_parameters	plugin_loader.h	/^  const struct olsrd_plugin_parameters *plugin_parameters;$/;"	m	struct:olsr_plugin	typeref:struct:olsr_plugin::olsrd_plugin_parameters
+plugin_parameters_size	plugin_loader.h	/^  unsigned int plugin_parameters_size;$/;"	m	struct:olsr_plugin
+register_param	plugin_loader.h	/^  register_param_func register_param;$/;"	m	struct:olsr_plugin
+register_param_func	plugin_loader.h	/^typedef int (*register_param_func) (char *, char *);$/;"	t
+set_plugin_boolean	plugin_util.c	/^set_plugin_boolean(const char *value, void *data, set_plugin_parameter_addon addon __attribute__ ((unused)))$/;"	f
+set_plugin_int	plugin_util.c	/^set_plugin_int(const char *value, void *data, set_plugin_parameter_addon addon __attribute__ ((unused)))$/;"	f
+set_plugin_ipaddress	plugin_util.c	/^set_plugin_ipaddress(const char *value, void *data, set_plugin_parameter_addon addon __attribute__ ((unused)))$/;"	f
+set_plugin_port	plugin_util.c	/^set_plugin_port(const char *value, void *data, set_plugin_parameter_addon addon __attribute__ ((unused)))$/;"	f
+set_plugin_string	plugin_util.c	/^set_plugin_string(const char *value, void *data, set_plugin_parameter_addon addon)$/;"	f
+_OLSRD_PLUGIN_UTIL	plugin_util.h	/^#define _OLSRD_PLUGIN_UTIL$/;"	d
+set_plugin_boolean	plugin_util.h	/^set_plugin_parameter set_plugin_boolean;$/;"	v
+set_plugin_int	plugin_util.h	/^set_plugin_parameter set_plugin_int;$/;"	v
+set_plugin_ipaddress	plugin_util.h	/^set_plugin_parameter set_plugin_ipaddress;$/;"	v
+set_plugin_port	plugin_util.h	/^set_plugin_parameter set_plugin_port;$/;"	v
+set_plugin_string	plugin_util.h	/^set_plugin_parameter set_plugin_string;$/;"	v
+print_hellomsg	print_packet.c	/^print_hellomsg(FILE * handle, uint8_t * data, int16_t totsize)$/;"	f	file:
+print_hellomsg_lq	print_packet.c	/^print_hellomsg_lq(FILE * handle, uint8_t * data, int16_t totsize)$/;"	f	file:
+print_hnamsg	print_packet.c	/^print_hnamsg(FILE * handle, uint8_t * data, int16_t totsize)$/;"	f	file:
+print_messagedump	print_packet.c	/^print_messagedump(FILE * handle, uint8_t * msg, int16_t size)$/;"	f	file:
+print_midmsg	print_packet.c	/^print_midmsg(FILE * handle, uint8_t * data, int16_t totsize)$/;"	f	file:
+print_olsr_serialized_message	print_packet.c	/^print_olsr_serialized_message(FILE * handle, union olsr_message * msg)$/;"	f
+print_olsr_serialized_packet	print_packet.c	/^print_olsr_serialized_packet(FILE * handle, union olsr_packet *pkt, uint16_t size, union olsr_ip_addr *from_addr)$/;"	f
+print_olsr_tcmsg	print_packet.c	/^print_olsr_tcmsg(FILE * handle, uint8_t * data, int16_t totsize)$/;"	f	file:
+print_olsr_tcmsg_lq	print_packet.c	/^print_olsr_tcmsg_lq(FILE * handle, uint8_t * data, int16_t totsize)$/;"	f	file:
+_PRINT_PACKET	print_packet.h	/^#define _PRINT_PACKET$/;"	d
+deserialize_hello	process_package.c	/^deserialize_hello(struct hello_message *hello, const void *ser)$/;"	f	file:
+linking_this_2_entries	process_package.c	/^linking_this_2_entries(struct neighbor_entry *neighbor, struct neighbor_2_entry *two_hop_neighbor, olsr_reltime vtime)$/;"	f	file:
+lookup_mpr_status	process_package.c	/^lookup_mpr_status(const struct hello_message *message, const struct interface *in_if)$/;"	f	file:
+olsr_hello_tap	process_package.c	/^olsr_hello_tap(struct hello_message *message, struct interface *in_if, const union olsr_ip_addr *from_addr)$/;"	f
+olsr_init_package_process	process_package.c	/^olsr_init_package_process(void)$/;"	f
+olsr_input_hello	process_package.c	/^olsr_input_hello(union olsr_message * ser, struct interface * inif, union olsr_ip_addr * from)$/;"	f
+process_message_neighbors	process_package.c	/^process_message_neighbors(struct neighbor_entry *neighbor, const struct hello_message *message)$/;"	f	file:
+_OLSR_PROCESS_PACKAGE	process_package.h	/^#define _OLSR_PROCESS_PACKAGE$/;"	d
+chg_kernel_list	process_routes.c	/^static struct list_node chg_kernel_list;$/;"	v	typeref:struct:list_node	file:
+del_kernel_list	process_routes.c	/^static struct list_node del_kernel_list;$/;"	v	typeref:struct:list_node	file:
+olsr_add_kernel_route	process_routes.c	/^olsr_add_kernel_route(struct rt_entry *rt)$/;"	f	file:
+olsr_addroute6_function	process_routes.c	/^export_route_function olsr_addroute6_function;$/;"	v
+olsr_addroute_function	process_routes.c	/^export_route_function olsr_addroute_function;$/;"	v
+olsr_chg_kernel_routes	process_routes.c	/^olsr_chg_kernel_routes(struct list_node *head_node)$/;"	f	file:
+olsr_del_kernel_routes	process_routes.c	/^olsr_del_kernel_routes(struct list_node *head_node)$/;"	f	file:
+olsr_delete_all_kernel_routes	process_routes.c	/^olsr_delete_all_kernel_routes(void)$/;"	f
+olsr_delete_interface_routes	process_routes.c	/^olsr_delete_interface_routes(int if_index) {$/;"	f
+olsr_delete_kernel_route	process_routes.c	/^olsr_delete_kernel_route(struct rt_entry *rt)$/;"	f	file:
+olsr_delete_outdated_routes	process_routes.c	/^olsr_delete_outdated_routes(struct rt_entry *rt)$/;"	f	file:
+olsr_delroute6_function	process_routes.c	/^export_route_function olsr_delroute6_function;$/;"	v
+olsr_delroute_function	process_routes.c	/^export_route_function olsr_delroute_function;$/;"	v
+olsr_enqueue_rt	process_routes.c	/^olsr_enqueue_rt(struct list_node *head_node, struct rt_entry *rt)$/;"	f	file:
+olsr_force_kernelroutes_refresh	process_routes.c	/^olsr_force_kernelroutes_refresh(void) {$/;"	f
+olsr_init_export_route	process_routes.c	/^olsr_init_export_route(void)$/;"	f
+olsr_rt_flags	process_routes.c	/^olsr_rt_flags(const struct rt_entry *rt)$/;"	f
+olsr_update_kernel_routes	process_routes.c	/^olsr_update_kernel_routes(void)$/;"	f
+olsr_update_rib_routes	process_routes.c	/^olsr_update_rib_routes(void)$/;"	f
+strerror	process_routes.c	/^#define strerror(/;"	d	file:
+strerror	process_routes.c	/^#undef strerror$/;"	d	file:
+_OLSR_PROCESS_RT	process_routes.h	/^#define _OLSR_PROCESS_RT$/;"	d
+export_route_function	process_routes.h	/^typedef int (*export_route_function) (const struct rt_entry *);$/;"	t
+mid_chgestruct	rebuild_packet.c	/^mid_chgestruct(struct mid_message *mmsg, const union olsr_message *m)$/;"	f
+_OLSR_REBUILD	rebuild_packet.h	/^#define _OLSR_REBUILD$/;"	d
+avl_comp_ipv4_prefix	routing_table.c	/^avl_comp_ipv4_prefix(const void *prefix1, const void *prefix2)$/;"	f
+avl_comp_ipv6_prefix	routing_table.c	/^avl_comp_ipv6_prefix(const void *prefix1, const void *prefix2)$/;"	f
+current_inetgw	routing_table.c	/^static struct rt_path *current_inetgw = NULL;$/;"	v	typeref:struct:rt_path	file:
+olsr_alloc_rt_entry	routing_table.c	/^olsr_alloc_rt_entry(struct olsr_ip_prefix *prefix)$/;"	f	file:
+olsr_alloc_rt_path	routing_table.c	/^olsr_alloc_rt_path(struct tc_entry *tc, struct olsr_ip_prefix *prefix, uint8_t origin)$/;"	f	file:
+olsr_bump_routingtree_version	routing_table.c	/^olsr_bump_routingtree_version(void)$/;"	f
+olsr_cmp_rt	routing_table.c	/^olsr_cmp_rt(const struct rt_entry * rt1, const struct rt_entry * rt2)$/;"	f
+olsr_cmp_rtp	routing_table.c	/^olsr_cmp_rtp(const struct rt_path *rtp1, const struct rt_path *rtp2, const struct rt_path *inetgw)$/;"	f	file:
+olsr_delete_routing_table	routing_table.c	/^olsr_delete_routing_table(union olsr_ip_addr *dst, int plen, union olsr_ip_addr *originator)$/;"	f
+olsr_delete_rt_path	routing_table.c	/^olsr_delete_rt_path(struct rt_path *rtp)$/;"	f
+olsr_fib_metric	routing_table.c	/^olsr_fib_metric(const struct rt_metric * met)$/;"	f
+olsr_get_nh	routing_table.c	/^olsr_get_nh(const struct rt_entry *rt)$/;"	f
+olsr_hopcount_change	routing_table.c	/^olsr_hopcount_change(const struct rt_metric * met1, const struct rt_metric * met2)$/;"	f
+olsr_init_routing_table	routing_table.c	/^olsr_init_routing_table(void)$/;"	f
+olsr_insert_routing_table	routing_table.c	/^olsr_insert_routing_table(union olsr_ip_addr *dst, int plen, union olsr_ip_addr *originator, int origin)$/;"	f
+olsr_insert_rt_path	routing_table.c	/^olsr_insert_rt_path(struct rt_path *rtp, struct tc_entry *tc, struct link_entry *link)$/;"	f
+olsr_lookup_routing_table	routing_table.c	/^olsr_lookup_routing_table(const union olsr_ip_addr *dst)$/;"	f
+olsr_nh_change	routing_table.c	/^olsr_nh_change(const struct rt_nexthop *nh1, const struct rt_nexthop *nh2)$/;"	f
+olsr_print_routing_table	routing_table.c	/^olsr_print_routing_table(struct avl_tree *tree)$/;"	f
+olsr_rt_best	routing_table.c	/^olsr_rt_best(struct rt_entry *rt)$/;"	f
+olsr_rt_to_string	routing_table.c	/^olsr_rt_to_string(const struct rt_entry *rt)$/;"	f
+olsr_rtp_to_string	routing_table.c	/^olsr_rtp_to_string(const struct rt_path *rtp)$/;"	f
+olsr_update_rt_path	routing_table.c	/^olsr_update_rt_path(struct rt_path *rtp, struct tc_entry *tc, struct link_entry *link)$/;"	f
+routingtree	routing_table.c	/^struct avl_tree routingtree;$/;"	v	typeref:struct:avl_tree
+routingtree_version	routing_table.c	/^unsigned int routingtree_version;$/;"	v
+rt_mem_cookie	routing_table.c	/^struct olsr_cookie_info *rt_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+rtp_mem_cookie	routing_table.c	/^struct olsr_cookie_info *rtp_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+NETMASK_DEFAULT	routing_table.h	/^#define NETMASK_DEFAULT /;"	d
+NETMASK_HOST	routing_table.h	/^#define NETMASK_HOST /;"	d
+OLSR_FOR_ALL_HNA_RT_ENTRIES	routing_table.h	/^#define OLSR_FOR_ALL_HNA_RT_ENTRIES(/;"	d
+OLSR_FOR_ALL_HNA_RT_ENTRIES_END	routing_table.h	/^#define OLSR_FOR_ALL_HNA_RT_ENTRIES_END(/;"	d
+OLSR_FOR_ALL_RT_ENTRIES	routing_table.h	/^#define OLSR_FOR_ALL_RT_ENTRIES(/;"	d
+OLSR_FOR_ALL_RT_ENTRIES_END	routing_table.h	/^#define OLSR_FOR_ALL_RT_ENTRIES_END(/;"	d
+OLSR_RT_ORIGIN_HNA	routing_table.h	/^  OLSR_RT_ORIGIN_HNA,$/;"	e	enum:olsr_rt_origin
+OLSR_RT_ORIGIN_INT	routing_table.h	/^  OLSR_RT_ORIGIN_INT,$/;"	e	enum:olsr_rt_origin
+OLSR_RT_ORIGIN_MAX	routing_table.h	/^  OLSR_RT_ORIGIN_MAX$/;"	e	enum:olsr_rt_origin
+OLSR_RT_ORIGIN_MID	routing_table.h	/^  OLSR_RT_ORIGIN_MID,$/;"	e	enum:olsr_rt_origin
+OLSR_RT_ORIGIN_MIN	routing_table.h	/^  OLSR_RT_ORIGIN_MIN,$/;"	e	enum:olsr_rt_origin
+RT_METRIC_DEFAULT	routing_table.h	/^#define RT_METRIC_DEFAULT /;"	d
+_OLSR_ROUTING_TABLE	routing_table.h	/^#define _OLSR_ROUTING_TABLE$/;"	d
+cost	routing_table.h	/^  olsr_linkcost cost;$/;"	m	struct:rt_metric
+gateway	routing_table.h	/^  union olsr_ip_addr gateway;          \/* gateway router *\/$/;"	m	struct:rt_nexthop	typeref:union:rt_nexthop::olsr_ip_addr
+hops	routing_table.h	/^  uint32_t hops;$/;"	m	struct:rt_metric
+iif_index	routing_table.h	/^  int iif_index;                       \/* outgoing interface index *\/$/;"	m	struct:rt_nexthop
+metric	routing_table.h	/^    uint32_t metric;$/;"	m	struct:olsr_kernel_route::__anon4
+olsr_kernel_route	routing_table.h	/^union olsr_kernel_route {$/;"	u
+olsr_rt_origin	routing_table.h	/^enum olsr_rt_origin {$/;"	g
+rt_best	routing_table.h	/^  struct rt_path *rt_best;             \/* shortcut to the best path *\/$/;"	m	struct:rt_entry	typeref:struct:rt_entry::rt_path
+rt_change_node	routing_table.h	/^  struct list_node rt_change_node;     \/* queue for kernel FIB add\/chg\/del *\/$/;"	m	struct:rt_entry	typeref:struct:rt_entry::list_node
+rt_dst	routing_table.h	/^    struct sockaddr rt_dst;$/;"	m	struct:olsr_kernel_route::__anon4	typeref:struct:olsr_kernel_route::__anon4::sockaddr
+rt_dst	routing_table.h	/^  struct olsr_ip_prefix rt_dst;$/;"	m	struct:rt_entry	typeref:struct:rt_entry::olsr_ip_prefix
+rt_entry	routing_table.h	/^struct rt_entry {$/;"	s
+rt_gateway	routing_table.h	/^    struct sockaddr rt_gateway;$/;"	m	struct:olsr_kernel_route::__anon4	typeref:struct:olsr_kernel_route::__anon4::sockaddr
+rt_metric	routing_table.h	/^  struct rt_metric rt_metric;          \/* metric of FIB route *\/$/;"	m	struct:rt_entry	typeref:struct:rt_entry::rt_metric
+rt_metric	routing_table.h	/^struct rt_metric {$/;"	s
+rt_nexthop	routing_table.h	/^  struct rt_nexthop rt_nexthop;        \/* nexthop of FIB route *\/$/;"	m	struct:rt_entry	typeref:struct:rt_entry::rt_nexthop
+rt_nexthop	routing_table.h	/^struct rt_nexthop {$/;"	s
+rt_path	routing_table.h	/^struct rt_path {$/;"	s
+rt_path_tree	routing_table.h	/^  struct avl_tree rt_path_tree;$/;"	m	struct:rt_entry	typeref:struct:rt_entry::avl_tree
+rt_tree_node	routing_table.h	/^  struct avl_node rt_tree_node;$/;"	m	struct:rt_entry	typeref:struct:rt_entry::avl_node
+rtmsg_dst	routing_table.h	/^    struct in6_addr rtmsg_dst;$/;"	m	struct:olsr_kernel_route::__anon5	typeref:struct:olsr_kernel_route::__anon5::in6_addr
+rtmsg_gateway	routing_table.h	/^    struct in6_addr rtmsg_gateway;$/;"	m	struct:olsr_kernel_route::__anon5	typeref:struct:olsr_kernel_route::__anon5::in6_addr
+rtmsg_metric	routing_table.h	/^    uint32_t rtmsg_metric;$/;"	m	struct:olsr_kernel_route::__anon5
+rtp_dst	routing_table.h	/^  struct olsr_ip_prefix rtp_dst;       \/* the prefix *\/$/;"	m	struct:rt_path	typeref:struct:rt_path::olsr_ip_prefix
+rtp_metric	routing_table.h	/^  struct rt_metric rtp_metric;$/;"	m	struct:rt_path	typeref:struct:rt_path::rt_metric
+rtp_nexthop	routing_table.h	/^  struct rt_nexthop rtp_nexthop;$/;"	m	struct:rt_path	typeref:struct:rt_path::rt_nexthop
+rtp_origin	routing_table.h	/^  uint8_t rtp_origin;                  \/* internal, MID or HNA *\/$/;"	m	struct:rt_path
+rtp_originator	routing_table.h	/^  union olsr_ip_addr rtp_originator;   \/* originator of the route *\/$/;"	m	struct:rt_path	typeref:union:rt_path::olsr_ip_addr
+rtp_prefix_tree_node	routing_table.h	/^  struct avl_node rtp_prefix_tree_node; \/* tc entry rtp node *\/$/;"	m	struct:rt_path	typeref:struct:rt_path::avl_node
+rtp_rt	routing_table.h	/^  struct rt_entry *rtp_rt;             \/* backpointer to owning route head *\/$/;"	m	struct:rt_path	typeref:struct:rt_path::rt_entry
+rtp_tc	routing_table.h	/^  struct tc_entry *rtp_tc;             \/* backpointer to owning tc entry *\/$/;"	m	struct:rt_path	typeref:struct:rt_path::tc_entry
+rtp_tree_node	routing_table.h	/^  struct avl_node rtp_tree_node;       \/* global rtp node *\/$/;"	m	struct:rt_path	typeref:struct:rt_path::avl_node
+rtp_version	routing_table.h	/^  uint32_t rtp_version;                \/* for detection of outdated rt_paths *\/$/;"	m	struct:rt_path
+v4	routing_table.h	/^  } v4;$/;"	m	union:olsr_kernel_route	typeref:struct:olsr_kernel_route::__anon4
+v6	routing_table.h	/^  } v6;$/;"	m	union:olsr_kernel_route	typeref:struct:olsr_kernel_route::__anon5
+OLSR_TIMEZONE_UNINITIALIZED	scheduler.c	/^#define OLSR_TIMEZONE_UNINITIALIZED /;"	d	file:
+add_olsr_socket	scheduler.c	/^add_olsr_socket(int fd, socket_handler_func pf_pr, socket_handler_func pf_imm, void *data, unsigned int flags)$/;"	f
+calc_jitter	scheduler.c	/^calc_jitter(unsigned int rel_time, uint8_t jitter_pct, unsigned int random_val)$/;"	f	file:
+close	scheduler.c	/^#define close(/;"	d	file:
+disable_olsr_socket	scheduler.c	/^disable_olsr_socket(int fd, socket_handler_func pf_pr, socket_handler_func pf_imm, unsigned int flags)$/;"	f
+enable_olsr_socket	scheduler.c	/^enable_olsr_socket(int fd, socket_handler_func pf_pr, socket_handler_func pf_imm, unsigned int flags)$/;"	f
+first_tv	scheduler.c	/^struct timeval first_tv;               \/* timevalue during startup *\/$/;"	v	typeref:struct:timeval
+handle_fds	scheduler.c	/^handle_fds(uint32_t next_interval)$/;"	f	file:
+last_tv	scheduler.c	/^struct timeval last_tv;                \/* timevalue used for last olsr_times() calculation *\/$/;"	v	typeref:struct:timeval
+now_times	scheduler.c	/^uint32_t now_times;                    \/* relative time compared to startup (in milliseconds *\/$/;"	v
+olsr_change_timer	scheduler.c	/^olsr_change_timer(struct timer_entry *timer, unsigned int rel_time, uint8_t jitter_pct, bool periodical)$/;"	f
+olsr_clock_string	scheduler.c	/^olsr_clock_string(uint32_t clk)$/;"	f
+olsr_flush_sockets	scheduler.c	/^olsr_flush_sockets(void)$/;"	f
+olsr_flush_timers	scheduler.c	/^olsr_flush_timers(void)$/;"	f
+olsr_getTimeDue	scheduler.c	/^olsr_getTimeDue(uint32_t s)$/;"	f
+olsr_getTimestamp	scheduler.c	/^olsr_getTimestamp(uint32_t s)$/;"	f
+olsr_get_timezone	scheduler.c	/^olsr_get_timezone(void)$/;"	f	file:
+olsr_init_timers	scheduler.c	/^olsr_init_timers(void)$/;"	f
+olsr_isTimedOut	scheduler.c	/^olsr_isTimedOut(uint32_t s)$/;"	f
+olsr_scheduler	scheduler.c	/^olsr_scheduler(void)$/;"	f
+olsr_set_timer	scheduler.c	/^olsr_set_timer(struct timer_entry **timer_ptr,$/;"	f
+olsr_start_timer	scheduler.c	/^olsr_start_timer(unsigned int rel_time,$/;"	f
+olsr_stop_timer	scheduler.c	/^olsr_stop_timer(struct timer_entry *timer)$/;"	f
+olsr_times	scheduler.c	/^olsr_times(void)$/;"	f	file:
+olsr_wallclock_string	scheduler.c	/^olsr_wallclock_string(void)$/;"	f
+poll_sockets	scheduler.c	/^poll_sockets(void)$/;"	f	file:
+remove_olsr_socket	scheduler.c	/^remove_olsr_socket(int fd, socket_handler_func pf_pr, socket_handler_func pf_imm)$/;"	f
+socket_head	scheduler.c	/^static struct list_node socket_head = { &socket_head, &socket_head };$/;"	v	typeref:struct:list_node	file:
+timer_last_run	scheduler.c	/^static uint32_t timer_last_run;        \/* remember the last timeslot walk *\/$/;"	v	file:
+timer_mem_cookie	scheduler.c	/^static struct olsr_cookie_info *timer_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info	file:
+timer_wheel	scheduler.c	/^static struct list_node timer_wheel[TIMER_WHEEL_SLOTS];$/;"	v	typeref:struct:list_node	file:
+walk_timers	scheduler.c	/^walk_timers(uint32_t * last_run)$/;"	f	file:
+GET_TIMESTAMP	scheduler.h	/^#define GET_TIMESTAMP(/;"	d
+MSEC_PER_SEC	scheduler.h	/^#define MSEC_PER_SEC /;"	d
+NSEC_PER_USEC	scheduler.h	/^#define NSEC_PER_USEC /;"	d
+OLSR_FOR_ALL_SOCKETS	scheduler.h	/^#define OLSR_FOR_ALL_SOCKETS(/;"	d
+OLSR_FOR_ALL_SOCKETS_END	scheduler.h	/^#define OLSR_FOR_ALL_SOCKETS_END(/;"	d
+OLSR_TIMER_ONESHOT	scheduler.h	/^#define OLSR_TIMER_ONESHOT /;"	d
+OLSR_TIMER_PERIODIC	scheduler.h	/^#define OLSR_TIMER_PERIODIC /;"	d
+OLSR_TIMER_RUNNING	scheduler.h	/^#define OLSR_TIMER_RUNNING /;"	d
+SP_IMM_READ	scheduler.h	/^#define SP_IMM_READ	/;"	d
+SP_IMM_WRITE	scheduler.h	/^#define SP_IMM_WRITE	/;"	d
+SP_PR_READ	scheduler.h	/^#define SP_PR_READ	/;"	d
+SP_PR_WRITE	scheduler.h	/^#define SP_PR_WRITE	/;"	d
+TIMED_OUT	scheduler.h	/^#define TIMED_OUT(/;"	d
+TIMER_WHEEL_MASK	scheduler.h	/^#define TIMER_WHEEL_MASK /;"	d
+TIMER_WHEEL_SLOTS	scheduler.h	/^#define TIMER_WHEEL_SLOTS /;"	d
+TIME_DUE	scheduler.h	/^#define TIME_DUE(/;"	d
+USEC_PER_MSEC	scheduler.h	/^#define USEC_PER_MSEC /;"	d
+USEC_PER_SEC	scheduler.h	/^#define USEC_PER_SEC /;"	d
+_OLSR_SCHEDULER	scheduler.h	/^#define _OLSR_SCHEDULER$/;"	d
+data	scheduler.h	/^  void *data;$/;"	m	struct:olsr_socket_entry
+fd	scheduler.h	/^  int fd;$/;"	m	struct:olsr_socket_entry
+flags	scheduler.h	/^  unsigned int flags;$/;"	m	struct:olsr_socket_entry
+olsr_socket_entry	scheduler.h	/^struct olsr_socket_entry {$/;"	s
+process_immediate	scheduler.h	/^  socket_handler_func process_immediate;$/;"	m	struct:olsr_socket_entry
+process_pollrate	scheduler.h	/^  socket_handler_func process_pollrate;$/;"	m	struct:olsr_socket_entry
+socket_handler_func	scheduler.h	/^typedef void (*socket_handler_func) (int fd, void *data, unsigned int flags);$/;"	t
+socket_node	scheduler.h	/^  struct list_node socket_node;$/;"	m	struct:olsr_socket_entry	typeref:struct:olsr_socket_entry::list_node
+timer_cb	scheduler.h	/^  timer_cb_func timer_cb;              \/* callback function *\/$/;"	m	struct:timer_entry
+timer_cb_context	scheduler.h	/^  void *timer_cb_context;              \/* context pointer *\/$/;"	m	struct:timer_entry
+timer_cb_func	scheduler.h	/^typedef void (*timer_cb_func) (void *); \/* callback function *\/$/;"	t
+timer_clock	scheduler.h	/^  uint32_t timer_clock;                \/* when timer shall fire (absolute time) *\/$/;"	m	struct:timer_entry
+timer_cookie	scheduler.h	/^  struct olsr_cookie_info *timer_cookie;       \/* used for diag stuff *\/$/;"	m	struct:timer_entry	typeref:struct:timer_entry::olsr_cookie_info
+timer_entry	scheduler.h	/^struct timer_entry {$/;"	s
+timer_flags	scheduler.h	/^  uint8_t timer_flags;                 \/* misc flags *\/$/;"	m	struct:timer_entry
+timer_jitter_pct	scheduler.h	/^  uint8_t timer_jitter_pct;            \/* the jitter expressed in percent *\/$/;"	m	struct:timer_entry
+timer_list	scheduler.h	/^  struct list_node timer_list;         \/* Wheel membership *\/$/;"	m	struct:timer_entry	typeref:struct:timer_entry::list_node
+timer_period	scheduler.h	/^  unsigned int timer_period;           \/* set for periodical timers (relative time) *\/$/;"	m	struct:timer_entry
+timer_random	scheduler.h	/^  unsigned int timer_random;           \/* cache random() result for performance reasons *\/$/;"	m	struct:timer_entry
+TC_ANSN_WINDOW	tc_set.c	/^#define TC_ANSN_WINDOW /;"	d	file:
+TC_ANSN_WINDOW_MULT	tc_set.c	/^#define TC_ANSN_WINDOW_MULT /;"	d	file:
+TC_SEQNO_WINDOW	tc_set.c	/^#define TC_SEQNO_WINDOW /;"	d	file:
+TC_SEQNO_WINDOW_MULT	tc_set.c	/^#define TC_SEQNO_WINDOW_MULT /;"	d	file:
+olsr_add_tc_edge_entry	tc_set.c	/^olsr_add_tc_edge_entry(struct tc_entry *tc, union olsr_ip_addr *addr, uint16_t ansn)$/;"	f
+olsr_add_tc_entry	tc_set.c	/^olsr_add_tc_entry(union olsr_ip_addr *adr)$/;"	f	file:
+olsr_calc_tc_edge_entry_etx	tc_set.c	/^olsr_calc_tc_edge_entry_etx(struct tc_edge_entry *tc_edge)$/;"	f
+olsr_calculate_tc_border	tc_set.c	/^olsr_calculate_tc_border(uint8_t lower_border, union olsr_ip_addr *lower_border_ip, uint8_t upper_border,$/;"	f	file:
+olsr_change_myself_tc	tc_set.c	/^olsr_change_myself_tc(void)$/;"	f
+olsr_delete_all_tc_entries	tc_set.c	/^void olsr_delete_all_tc_entries(void) {$/;"	f
+olsr_delete_outdated_tc_edges	tc_set.c	/^olsr_delete_outdated_tc_edges(struct tc_entry *tc)$/;"	f
+olsr_delete_revoked_tc_edges	tc_set.c	/^olsr_delete_revoked_tc_edges(struct tc_entry *tc, uint16_t ansn, union olsr_ip_addr *lower_border, union olsr_ip_addr *upper_border)$/;"	f	file:
+olsr_delete_tc_edge_entry	tc_set.c	/^olsr_delete_tc_edge_entry(struct tc_edge_entry *tc_edge)$/;"	f
+olsr_delete_tc_entry	tc_set.c	/^olsr_delete_tc_entry(struct tc_entry *tc)$/;"	f
+olsr_expire_tc_edge_gc	tc_set.c	/^olsr_expire_tc_edge_gc(void *context)$/;"	f	file:
+olsr_expire_tc_entry	tc_set.c	/^olsr_expire_tc_entry(void *context)$/;"	f	file:
+olsr_init_tc	tc_set.c	/^olsr_init_tc(void)$/;"	f
+olsr_input_tc	tc_set.c	/^olsr_input_tc(union olsr_message * msg, struct interface * input_if __attribute__ ((unused)), union olsr_ip_addr * from_addr)$/;"	f
+olsr_locate_tc_entry	tc_set.c	/^olsr_locate_tc_entry(union olsr_ip_addr *adr)$/;"	f
+olsr_lock_tc_entry	tc_set.c	/^olsr_lock_tc_entry(struct tc_entry *tc)$/;"	f
+olsr_lookup_tc_edge	tc_set.c	/^olsr_lookup_tc_edge(struct tc_entry *tc, union olsr_ip_addr *edge_addr)$/;"	f
+olsr_lookup_tc_entry	tc_set.c	/^olsr_lookup_tc_entry(union olsr_ip_addr *adr)$/;"	f
+olsr_print_tc_table	tc_set.c	/^olsr_print_tc_table(void)$/;"	f
+olsr_seq_inrange_high	tc_set.c	/^olsr_seq_inrange_high(int beg, int end, uint16_t seq)$/;"	f	file:
+olsr_seq_inrange_low	tc_set.c	/^olsr_seq_inrange_low(int beg, int end, uint16_t seq)$/;"	f	file:
+olsr_tc_edge_to_string	tc_set.c	/^olsr_tc_edge_to_string(struct tc_edge_entry *tc_edge)$/;"	f
+olsr_tc_update_edge	tc_set.c	/^olsr_tc_update_edge(struct tc_entry *tc, uint16_t ansn, const unsigned char **curr, union olsr_ip_addr *neighbor)$/;"	f	file:
+olsr_unlock_tc_entry	tc_set.c	/^olsr_unlock_tc_entry(struct tc_entry *tc)$/;"	f
+tc_edge_gc_timer_cookie	tc_set.c	/^struct olsr_cookie_info *tc_edge_gc_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+tc_edge_mem_cookie	tc_set.c	/^struct olsr_cookie_info *tc_edge_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+tc_mem_cookie	tc_set.c	/^struct olsr_cookie_info *tc_mem_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+tc_myself	tc_set.c	/^struct tc_entry *tc_myself;            \/* Shortcut to ourselves *\/$/;"	v	typeref:struct:tc_entry
+tc_tree	tc_set.c	/^struct avl_tree tc_tree;$/;"	v	typeref:struct:avl_tree
+tc_validity_timer_cookie	tc_set.c	/^struct olsr_cookie_info *tc_validity_timer_cookie = NULL;$/;"	v	typeref:struct:olsr_cookie_info
+OLSR_FOR_ALL_PREFIX_ENTRIES	tc_set.h	/^#define OLSR_FOR_ALL_PREFIX_ENTRIES(/;"	d
+OLSR_FOR_ALL_PREFIX_ENTRIES_END	tc_set.h	/^#define OLSR_FOR_ALL_PREFIX_ENTRIES_END(/;"	d
+OLSR_FOR_ALL_TC_EDGE_ENTRIES	tc_set.h	/^#define OLSR_FOR_ALL_TC_EDGE_ENTRIES(/;"	d
+OLSR_FOR_ALL_TC_EDGE_ENTRIES_END	tc_set.h	/^#define OLSR_FOR_ALL_TC_EDGE_ENTRIES_END(/;"	d
+OLSR_FOR_ALL_TC_ENTRIES	tc_set.h	/^#define OLSR_FOR_ALL_TC_ENTRIES(/;"	d
+OLSR_FOR_ALL_TC_ENTRIES_END	tc_set.h	/^#define OLSR_FOR_ALL_TC_ENTRIES_END(/;"	d
+OLSR_TC_EDGE_GC_JITTER	tc_set.h	/^#define OLSR_TC_EDGE_GC_JITTER /;"	d
+OLSR_TC_EDGE_GC_TIME	tc_set.h	/^#define OLSR_TC_EDGE_GC_TIME /;"	d
+OLSR_TC_VTIME_JITTER	tc_set.h	/^#define OLSR_TC_VTIME_JITTER /;"	d
+T_dest_addr	tc_set.h	/^  union olsr_ip_addr T_dest_addr;      \/* edge_node key *\/$/;"	m	struct:tc_edge_entry	typeref:union:tc_edge_entry::olsr_ip_addr
+_OLSR_TOP_SET	tc_set.h	/^#define _OLSR_TOP_SET$/;"	d
+addr	tc_set.h	/^  union olsr_ip_addr addr;             \/* vertex_node key *\/$/;"	m	struct:tc_entry	typeref:union:tc_entry::olsr_ip_addr
+ansn	tc_set.h	/^  uint16_t ansn;                       \/* ANSN number of the tc message *\/$/;"	m	struct:tc_entry
+ansn	tc_set.h	/^  uint16_t ansn;                       \/* ansn of this edge, used for multipart msgs *\/$/;"	m	struct:tc_edge_entry
+cand_tree_node	tc_set.h	/^  struct avl_node cand_tree_node;      \/* SPF candidate heap, node keyed by path_etx *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::avl_node
+cost	tc_set.h	/^  olsr_linkcost cost;                  \/* metric used for SPF calculation *\/$/;"	m	struct:tc_edge_entry
+edge_gc_timer	tc_set.h	/^  struct timer_entry *edge_gc_timer;   \/* used for edge garbage collection *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::timer_entry
+edge_inv	tc_set.h	/^  struct tc_edge_entry *edge_inv;      \/* shortcut, used during SPF calculation *\/$/;"	m	struct:tc_edge_entry	typeref:struct:tc_edge_entry::tc_edge_entry
+edge_node	tc_set.h	/^  struct avl_node edge_node;           \/* edge_tree node in tc_entry *\/$/;"	m	struct:tc_edge_entry	typeref:struct:tc_edge_entry::avl_node
+edge_tree	tc_set.h	/^  struct avl_tree edge_tree;           \/* subtree for edges *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::avl_tree
+err_seq	tc_set.h	/^  uint16_t err_seq;                    \/* sequence number of an unplausible TC *\/$/;"	m	struct:tc_entry
+err_seq_valid	tc_set.h	/^  bool err_seq_valid;                  \/* do we have an error (unplauible seq\/ansn) *\/$/;"	m	struct:tc_entry
+hops	tc_set.h	/^  uint8_t hops;                        \/* SPF calculated hopcount *\/$/;"	m	struct:tc_entry
+ignored	tc_set.h	/^  uint16_t ignored;                    \/* how many TC messages ignored in a sequence$/;"	m	struct:tc_entry
+linkquality	tc_set.h	/^  uint32_t linkquality[0];$/;"	m	struct:tc_edge_entry
+msg_hops	tc_set.h	/^  uint8_t msg_hops;                    \/* hopcount as per the tc message *\/$/;"	m	struct:tc_entry
+msg_seq	tc_set.h	/^  uint16_t msg_seq;                    \/* sequence number of the tc message *\/$/;"	m	struct:tc_entry
+next_hop	tc_set.h	/^  struct link_entry *next_hop;         \/* SPF calculated link to the 1st hop neighbor *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::link_entry
+path_cost	tc_set.h	/^  olsr_linkcost path_cost;             \/* SPF calculated distance, cand_tree_node key *\/$/;"	m	struct:tc_entry
+path_list_node	tc_set.h	/^  struct list_node path_list_node;     \/* SPF result list *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::list_node
+prefix_tree	tc_set.h	/^  struct avl_tree prefix_tree;         \/* subtree for prefixes *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::avl_tree
+refcount	tc_set.h	/^  uint32_t refcount;                   \/* reference counter *\/$/;"	m	struct:tc_entry
+tc	tc_set.h	/^  struct tc_entry *tc;                 \/* backpointer to owning tc entry *\/$/;"	m	struct:tc_edge_entry	typeref:struct:tc_edge_entry::tc_entry
+tc_edge_entry	tc_set.h	/^struct tc_edge_entry {$/;"	s
+tc_entry	tc_set.h	/^struct tc_entry {$/;"	s
+validity_timer	tc_set.h	/^  struct timer_entry *validity_timer;  \/* tc validity time *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::timer_entry
+vertex_node	tc_set.h	/^  struct avl_node vertex_node;         \/* node keyed by ip address *\/$/;"	m	struct:tc_entry	typeref:struct:tc_entry::avl_node
+olsr_delete_neighbor_pointer	two_hop_neighbor_table.c	/^olsr_delete_neighbor_pointer(struct neighbor_2_entry *two_hop_entry, struct neighbor_entry *neigh)$/;"	f
+olsr_delete_two_hop_neighbor_table	two_hop_neighbor_table.c	/^olsr_delete_two_hop_neighbor_table(struct neighbor_2_entry *two_hop_neighbor)$/;"	f
+olsr_init_two_hop_table	two_hop_neighbor_table.c	/^olsr_init_two_hop_table(void)$/;"	f
+olsr_insert_two_hop_neighbor_table	two_hop_neighbor_table.c	/^olsr_insert_two_hop_neighbor_table(struct neighbor_2_entry *two_hop_neighbor)$/;"	f
+olsr_lookup_two_hop_neighbor_table	two_hop_neighbor_table.c	/^olsr_lookup_two_hop_neighbor_table(const union olsr_ip_addr *dest)$/;"	f
+olsr_lookup_two_hop_neighbor_table_mid	two_hop_neighbor_table.c	/^olsr_lookup_two_hop_neighbor_table_mid(const union olsr_ip_addr *dest)$/;"	f
+olsr_print_two_hop_neighbor_table	two_hop_neighbor_table.c	/^olsr_print_two_hop_neighbor_table(void)$/;"	f
+two_hop_neighbortable	two_hop_neighbor_table.c	/^struct neighbor_2_entry two_hop_neighbortable[HASHSIZE];$/;"	v	typeref:struct:neighbor_2_entry
+NB2S_COVERED	two_hop_neighbor_table.h	/^#define	NB2S_COVERED /;"	d
+_OLSR_TWO_HOP_TABLE	two_hop_neighbor_table.h	/^#define _OLSR_TWO_HOP_TABLE$/;"	d
+mpr_covered_count	two_hop_neighbor_table.h	/^  uint8_t mpr_covered_count;           \/*used in mpr calculation *\/$/;"	m	struct:neighbor_2_entry
+neighbor	two_hop_neighbor_table.h	/^  struct neighbor_entry *neighbor;$/;"	m	struct:neighbor_list_entry	typeref:struct:neighbor_list_entry::neighbor_entry
+neighbor_2_addr	two_hop_neighbor_table.h	/^  union olsr_ip_addr neighbor_2_addr;$/;"	m	struct:neighbor_2_entry	typeref:union:neighbor_2_entry::olsr_ip_addr
+neighbor_2_entry	two_hop_neighbor_table.h	/^struct neighbor_2_entry {$/;"	s
+neighbor_2_nblist	two_hop_neighbor_table.h	/^  struct neighbor_list_entry neighbor_2_nblist;$/;"	m	struct:neighbor_2_entry	typeref:struct:neighbor_2_entry::neighbor_list_entry
+neighbor_2_pointer	two_hop_neighbor_table.h	/^  int16_t neighbor_2_pointer;          \/* Neighbor count *\/$/;"	m	struct:neighbor_2_entry
+neighbor_list_entry	two_hop_neighbor_table.h	/^struct neighbor_list_entry {$/;"	s
+next	two_hop_neighbor_table.h	/^  struct neighbor_2_entry *next;$/;"	m	struct:neighbor_2_entry	typeref:struct:neighbor_2_entry::neighbor_2_entry
+next	two_hop_neighbor_table.h	/^  struct neighbor_list_entry *next;$/;"	m	struct:neighbor_list_entry	typeref:struct:neighbor_list_entry::neighbor_list_entry
+path_linkcost	two_hop_neighbor_table.h	/^  olsr_linkcost path_linkcost;$/;"	m	struct:neighbor_list_entry
+prev	two_hop_neighbor_table.h	/^  struct neighbor_2_entry *prev;$/;"	m	struct:neighbor_2_entry	typeref:struct:neighbor_2_entry::neighbor_2_entry
+prev	two_hop_neighbor_table.h	/^  struct neighbor_list_entry *prev;$/;"	m	struct:neighbor_list_entry	typeref:struct:neighbor_list_entry::neighbor_list_entry
+processed	two_hop_neighbor_table.h	/^  uint8_t processed;                   \/*used in mpr calculation *\/$/;"	m	struct:neighbor_2_entry
+saved_path_linkcost	two_hop_neighbor_table.h	/^  olsr_linkcost saved_path_linkcost;$/;"	m	struct:neighbor_list_entry
+second_hop_linkcost	two_hop_neighbor_table.h	/^  olsr_linkcost second_hop_linkcost;$/;"	m	struct:neighbor_list_entry
