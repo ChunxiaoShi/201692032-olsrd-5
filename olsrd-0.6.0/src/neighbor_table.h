@@ -60,7 +60,8 @@ struct neighbor_entry {     //邻居结点信息
   uint8_t status;                           //主地址状态
   uint8_t willingness;                      //MPR相关
   bool is_mpr;                              //是否是MPR
-  bool was_mpr;                        /* Used to detect changes in MPR ？用于发现MPR的变化*/
+  bool was_mpr;                        /* Used to detect changes in MPR 
+                                          用于发现MPR的变化*/
   bool skip;                                
   int neighbor_2_nocov;                     //覆盖两跳邻居节点的数量
   int linkcount;                            //链接链路的数量

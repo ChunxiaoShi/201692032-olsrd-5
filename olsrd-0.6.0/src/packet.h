@@ -63,7 +63,8 @@ struct hello_message {    /*消息数据包*/
   uint16_t packet_seq_number;    /*序列号*/
   uint8_t hop_count;      /*跳数*/
   uint8_t ttl;            /*time to live*/
-  uint8_t willingness;    /*指定节点的意愿进行，有意愿的WILL_NEVER的节点被选为MPR的任意结点*/
+  uint8_t willingness;    /*指定节点的意愿进行，有意愿的WILL_NEVER的节点
+                            被选为MPR的任意结点*/
   struct hello_neighbor *neighbors;/*消息传递的下一节点*/
 
 };
@@ -103,7 +104,7 @@ struct mid_alias {
 };
 
 struct mid_message {
-  olsr_reltime vtime;
+  olsr_reltime vtime;                  /*有效时间*/
   union olsr_ip_addr mid_origaddr;     /* originator's address */
   uint8_t mid_hopcnt;                  /* number of hops to destination */
   uint8_t mid_ttl;                     /* ttl */

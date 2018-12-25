@@ -52,19 +52,25 @@
 
 /* deserialized OLSR header 反序列化olsr头部*/
 
-struct olsr_common {   /*基本数据包*/
-  uint8_t type;       /*消息类型。消息类型0-127由OLSR保留，而128-255空间被认为是“私有”，可用于协议的自定义扩展。*/
-  olsr_reltime vtime; /*该字段指示接收后多长时间内节点将此信息视为有效的时间。时间间隔以尾数 - 指数格式表示。*/
+struct olsr_common {  /*基本数据包*/
+  uint8_t type;       /*消息类型。消息类型0-127由OLSR保留，
+                        而128-255空间被认为是“私有”，
+                        可用于协议的自定义扩展。*/
+  olsr_reltime vtime; /*该字段指示接收后多长时间内节点将此信息
+                        视为有效的时间。时间间隔以尾数-指数格
+                        式表示。*/
   uint16_t size;      /*消息大小。以字节为单位，包括header*/
   union olsr_ip_addr orig;/*发送端ip地址*/
   uint8_t ttl;        /*time to live 跳数*/
   uint8_t hops;       /*此消息在传递过程中经历的跳数*/
-  uint16_t seqno;     /*消息的序列号，这是唯一不变的！！以确保消息不会被重发。每发送一个新消息包就+1*/
+  uint16_t seqno;     /*消息的序列号，这是唯一不变的！！
+                        以确保消息不会被重发。每发送一个新消息
+                        包就+1*/
 };
 
 /* serialized IPv4 OLSR header */
 
-struct olsr_header_v4 {
+struct olsr_header_v4 {   /*分组头部*/
   uint8_t type;
   uint8_t vtime;
   uint16_t size;
@@ -89,25 +95,30 @@ struct olsr_header_v6 {
 /* deserialized LQ_HELLO */
 
 struct lq_hello_neighbor {/*邻居结点集HELLO消息的头部*/
-  uint8_t link_type;      /*链路状态，有三种，非对称链路，对称链路，列表中节点被选为MPR。*/
+  uint8_t link_type;      /*链路状态，有三种，非对称链路，
+                            对称链路，列表中节点被选为MPR。*/
   uint8_t neigh_type;     /*邻居结点状态，对称、非对称*/
   union olsr_ip_addr addr;/*发送端ip地址*/
-  struct lq_hello_neighbor *next;/*将要把HELLO消息传递给的下一个邻居结点信息*/
-  uint32_t linkquality[0];/*链路质量？？（值是什么）*/
+  struct lq_hello_neighbor *next;/*将要把HELLO消息传递给的
+                                  下一个邻居结点信息*/
+  uint32_t linkquality[0];/*链路质量*/
 };
 
-struct lq_hello_message {   /*消息数据包的头部*/
+struct lq_hello_message {   /*（Message部分）消息数据包的头部*/
   struct olsr_common comm;  /*olsr消息*/
   olsr_reltime htime;       /*消息发送间隔*/
-  uint8_t will;             /*指定节点的意愿进行，有意愿的WILL_NEVER的节点被选为MPR的任意结点*/
+  uint8_t will;             /*指定节点的意愿进行，有WILL_NEVER
+                              的节点被选为MPR的任意结点*/
   struct lq_hello_neighbor *neigh;/*消息传递的下一节点*/
 };
 
 /* serialized LQ_HELLO */
 struct lq_hello_info_header {
-  uint8_t link_code;    /*链路类型：ASYM_LINK,SYM_LINK,MPR_LINK,还可提供附加信息，例如链路中断LOST_LINK*/
+  uint8_t link_code;    /*链路类型：ASYM_LINK,SYM_LINK,MPR_LINK,
+                          还可提供附加信息，例如链路中断LOST_LINK*/
   uint8_t reserved;     /*保留字必须为0000 0000*/
-  uint16_t size;        /*本链路消息的大小，从link_code到下一个link_code前*/
+  uint16_t size;        /*本链路消息的大小，从link_code到下一个
+                          link_code前*/
 };
 
 struct lq_hello_header {
@@ -121,7 +132,6 @@ struct lq_hello_header {
 
 /*
 lq_hello_header和lq_hello_info_header共同组成HELLO消息包的头部。
-
 */
 
 
@@ -130,7 +140,8 @@ struct lq_tc_message {    /*封装后的拓扑数据包格式。*/
   struct olsr_common comm;/*olsr基本数据包*/
   union olsr_ip_addr from;/*到达目的地的倒数第二跳地址*/
   uint16_t ansn;          /*记录本节点收到的最近一个TC分组的ANSN序列号。
-                            当收到一个新的TC分组时，将新的TC分组的ANSN号与拓扑表中的相对应的ANSN序列号比较，
+                            当收到一个新的TC分组时，将新的TC分组的ANSN号
+                            与拓扑表中的相对应的ANSN序列号比较，
                             以此判断接收还是丢弃该消息*/
   struct tc_mpr_addr *neigh;/*指向广播邻居集
                               struct tc_mpr_addr定义在packet.h中*/
